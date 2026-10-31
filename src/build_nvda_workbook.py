@@ -288,11 +288,14 @@ notes(ra, 20, ["Notes:", "1. FY2017 average total assets uses FY2016 ending tota
 
 # ------------------------------------------------------------------ Prices & sentiment placeholders
 hp = sheet("Historical Stock Prices", "NVIDIA Corp. - Historical Stock Prices at Balance Sheet Dates",
-           "Pending: to be filled from the program's stock price step (Yahoo Finance)", first=False)
+           "Yahoo Finance daily closes via src/get_nvda_stock_prices.py (yfinance)", first=False)
 for j, v in enumerate(["Fiscal Year", "Balance Sheet Date", "Actual Trading Date", "Closing Stock Price ($ USD)",
                        "Split Factor (to post-2024 basis)", "Split-Adjusted Close ($ USD)"]):
     c = hp.cell(4, 1 + j, v)
     c.font, c.fill = HDR, FILL
+# Actual closing price on the trading date (yfinance split-adjusted Close x split factor)
+CLOSE = {2026: 187.67, 2025: 142.62, 2024: 610.31, 2023: 203.65, 2022: 228.40,
+         2021: 519.59, 2020: 250.48, 2019: 160.15, 2018: 243.33, 2017: 111.77}
 trade = {2026: "2026-01-23", 2025: "2025-01-24", 2024: "2024-01-26", 2023: "2023-01-27", 2022: "2022-01-28",
          2021: "2021-01-29", 2020: "2020-01-24", 2019: "2019-01-25", 2018: "2018-01-26", 2017: "2017-01-27"}
 for k, y in enumerate(YEARS):
@@ -301,7 +304,8 @@ for k, y in enumerate(YEARS):
     hp.cell(r, 1, f"FY {y}")
     hp.cell(r, 2, PERIOD_END[y])
     hp.cell(r, 3, trade[y])
-    hp.cell(r, 4, 187.67 if y == 2026 else None).font = INPUT
+    hp.cell(r, 4, CLOSE[y]).font = INPUT
+    hp.cell(r, 4).number_format = "$#,##0.00"
     hp.cell(r, 5, factor).font = INPUT
     hp.cell(r, 6, f'=IF(D{r}="","",D{r}/E{r})').number_format = "$#,##0.00"
 for c in ("B", "C", "D", "E", "F"):
@@ -309,7 +313,7 @@ for c in ("B", "C", "D", "E", "F"):
 notes(hp, 16, ["Notes:",
                "1. NVIDIA split 4-for-1 on July 20, 2021 and 10-for-1 on June 10, 2024. Split factor converts older prices to today's share basis.",
                "2. Fiscal years end on the last Sunday of January; prices are from the preceding Friday.",
-               "3. FY2026 close ($187.67, Jan 23, 2026) per FinancialContent historical data; other years pending."])
+               "3. Source: Yahoo Finance via yfinance. Its Close is already split-adjusted; the actual close shown is that value x split factor."])
 
 sa = sheet("Sentiment Analysis", "NVIDIA Corp. - Loughran-McDonald MD&A Sentiment Analysis",
            "Item 7 (MD&A) word counts from src/lm_sentiment.py, sentiment-ready text", first=False)

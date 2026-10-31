@@ -271,6 +271,7 @@
       </div>
       <div class="kpis" id="corr-kpis"></div>
       <div class="table-scroll"><table id="price-table"></table></div>
+      <div class="notes" id="price-notes-box" hidden><h3>What the data shows</h3><ul id="price-notes"></ul></div>
     </section>
 
     <!-- 6. Downloads -->
@@ -573,12 +574,16 @@
       kpis("corr-kpis", [
         ["Correlation: price & P/N level", pearson(price, pn).toFixed(2)],
         ["Correlation: yearly % changes", pearson(chg(price), chg(pn)).toFixed(2)],
-        ["Price change, 10 yrs", ((price.at(-1) / price[0] - 1) * 100).toFixed(0) + "%"],
+        ["Price change, 10 yrs", Math.round((price.at(-1) / price[0] - 1) * 100).toLocaleString() + "%"],
       ]);
       el("price-table").innerHTML =
         "<thead><tr><th>Fiscal year</th><th>Balance sheet date</th><th>Trading date</th><th>Closing price</th><th>Split factor</th><th>Split-adjusted close</th><th>P/N ratio</th></tr></thead><tbody>" +
         d.prices.map((p, i) => `<tr><td>FY ${p.year}</td><td>${p.bsDate}</td><td>${p.tradeDate}</td><td>$${p.close.toFixed(2)}</td>
           <td>${p.splitFactor}:1</td><td>$${p.splitAdjClose.toFixed(2)}</td><td>${fmt2(s[i].pn)}</td></tr>`).join("") + "</tbody>";
+      if (d.notes?.price?.length) {
+        el("price-notes-box").hidden = false;
+        el("price-notes").innerHTML = d.notes.price.map((n) => `<li>${n}</li>`).join("");
+      }
       }
 
       // 6. Downloads

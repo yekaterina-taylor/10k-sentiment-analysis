@@ -1351,7 +1351,88 @@
    "score": -0.007080110135046545
   }
  ],
- "prices": [],
+ "prices": [
+  {
+   "year": 2026,
+   "bsDate": "2026-01-25",
+   "tradeDate": "2026-01-23",
+   "close": 187.67,
+   "splitFactor": 1,
+   "splitAdjClose": 187.67
+  },
+  {
+   "year": 2025,
+   "bsDate": "2025-01-26",
+   "tradeDate": "2025-01-24",
+   "close": 142.62,
+   "splitFactor": 1,
+   "splitAdjClose": 142.62
+  },
+  {
+   "year": 2024,
+   "bsDate": "2024-01-28",
+   "tradeDate": "2024-01-26",
+   "close": 610.31,
+   "splitFactor": 10,
+   "splitAdjClose": 61.03
+  },
+  {
+   "year": 2023,
+   "bsDate": "2023-01-29",
+   "tradeDate": "2023-01-27",
+   "close": 203.65,
+   "splitFactor": 10,
+   "splitAdjClose": 20.36
+  },
+  {
+   "year": 2022,
+   "bsDate": "2022-01-30",
+   "tradeDate": "2022-01-28",
+   "close": 228.4,
+   "splitFactor": 10,
+   "splitAdjClose": 22.84
+  },
+  {
+   "year": 2021,
+   "bsDate": "2021-01-31",
+   "tradeDate": "2021-01-29",
+   "close": 519.59,
+   "splitFactor": 40,
+   "splitAdjClose": 12.99
+  },
+  {
+   "year": 2020,
+   "bsDate": "2020-01-26",
+   "tradeDate": "2020-01-24",
+   "close": 250.48,
+   "splitFactor": 40,
+   "splitAdjClose": 6.26
+  },
+  {
+   "year": 2019,
+   "bsDate": "2019-01-27",
+   "tradeDate": "2019-01-25",
+   "close": 160.15,
+   "splitFactor": 40,
+   "splitAdjClose": 4.0
+  },
+  {
+   "year": 2018,
+   "bsDate": "2018-01-28",
+   "tradeDate": "2018-01-26",
+   "close": 243.33,
+   "splitFactor": 40,
+   "splitAdjClose": 6.08
+  },
+  {
+   "year": 2017,
+   "bsDate": "2017-01-29",
+   "tradeDate": "2017-01-27",
+   "close": 111.77,
+   "splitFactor": 40,
+   "splitAdjClose": 2.79
+  }
+ ],
  "downloads": [
   {
    "label": "10-year analysis workbook (Excel)",
@@ -1360,11 +1441,21 @@
   {
    "label": "All MD&A text files, FY2017-FY2026 (.zip)",
    "file": "data/NVDA/NVDA_MDA_Text_Files.zip"
+  },
+  {
+   "label": "Fiscal year-end stock prices (.csv)",
+   "file": "data/NVDA/NVDA_fiscal_year_end_prices.csv"
+  },
+  {
+   "label": "Daily stock prices, 2017-2026 (.csv)",
+   "file": "data/NVDA/NVDA_daily_prices_2017_2026.csv"
+  },
+  {
+   "label": "Stock price program (get_nvda_stock_prices.py)",
+   "file": "src/get_nvda_stock_prices.py"
   }
  ],
- "pending": {
-  "price": "This comparison needs NVIDIA's fiscal year-end stock prices, which are still being collected. Prices will be split-adjusted for the 4-for-1 (2021) and 10-for-1 (2024) stock splits."
- },
+ "pending": {},
  "notes": {
   "ratios": [
    "Liquidity: the current ratio stayed very high, between 3.5 and 8.0. It peaked near 8.0 in FY2018-FY2019 and eased to 3.9 in FY2026 as payables and accrued liabilities grew with sales. NVIDIA can cover short-term obligations several times over.",
@@ -1387,6 +1478,13 @@
    "FY2026 shows that tone does not simply follow results: revenue hit a record $216 billion, yet P/N fell to 0.54 as the MD&A focused on export controls, the $4.5 billion H20 charge and supply challenges.",
    "Some negative words are boilerplate or dictionary quirks: \"critical\" comes mostly from the \"Critical Accounting Estimates\" heading, and \"termination\" (FY2023-FY2024) and \"closing\" (FY2021) refer to the Arm deal.",
    "Method: exact matching against the Loughran-McDonald Master Dictionary, using the sentiment-ready text (src/lm_sentiment.py). Apple's sentiment numbers came from a different program, so the two companies' word counts are not yet directly comparable."
+  ],
+  "price": [
+   "Prices come from Yahoo Finance via the yfinance library (src/get_nvda_stock_prices.py). Yahoo's \"Close\" is already split-adjusted, so the actual closing price shown is reconstructed by multiplying by the split factor (40 before July 2021, 10 until June 2024).",
+   "The split-adjusted price rose from $2.79 to $187.67, about 67 times, while P/N stayed in a narrow 0.44-0.76 band. The correlation between price level and P/N is only 0.10, so there is no link between the two levels.",
+   "Year-to-year changes moved in the same direction in 6 of 9 years (correlation 0.55), for example FY2019 and FY2023 when both price and tone fell. With only 9 changes this is not statistically significant: a correlation of about 0.67 would be needed.",
+   "Tone did not predict the next year's stock return (correlation -0.31). FY2026 shows why: the stock rose 32% while P/N fell to 0.54, because the MD&A focused on export controls and the H20 charge.",
+   "Conclusion: NVIDIA's stock price followed its earnings growth (net income rose from $1.7 billion to $120 billion), not the tone of its MD&A. This matches the Apple result."
   ]
  },
  "mda": [
