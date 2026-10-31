@@ -68,6 +68,28 @@
     }
     .custom .btn { flex: 0 1 180px; background: var(--gold); color: var(--blue); }
     .custom .btn:hover, .custom .btn:focus-visible { background: var(--blue); color: #fff; }
+    .company {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+    }
+    .logo {
+      height: 36px;
+      width: 36px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 6px;
+      padding: 4px;
+    }
+    .label {
+      margin: 8px 0 0;
+      font-size: 0.85rem;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue);
+    }
     #message {
       min-height: 1.5em;
       text-align: center;
@@ -90,9 +112,6 @@
   </header>
 
   <main>
-    <button class="btn" type="button" data-company="AAPL">Apple (AAPL)</button>
-    <button class="btn" type="button" data-company="NVDA">NVIDIA (NVDA)</button>
-
     <form class="custom" id="custom-form">
       <input id="ticker" type="text" placeholder="Any ticker, e.g. WMT" maxlength="10"
              aria-label="Company ticker symbol" autocomplete="off">
@@ -100,6 +119,18 @@
     </form>
 
     <p id="message" role="status"></p>
+
+    <p class="label">Featured analyses</p>
+
+    <!-- To show a logo, add logos/apple.png and logos/nvidia.png to the repo. -->
+    <button class="btn company" type="button" data-company="AAPL">
+      <img class="logo" src="logos/apple.png" alt="" onerror="this.remove()">
+      <span>Apple (AAPL)</span>
+    </button>
+    <button class="btn company" type="button" data-company="NVDA">
+      <img class="logo" src="logos/nvidia.png" alt="" onerror="this.remove()">
+      <span>NVIDIA (NVDA)</span>
+    </button>
   </main>
 
   <footer>Data source: SEC EDGAR 10-K filings</footer>
