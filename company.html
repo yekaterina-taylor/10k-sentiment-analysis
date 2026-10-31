@@ -82,6 +82,18 @@
     .notes ul { margin: 0; padding-left: 18px; }
     .notes li { margin-bottom: 6px; line-height: 1.45; }
 
+    /* Ratio status colors (tint backgrounds; text stays ink; icon adds a non-color cue) */
+    .st-good { background: #DDF3E4; }
+    .st-mid  { background: #FFF1C2; }
+    .st-weak { background: #FCE1E8; }
+    td .ic { display: inline-block; width: 1.1em; margin-right: 4px; font-weight: bold; color: var(--muted); }
+    .ratio-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; margin-bottom: 10px; font-size: 0.85rem; }
+    .legend-item { display: inline-flex; align-items: center; gap: 6px; }
+    .chip { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 4px; font-weight: bold;
+            color: var(--muted); border: 1px solid rgba(0,0,0,.08); }
+    .ratio-legend .bench { flex-basis: 100%; margin: 4px 0 0; padding-left: 18px; color: var(--muted); }
+    .ratio-legend .bench li { margin-bottom: 2px; }
+    .bench-caveat { margin-top: -12px; font-size: 0.85rem; }
     details.explain { border: 2px solid var(--blue); border-radius: 8px; margin-bottom: 24px; background: var(--paper); }
     details.explain summary {
       cursor: pointer; padding: 14px 16px; font-weight: bold; color: var(--blue);
@@ -161,7 +173,10 @@
       <h2>Ratios</h2>
       <p class="sub">One ratio each for liquidity, solvency, efficiency, and profitability.</p>
       <div class="grid2" id="ratio-charts"></div>
+      <div class="ratio-legend" id="ratio-legend"></div>
       <div class="table-scroll"><table id="ratio-table"></table></div>
+      <p class="sub bench-caveat">Colors use general rule-of-thumb benchmarks. Healthy levels differ by industry and business
+        model. For example, a very profitable company can safely run a current ratio below 1.0.</p>
       <div class="notes"><h3>What the data shows</h3><ul id="ratio-notes"></ul></div>
     </section>
 
@@ -335,9 +350,33 @@
         lineChart(el(`ratio-${i}`), chrono, [...r.values].reverse(),
           { tip: isPct ? fmtPct : (v) => fmt2(v) + "x", tick: isPct ? (v) => (v * 100).toFixed(0) + "%" : (v) => v.toFixed(2) });
       });
+      // General rule-of-thumb benchmarks (they vary by industry): [strong if ..., weak if ...]
+      const BENCH = {
+        Liquidity:     { good: (v) => v >= 1.5, weak: (v) => v < 1.0, text: "Strong ≥ 1.5 · Adequate 1.0–1.5 · Weak < 1.0" },
+        Solvency:      { good: (v) => v <= 0.4, weak: (v) => v > 0.6, text: "Strong ≤ 0.40 · Moderate 0.40–0.60 · High > 0.60" },
+        Efficiency:    { good: (v) => v >= 1.0, weak: (v) => v < 0.5, text: "Strong ≥ 1.0 · Adequate 0.5–1.0 · Weak < 0.5" },
+        Profitability: { good: (v) => v >= 0.2, weak: (v) => v < 0.1, text: "Strong ≥ 20% · Adequate 10–20% · Weak < 10%" },
+      };
+      const STATUS = {
+        good: { cls: "st-good", icon: "✓", label: "Strong" },
+        mid:  { cls: "st-mid",  icon: "●", label: "Adequate / moderate" },
+        weak: { cls: "st-weak", icon: "!", label: "Weak / high risk" },
+      };
+      const statusOf = (cat, v) => {
+        const b = BENCH[cat];
+        if (!b || v == null) return null;
+        return b.good(v) ? "good" : b.weak(v) ? "weak" : "mid";
+      };
+      el("ratio-legend").innerHTML =
+        Object.values(STATUS).map((s) => `<span class="legend-item"><span class="chip ${s.cls}">${s.icon}</span>${s.label}</span>`).join("") +
+        "<ul class=\"bench\">" + d.ratios.map((r) => `<li><strong>${r.name}:</strong> ${BENCH[r.category]?.text || ""}</li>`).join("") + "</ul>";
       el("ratio-table").innerHTML = "<thead><tr><th>Ratio</th>" + years.map((y) => `<th>${y}</th>`).join("") + "</tr></thead><tbody>" +
-        d.ratios.map((r) => `<tr><td>${r.name}</td>` + r.values.map((v) =>
-          `<td>${r.category === "Profitability" ? fmtPct(v) : fmt2(v)}</td>`).join("") + "</tr>").join("") + "</tbody>";
+        d.ratios.map((r) => `<tr><td>${r.name}</td>` + r.values.map((v) => {
+          const st = statusOf(r.category, v);
+          const s = st ? STATUS[st] : null;
+          const txt = r.category === "Profitability" ? fmtPct(v) : fmt2(v);
+          return s ? `<td class="${s.cls}" title="${s.label}"><span class="ic" aria-hidden="true">${s.icon}</span>${txt}</td>` : `<td>${txt}</td>`;
+        }).join("") + "</tr>").join("") + "</tbody>";
       el("ratio-notes").innerHTML = (d.notes?.ratios || []).map((n) => `<li>${n}</li>`).join("");
 
       // Sections that depend on MD&A text or prices may still be pending for a company
