@@ -99,6 +99,8 @@
     #sent-table td + td { border-left: 1px solid #C9DAEE; }
     #sent-table th .hi { display: block; margin: 0 auto 5px; width: 22px; height: 22px; stroke: var(--gold); fill: none;
       stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .corr-sentence { font-size: 1.02rem; line-height: 1.6; margin: 0 0 24px; padding: 14px 16px; background: var(--soft);
+      border-left: 4px solid var(--gold); border-radius: 6px; }
     #price-table th + th { border-left: 1px solid rgba(255,255,255,.55); }
     #price-table td + td { border-left: 1px solid #C9DAEE; }
     #price-table tbody tr:nth-child(odd) td { background: #fff; }
@@ -273,7 +275,7 @@
         <div class="meta">Positive &divide; negative words; dashed line = 1.0 (balanced tone)</div>
         <div class="chart"><canvas id="pn-chart"></canvas></div>
       </div>
-      <div class="kpis" id="corr-kpis"></div>
+      <p class="corr-sentence" id="corr-kpis"></p>
       <div class="table-scroll"><table id="price-table"></table></div>
       <div class="notes" id="price-notes-box" hidden><h3>What the data shows</h3><ul id="price-notes"></ul></div>
     </section>
@@ -575,11 +577,15 @@
         return num / Math.sqrt(da * db);
       };
       const chg = (arr) => arr.slice(1).map((v, i) => v / arr[i] - 1);
-      kpis("corr-kpis", [
-        ["Correlation: price & P/N level", pearson(price, pn).toFixed(2)],
-        ["Correlation: yearly % changes", pearson(chg(price), chg(pn)).toFixed(2)],
-        ["Price change, 10 yrs", Math.round((price.at(-1) / price[0] - 1) * 100).toLocaleString() + "%"],
-      ]);
+      const rLvl = pearson(price, pn), rChg = pearson(chg(price), chg(pn));
+      const strength = (r) => Math.abs(r) < 0.3 ? "weak" : Math.abs(r) < 0.67 ? "moderate but not statistically meaningful" : "strong";
+      const pctUp = Math.round((price.at(-1) / price[0] - 1) * 100).toLocaleString();
+      el("corr-kpis").innerHTML =
+        `Over the ten years, the split-adjusted stock price rose <strong>${pctUp}%</strong>, from ` +
+        `$${price[0].toFixed(2)} to $${price.at(-1).toFixed(2)}. The correlation between the price level and the P/N ratio ` +
+        `is <strong>${rLvl.toFixed(2)}</strong> (${strength(rLvl)}), and between their year-to-year % changes it is ` +
+        `<strong>${rChg.toFixed(2)}</strong> (${strength(rChg)}). With only ten years of data, a correlation needs to be ` +
+        `about 0.67 or higher to be statistically meaningful.`;
       el("price-table").innerHTML =
         "<thead><tr><th>Fiscal year</th><th>Balance sheet date</th><th>Trading date</th><th>Closing price</th><th>Split factor</th><th>Split-adjusted close</th><th>P/N ratio</th></tr></thead><tbody>" +
         d.prices.map((p, i) => `<tr><td>FY ${p.year}</td><td>${p.bsDate}</td><td>${p.tradeDate}</td><td>$${p.close.toFixed(2)}</td>
