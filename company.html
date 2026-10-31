@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company Analysis</title>
+  <script src="vendor/chart.umd.js"></script>
+  <style>
+    :root {
+      --blue: #004B8D;
+      --gold: #FFC423;
+      --series-1: #1F63B0;   /* validated pair for charts */
+      --series-2: #B07D00;
+      --ink: #1a1a1a;
+      --muted: #5c5c5c;
+      --line: #e3e6ea;
+      --paper: #ffffff;
+      --soft: #f5f7fa;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--paper); }
+    a { color: var(--blue); }
+    header {
+      background: var(--blue); color: #fff; padding: 20px 16px;
+      border-bottom: 6px solid var(--gold);
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; }
+    header a.back { color: #fff; text-decoration: none; font-size: 0.9rem; opacity: 0.85; }
+    header h1 { margin: 8px 0 4px; font-size: 1.7rem; }
+    header p { margin: 0; opacity: 0.9; }
+
+    nav.tabs {
+      position: sticky; top: 0; z-index: 5; background: var(--paper);
+      border-bottom: 1px solid var(--line); overflow-x: auto;
+    }
+    nav.tabs .wrap { display: flex; gap: 4px; padding: 0 16px; }
+    nav.tabs button {
+      flex: 0 0 auto; border: 0; background: none; cursor: pointer;
+      padding: 14px 14px 11px; font: bold 0.95rem Arial, sans-serif; color: var(--muted);
+      border-bottom: 3px solid transparent;
+    }
+    nav.tabs button[aria-selected="true"] { color: var(--blue); border-bottom-color: var(--gold); }
+    nav.tabs button:hover { color: var(--blue); }
+
+    main { padding: 24px 16px 48px; }
+    section[hidden] { display: none; }
+    h2 { color: var(--blue); margin: 0 0 6px; }
+    .sub { color: var(--muted); margin: 0 0 20px; }
+
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 24px; }
+    .kpi { background: var(--soft); border-left: 4px solid var(--gold); padding: 14px; border-radius: 6px; }
+    .kpi .k { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    .kpi .v { font-size: 1.5rem; font-weight: bold; color: var(--blue); margin-top: 4px; }
+
+    .table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; margin-bottom: 24px; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    th, td { padding: 7px 10px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--line); }
+    th:first-child, td:first-child { text-align: left; position: sticky; left: 0; background: var(--paper); }
+    thead th { background: var(--blue); color: #fff; }
+    thead th:first-child { background: var(--blue); }
+    tr.header td { font-weight: bold; color: var(--blue); background: var(--soft); }
+    tr.header td:first-child { background: var(--soft); }
+    tr.total td { font-weight: bold; border-top: 1px solid #b9c2cc; }
+    td.indent { padding-left: 24px; }
+
+    .subtabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+    .subtabs button {
+      border: 2px solid var(--blue); background: var(--paper); color: var(--blue);
+      padding: 8px 14px; border-radius: 999px; font: bold 0.9rem Arial, sans-serif; cursor: pointer;
+    }
+    .subtabs button[aria-pressed="true"] { background: var(--blue); color: #fff; }
+
+    .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .card { border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--paper); }
+    .card h3 { margin: 0 0 2px; font-size: 1rem; }
+    .card .meta { color: var(--muted); font-size: 0.8rem; margin-bottom: 8px; }
+    .chart { position: relative; height: 220px; }
+    .chart.tall { height: 280px; }
+
+    .notes { background: var(--soft); border-radius: 8px; padding: 16px 18px; margin-bottom: 24px; }
+    .notes h3 { margin: 0 0 8px; color: var(--blue); font-size: 1rem; }
+    .notes ul { margin: 0; padding-left: 18px; }
+    .notes li { margin-bottom: 6px; line-height: 1.45; }
+
+    .downloads { display: grid; gap: 12px; max-width: 640px; }
+    .dl {
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      border: 2px solid var(--blue); border-radius: 8px; padding: 14px 16px; text-decoration: none; color: var(--ink);
+    }
+    .dl:hover { background: var(--gold); }
+    .dl.pending { border-style: dashed; color: var(--muted); }
+    .dl .tag { font-weight: bold; color: var(--blue); }
+    .error { color: #a40000; font-weight: bold; }
+    footer { background: var(--blue); color: #fff; text-align: center; padding: 14px 16px; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="back" href="index.html">&larr; All companies</a>
+      <h1 id="co-name">Loading&hellip;</h1>
+      <p id="co-sub"></p>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Sections">
+    <div class="wrap" role="tablist">
+      <button role="tab" data-tab="overview">Overview</button>
+      <button role="tab" data-tab="statements">Financial Statements</button>
+      <button role="tab" data-tab="ratios">Ratios</button>
+      <button role="tab" data-tab="sentiment">Sentiment</button>
+      <button role="tab" data-tab="price">Stock Price vs. Sentiment</button>
+      <button role="tab" data-tab="downloads">Downloads</button>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <!-- 1. Overview -->
+    <section id="overview" role="tabpanel">
+      <h2>Overview</h2>
+      <p class="sub">Ten most recent annual reports (Form 10-K) from SEC EDGAR.</p>
+      <div class="kpis" id="overview-kpis"></div>
+      <div class="table-scroll"><table id="filings-table"></table></div>
+    </section>
+
+    <!-- 2. Financial statements -->
+    <section id="statements" role="tabpanel" hidden>
+      <h2>Financial Statements</h2>
+      <p class="sub">USD millions. Ten fiscal years side by side, most recent first.</p>
+      <div class="subtabs">
+        <button data-stmt="incomeStatement" aria-pressed="true">Income Statement</button>
+        <button data-stmt="balanceSheet" aria-pressed="false">Balance Sheet</button>
+        <button data-stmt="cashFlow" aria-pressed="false">Cash Flows</button>
+      </div>
+      <div class="table-scroll"><table id="stmt-table"></table></div>
+    </section>
+
+    <!-- 3. Ratios -->
+    <section id="ratios" role="tabpanel" hidden>
+      <h2>Ratios</h2>
+      <p class="sub">One ratio each for liquidity, solvency, efficiency, and profitability.</p>
+      <div class="grid2" id="ratio-charts"></div>
+      <div class="table-scroll"><table id="ratio-table"></table></div>
+      <div class="notes"><h3>What the data shows</h3><ul id="ratio-notes"></ul></div>
+    </section>
+
+    <!-- 4. Sentiment -->
+    <section id="sentiment" role="tabpanel" hidden>
+      <h2>Sentiment</h2>
+      <p class="sub">Loughran-McDonald dictionary scores of the MD&amp;A section (Item 7).</p>
+      <div class="kpis" id="sent-kpis"></div>
+      <div class="card" style="margin-bottom:24px">
+        <h3>Positive vs. negative words</h3>
+        <div class="meta">Word counts per fiscal year</div>
+        <div class="chart tall"><canvas id="posneg-chart"></canvas></div>
+      </div>
+      <div class="table-scroll"><table id="sent-table"></table></div>
+      <div class="notes"><h3>What the data shows</h3><ul id="sent-notes"></ul></div>
+    </section>
+
+    <!-- 5. Stock price vs sentiment -->
+    <section id="price" role="tabpanel" hidden>
+      <h2>Stock Price vs. Sentiment</h2>
+      <p class="sub">Split-adjusted closing price on each balance sheet date, aligned year by year with the MD&amp;A P/N ratio.</p>
+      <div class="card" style="margin-bottom:12px">
+        <h3>Split-adjusted closing price</h3>
+        <div class="meta">USD per share, last trading day of the fiscal year</div>
+        <div class="chart"><canvas id="price-chart"></canvas></div>
+      </div>
+      <div class="card" style="margin-bottom:24px">
+        <h3>MD&amp;A P/N ratio</h3>
+        <div class="meta">Positive &divide; negative words; dashed line = 1.0 (balanced tone)</div>
+        <div class="chart"><canvas id="pn-chart"></canvas></div>
+      </div>
+      <div class="kpis" id="corr-kpis"></div>
+      <div class="table-scroll"><table id="price-table"></table></div>
+    </section>
+
+    <!-- 6. Downloads -->
+    <section id="downloads" role="tabpanel" hidden>
+      <h2>Downloads</h2>
+      <p class="sub">Program outputs for this company.</p>
+      <div class="downloads" id="dl-list"></div>
+    </section>
+  </main>
+
+  <footer>Data source: SEC EDGAR 10-K filings &middot; Loughran-McDonald Master Dictionary</footer>
+
+  <script>
+    // ---------- helpers ----------
+    const ticker = (new URLSearchParams(location.search).get("t") || "AAPL").toUpperCase();
+    const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+    const fmtM = (v) => v == null ? "" : v < 0 ? `(${Math.abs(v).toLocaleString()})` : v.toLocaleString();
+    const fmt2 = (v) => v == null ? "" : Number(v).toFixed(2);
+    const fmtPct = (v) => v == null ? "" : (v * 100).toFixed(1) + "%";
+    const el = (id) => document.getElementById(id);
+    const chartDefaults = () => {
+      Chart.defaults.font.family = "Arial, Helvetica, sans-serif";
+      Chart.defaults.color = css("--muted");
+      Chart.defaults.borderColor = css("--line");
+    };
+
+    function kpis(target, items) {
+      el(target).innerHTML = items.map(([k, v]) =>
+        `<div class="kpi"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+    }
+
+    function lineChart(canvas, labels, values, opts = {}) {
+      return new Chart(canvas, {
+        type: "line",
+        data: { labels, datasets: [{
+          data: values, borderColor: opts.color || css("--series-1"), backgroundColor: opts.color || css("--series-1"),
+          borderWidth: 2, pointRadius: 4, pointHoverRadius: 6, tension: 0 }].concat(opts.extra || []) },
+        options: {
+          maintainAspectRatio: false,
+          interaction: { mode: "index", intersect: false },
+          plugins: { legend: { display: false },
+                     tooltip: { filter: (c) => c.datasetIndex === 0, callbacks: { label: (c) => " " + (opts.tip ? opts.tip(c.parsed.y) : c.parsed.y) } } },
+          scales: { x: { grid: { display: false } },
+                    y: { beginAtZero: opts.zero ?? false, ticks: { callback: opts.tick || ((v) => v) } } }
+        }
+      });
+    }
+
+    // ---------- tabs ----------
+    const tabs = document.querySelectorAll("[data-tab]");
+    function showTab(name) {
+      tabs.forEach((t) => t.setAttribute("aria-selected", t.dataset.tab === name));
+      document.querySelectorAll("main section").forEach((s) => (s.hidden = s.id !== name));
+      history.replaceState(null, "", `?t=${ticker}#${name}`);
+    }
+    tabs.forEach((t) => t.addEventListener("click", () => showTab(t.dataset.tab)));
+
+    // ---------- render ----------
+    fetch(`data/${ticker}/${ticker}.json`)
+      .then((r) => { if (!r.ok) throw new Error(); return r.json(); })
+      .then(render)
+      .catch(() => {
+        el("co-name").textContent = ticker;
+        el("overview").innerHTML = `<p class="error">No analysis has been published for ${ticker} yet.</p>`;
+      });
+
+    function render(d) {
+      chartDefaults();
+      document.title = `${d.name} (${d.ticker}) | 10-K Analysis`;
+      el("co-name").textContent = `${d.name} (${d.ticker})`;
+      el("co-sub").textContent = `CIK ${d.cik} · Fiscal year ends: ${d.fiscalYearEnd}`;
+      const years = d.years.map((y) => "FY " + y);          // most recent first
+      const chrono = [...d.years].reverse().map((y) => "FY " + y);
+
+      // 1. Overview
+      const rev = d.incomeStatement.find((r) => r.label === "Total Net Sales").values;
+      const ni = d.incomeStatement.find((r) => r.label === "Net Income").values;
+      kpis("overview-kpis", [
+        ["Fiscal years covered", `FY ${d.years.at(-1)} – FY ${d.years[0]}`],
+        [`FY ${d.years[0]} revenue`, "$" + (rev[0] / 1000).toFixed(1) + "B"],
+        [`FY ${d.years[0]} net income`, "$" + (ni[0] / 1000).toFixed(1) + "B"],
+        ["Revenue growth, 10 yrs", ((rev[0] / rev.at(-1) - 1) * 100).toFixed(0) + "%"],
+      ]);
+      el("filings-table").innerHTML =
+        "<thead><tr><th>Fiscal year</th><th>Period ending</th><th>Filed</th><th>Accession no.</th><th>10-K</th></tr></thead><tbody>" +
+        d.filings.map((f) => `<tr><td>FY ${f.year}</td><td>${f.period}</td><td>${f.filed}</td><td>${f.accession}</td>
+          <td><a href="${f.url}" target="_blank" rel="noopener">View on EDGAR</a></td></tr>`).join("") + "</tbody>";
+
+      // 2. Statements
+      const head = "<thead><tr><th>USD millions</th>" + years.map((y) => `<th>${y}</th>`).join("") + "</tr></thead>";
+      function drawStmt(key) {
+        el("stmt-table").innerHTML = head + "<tbody>" + d[key].map((r) => {
+          if (r.kind === "header") return `<tr class="header"><td colspan="11">${r.label}</td></tr>`;
+          return `<tr class="${r.kind}"><td class="${r.kind === "line" ? "indent" : ""}">${r.label}</td>` +
+                 r.values.map((v) => `<td>${fmtM(v)}</td>`).join("") + "</tr>";
+        }).join("") + "</tbody>";
+      }
+      document.querySelectorAll("[data-stmt]").forEach((b) => b.addEventListener("click", () => {
+        document.querySelectorAll("[data-stmt]").forEach((x) => x.setAttribute("aria-pressed", x === b));
+        drawStmt(b.dataset.stmt);
+      }));
+      drawStmt("incomeStatement");
+
+      // 3. Ratios
+      el("ratio-charts").innerHTML = d.ratios.map((r, i) =>
+        `<div class="card"><h3>${r.name}</h3><div class="meta">${r.category} · ${r.formula}</div>
+         <div class="chart"><canvas id="ratio-${i}"></canvas></div></div>`).join("");
+      d.ratios.forEach((r, i) => {
+        const isPct = r.category === "Profitability";
+        lineChart(el(`ratio-${i}`), chrono, [...r.values].reverse(),
+          { tip: isPct ? fmtPct : (v) => fmt2(v) + "x", tick: isPct ? (v) => (v * 100).toFixed(0) + "%" : (v) => v.toFixed(2) });
+      });
+      el("ratio-table").innerHTML = "<thead><tr><th>Ratio</th>" + years.map((y) => `<th>${y}</th>`).join("") + "</tr></thead><tbody>" +
+        d.ratios.map((r) => `<tr><td>${r.name}</td>` + r.values.map((v) =>
+          `<td>${r.category === "Profitability" ? fmtPct(v) : fmt2(v)}</td>`).join("") + "</tr>").join("") + "</tbody>";
+      el("ratio-notes").innerHTML = (d.notes?.ratios || []).map((n) => `<li>${n}</li>`).join("");
+
+      // 4. Sentiment
+      const s = d.sentiment;                     // most recent first
+      const sChrono = [...s].reverse();
+      const avg = (k) => s.reduce((a, x) => a + x[k], 0) / s.length;
+      const best = s.reduce((a, x) => (x.pn > a.pn ? x : a));
+      kpis("sent-kpis", [
+        ["Avg. MD&A word count", Math.round(avg("total")).toLocaleString()],
+        ["Avg. positive words", avg("positive").toFixed(1)],
+        ["Avg. negative words", avg("negative").toFixed(1)],
+        ["Avg. P/N ratio", avg("pn").toFixed(2)],
+        ["Most positive year", `FY ${best.year} (${best.pn.toFixed(2)})`],
+      ]);
+      new Chart(el("posneg-chart"), {
+        type: "bar",
+        data: { labels: chrono, datasets: [
+          { label: "Positive", data: sChrono.map((x) => x.positive), backgroundColor: css("--series-1"), borderRadius: 4, borderSkipped: "bottom" },
+          { label: "Negative", data: sChrono.map((x) => x.negative), backgroundColor: css("--series-2"), borderRadius: 4, borderSkipped: "bottom" }] },
+        options: { maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
+          datasets: { bar: { categoryPercentage: 0.7, barPercentage: 0.9 } },
+          plugins: { legend: { position: "top", align: "start", labels: { usePointStyle: true, pointStyle: "rectRounded" } } },
+          scales: { x: { grid: { display: false } }, y: { beginAtZero: true } } }
+      });
+      const cols = [["Total words", "total"], ["Positive", "positive"], ["Negative", "negative"], ["Uncertainty", "uncertainty"],
+                    ["Litigious", "litigious"], ["Strong modal", "strongModal"], ["Weak modal", "weakModal"], ["Constraining", "constraining"]];
+      el("sent-table").innerHTML = "<thead><tr><th>Fiscal year</th>" + cols.map((c) => `<th>${c[0]}</th>`).join("") +
+        "<th>P/N ratio</th><th>Sentiment score</th></tr></thead><tbody>" +
+        s.map((x) => `<tr><td>FY ${x.year}</td>` + cols.map((c) => `<td>${x[c[1]].toLocaleString()}</td>`).join("") +
+          `<td>${fmt2(x.pn)}</td><td>${x.score.toFixed(4)}</td></tr>`).join("") + "</tbody>";
+      el("sent-notes").innerHTML = (d.notes?.sentiment || []).map((n) => `<li>${n}</li>`).join("");
+
+      // 5. Price vs sentiment (two aligned charts, shared years — no dual axis)
+      const pChrono = [...d.prices].reverse();
+      const price = pChrono.map((p) => p.splitAdjClose);
+      const pn = sChrono.map((x) => x.pn);
+      lineChart(el("price-chart"), chrono, price, { tip: (v) => "$" + v.toFixed(2), tick: (v) => "$" + v, zero: true });
+      lineChart(el("pn-chart"), chrono, pn, {
+        color: css("--series-2"), tip: fmt2, tick: (v) => v.toFixed(1), zero: true,
+        extra: [{ data: chrono.map(() => 1), borderColor: css("--muted"), borderWidth: 1, borderDash: [5, 4], pointRadius: 0, pointHoverRadius: 0 }] });
+      const pearson = (a, b) => {
+        const n = a.length, ma = a.reduce((x, y) => x + y) / n, mb = b.reduce((x, y) => x + y) / n;
+        let num = 0, da = 0, db = 0;
+        for (let i = 0; i < n; i++) { num += (a[i] - ma) * (b[i] - mb); da += (a[i] - ma) ** 2; db += (b[i] - mb) ** 2; }
+        return num / Math.sqrt(da * db);
+      };
+      const chg = (arr) => arr.slice(1).map((v, i) => v / arr[i] - 1);
+      kpis("corr-kpis", [
+        ["Correlation: price & P/N level", pearson(price, pn).toFixed(2)],
+        ["Correlation: yearly % changes", pearson(chg(price), chg(pn)).toFixed(2)],
+        ["Price change, 10 yrs", ((price.at(-1) / price[0] - 1) * 100).toFixed(0) + "%"],
+      ]);
+      el("price-table").innerHTML =
+        "<thead><tr><th>Fiscal year</th><th>Balance sheet date</th><th>Trading date</th><th>Closing price</th><th>Split factor</th><th>Split-adjusted close</th><th>P/N ratio</th></tr></thead><tbody>" +
+        d.prices.map((p, i) => `<tr><td>FY ${p.year}</td><td>${p.bsDate}</td><td>${p.tradeDate}</td><td>$${p.close.toFixed(2)}</td>
+          <td>${p.splitFactor}:1</td><td>$${p.splitAdjClose.toFixed(2)}</td><td>${fmt2(s[i].pn)}</td></tr>`).join("") + "</tbody>";
+
+      // 6. Downloads
+      const pending = ["MD&A text files (raw and cleaned)", "Python program (sec_analysis.py)"];
+      el("dl-list").innerHTML =
+        d.downloads.map((f) => `<a class="dl" href="${f.file}" download><span>${f.label}</span><span class="tag">Download</span></a>`).join("") +
+        pending.map((p) => `<div class="dl pending"><span>${p}</span><span>Coming soon</span></div>`).join("");
+
+      const start = location.hash.slice(1);
+      showTab([...tabs].some((t) => t.dataset.tab === start) ? start : "overview");
+    }
+  </script>
+</body>
+</html>

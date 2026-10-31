@@ -1,0 +1,1519 @@
+{
+ "ticker": "AAPL",
+ "name": "Apple Inc.",
+ "cik": "0000320193",
+ "fiscalYearEnd": "Last Saturday of September",
+ "years": [
+  2025,
+  2024,
+  2023,
+  2022,
+  2021,
+  2020,
+  2019,
+  2018,
+  2017,
+  2016
+ ],
+ "filings": [
+  {
+   "year": 2025,
+   "filed": "2025-10-31",
+   "period": "2025-09-27",
+   "accession": "0000320193-25-000079",
+   "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+  },
+  {
+   "year": 2024,
+   "filed": "2024-11-01",
+   "period": "2024-09-28",
+   "accession": "0000320193-24-000123",
+   "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm"
+  },
+  {
+   "year": 2023,
+   "filed": "2023-11-03",
+   "period": "2023-09-30",
+   "accession": "0000320193-23-000106",
+   "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm"
+  },
+  {
+   "year": 2022,
+   "filed": "2022-10-28",
+   "period": "2022-09-24",
+   "accession": "0000320193-22-000108",
+   "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/320193/000032019322000108/aapl-20220924.htm"
+  },
+  {
+   "year": 2021,
+   "filed": "2021-10-29",
+   "period": "2021-09-25",
+   "accession": "0000320193-21-000105",
+   "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+  },
+  {
+   "year": 2020,
+   "filed": "2020-10-30",
+   "period": "2020-09-26",
+   "accession": "0000320193-20-000096",
+   "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/320193/000032019320000096/aapl-20200926.htm"
+  },
+  {
+   "year": 2019,
+   "filed": "2019-10-31",
+   "period": "2019-09-28",
+   "accession": "0000320193-19-000119",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019319000119/a10-k20199282019.htm"
+  },
+  {
+   "year": 2018,
+   "filed": "2018-11-05",
+   "period": "2018-09-29",
+   "accession": "0000320193-18-000145",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019318000145/a10-k20189292018.htm"
+  },
+  {
+   "year": 2017,
+   "filed": "2017-11-03",
+   "period": "2017-09-30",
+   "accession": "0000320193-17-000070",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019317000070/a10-k20179302017.htm"
+  },
+  {
+   "year": 2016,
+   "filed": "2016-10-26",
+   "period": "2016-09-24",
+   "accession": "0001628280-16-020309",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000162828016020309/a201610-k9242016.htm"
+  }
+ ],
+ "incomeStatement": [
+  {
+   "label": "Revenue:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Products Net Sales",
+   "kind": "line",
+   "values": [
+    304364,
+    294866,
+    298085,
+    316199,
+    297392,
+    220747,
+    213883,
+    225847,
+    196534,
+    191257
+   ]
+  },
+  {
+   "label": "Services Net Sales",
+   "kind": "line",
+   "values": [
+    111797,
+    96169,
+    85200,
+    78129,
+    68425,
+    53768,
+    46291,
+    39748,
+    32700,
+    24382
+   ]
+  },
+  {
+   "label": "Total Net Sales",
+   "kind": "total",
+   "values": [
+    416161,
+    391035,
+    383285,
+    394328,
+    365817,
+    274515,
+    260174,
+    265595,
+    229234,
+    215639
+   ]
+  },
+  {
+   "label": "Cost of Sales:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Cost of Sales - Products",
+   "kind": "line",
+   "values": [
+    187014,
+    184815,
+    189282,
+    201471,
+    192266,
+    151286,
+    144996,
+    148164,
+    126337,
+    117143
+   ]
+  },
+  {
+   "label": "Cost of Sales - Services",
+   "kind": "line",
+   "values": [
+    33946,
+    25537,
+    24855,
+    22075,
+    20715,
+    18273,
+    16786,
+    15592,
+    14711,
+    14233
+   ]
+  },
+  {
+   "label": "Total Cost of Sales",
+   "kind": "total",
+   "values": [
+    220960,
+    210352,
+    214137,
+    223546,
+    212981,
+    169559,
+    161782,
+    163756,
+    141048,
+    131376
+   ]
+  },
+  {
+   "label": "Gross Profit",
+   "kind": "total",
+   "values": [
+    195201,
+    180683,
+    169148,
+    170782,
+    152836,
+    104956,
+    98392,
+    101839,
+    88186,
+    84263
+   ]
+  },
+  {
+   "label": "Operating Expenses:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Research and Development (R&D)",
+   "kind": "line",
+   "values": [
+    34550,
+    31370,
+    29915,
+    26251,
+    21914,
+    18752,
+    16217,
+    14236,
+    11581,
+    10045
+   ]
+  },
+  {
+   "label": "Selling, General and Administrative (SG&A)",
+   "kind": "line",
+   "values": [
+    27601,
+    26097,
+    24932,
+    25094,
+    21973,
+    19916,
+    18245,
+    16705,
+    15261,
+    14194
+   ]
+  },
+  {
+   "label": "Total Operating Expenses",
+   "kind": "total",
+   "values": [
+    62151,
+    57467,
+    54847,
+    51345,
+    43887,
+    38668,
+    34462,
+    30941,
+    26842,
+    24239
+   ]
+  },
+  {
+   "label": "Operating Income",
+   "kind": "total",
+   "values": [
+    133050,
+    123216,
+    114301,
+    119437,
+    108949,
+    66288,
+    63930,
+    70898,
+    61344,
+    60024
+   ]
+  },
+  {
+   "label": "Total Other Income / (Expense), Net",
+   "kind": "total",
+   "values": [
+    47,
+    269,
+    -565,
+    -334,
+    258,
+    803,
+    1807,
+    2005,
+    2745,
+    1348
+   ]
+  },
+  {
+   "label": "Income Before Provision for Income Taxes",
+   "kind": "total",
+   "values": [
+    133097,
+    123485,
+    113736,
+    119103,
+    109207,
+    67091,
+    65737,
+    72903,
+    64089,
+    61372
+   ]
+  },
+  {
+   "label": "Provision for Income Taxes",
+   "kind": "total",
+   "values": [
+    21087,
+    29749,
+    16741,
+    19300,
+    14527,
+    9680,
+    10481,
+    13372,
+    15738,
+    15685
+   ]
+  },
+  {
+   "label": "Net Income",
+   "kind": "total",
+   "values": [
+    112010,
+    93736,
+    96995,
+    99803,
+    94680,
+    57411,
+    55256,
+    59531,
+    48351,
+    45687
+   ]
+  }
+ ],
+ "balanceSheet": [
+  {
+   "label": "ASSETS:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Current Assets:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Cash and cash equivalents",
+   "kind": "line",
+   "values": [
+    35934,
+    29943,
+    29965,
+    23646,
+    34940,
+    38016,
+    48844,
+    25913,
+    20289,
+    20484
+   ]
+  },
+  {
+   "label": "Marketable securities",
+   "kind": "line",
+   "values": [
+    18763,
+    35228,
+    31590,
+    24658,
+    27699,
+    52927,
+    51713,
+    40388,
+    53892,
+    46671
+   ]
+  },
+  {
+   "label": "Accounts receivable, net",
+   "kind": "line",
+   "values": [
+    39777,
+    33410,
+    29508,
+    28184,
+    26278,
+    16120,
+    22926,
+    23186,
+    17874,
+    15754
+   ]
+  },
+  {
+   "label": "Inventories",
+   "kind": "line",
+   "values": [
+    5718,
+    7286,
+    6331,
+    4946,
+    6580,
+    4061,
+    4106,
+    3956,
+    4855,
+    2132
+   ]
+  },
+  {
+   "label": "Vendor non-trade receivables",
+   "kind": "line",
+   "values": [
+    33180,
+    32833,
+    31477,
+    32748,
+    25228,
+    21325,
+    22878,
+    25809,
+    17799,
+    13545
+   ]
+  },
+  {
+   "label": "Other current assets",
+   "kind": "line",
+   "values": [
+    14585,
+    14287,
+    14695,
+    21223,
+    14111,
+    11264,
+    12352,
+    12087,
+    13936,
+    8283
+   ]
+  },
+  {
+   "label": "Total Current Assets",
+   "kind": "total",
+   "values": [
+    147957,
+    152987,
+    143566,
+    135405,
+    134836,
+    143713,
+    162819,
+    131339,
+    128645,
+    106869
+   ]
+  },
+  {
+   "label": "Non-Current Assets:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Marketable securities (Non-current)",
+   "kind": "line",
+   "values": [
+    77723,
+    91479,
+    100544,
+    120805,
+    127877,
+    100887,
+    105341,
+    170799,
+    194714,
+    170430
+   ]
+  },
+  {
+   "label": "Property, plant and equipment, net",
+   "kind": "line",
+   "values": [
+    49834,
+    45680,
+    43715,
+    42117,
+    39440,
+    36766,
+    37378,
+    41304,
+    33783,
+    27010
+   ]
+  },
+  {
+   "label": "Other non-current assets",
+   "kind": "line",
+   "values": [
+    83727,
+    74834,
+    64758,
+    54428,
+    48849,
+    42522,
+    32978,
+    22283,
+    18177,
+    17377
+   ]
+  },
+  {
+   "label": "Total Non-Current Assets",
+   "kind": "total",
+   "values": [
+    211284,
+    211993,
+    209017,
+    217350,
+    216166,
+    180175,
+    175697,
+    234386,
+    246674,
+    214817
+   ]
+  },
+  {
+   "label": "TOTAL ASSETS",
+   "kind": "total",
+   "values": [
+    359241,
+    364980,
+    352583,
+    352755,
+    351002,
+    323888,
+    338516,
+    365725,
+    375319,
+    321686
+   ]
+  },
+  {
+   "label": "LIABILITIES AND STOCKHOLDERS' EQUITY:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Current Liabilities:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Accounts payable",
+   "kind": "line",
+   "values": [
+    69860,
+    68960,
+    62611,
+    64115,
+    54763,
+    42296,
+    46236,
+    55888,
+    49049,
+    37294
+   ]
+  },
+  {
+   "label": "Other current liabilities",
+   "kind": "line",
+   "values": [
+    66387,
+    78304,
+    58829,
+    60845,
+    47493,
+    42684,
+    37720,
+    32687,
+    25744,
+    22027
+   ]
+  },
+  {
+   "label": "Deferred revenue",
+   "kind": "line",
+   "values": [
+    9055,
+    8249,
+    8061,
+    7912,
+    7612,
+    6643,
+    5522,
+    7543,
+    7548,
+    8080
+   ]
+  },
+  {
+   "label": "Commercial paper",
+   "kind": "line",
+   "values": [
+    7979,
+    9967,
+    5985,
+    9982,
+    6000,
+    4996,
+    5980,
+    11964,
+    11977,
+    8105
+   ]
+  },
+  {
+   "label": "Term debt (Current portion)",
+   "kind": "line",
+   "values": [
+    12350,
+    10912,
+    9822,
+    11128,
+    9613,
+    8773,
+    10260,
+    8784,
+    6496,
+    3500
+   ]
+  },
+  {
+   "label": "Total Current Liabilities",
+   "kind": "total",
+   "values": [
+    165631,
+    176392,
+    145308,
+    153982,
+    125481,
+    105392,
+    105718,
+    116866,
+    100814,
+    79006
+   ]
+  },
+  {
+   "label": "Non-Current Liabilities:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Term debt (Non-current)",
+   "kind": "line",
+   "values": [
+    78328,
+    85750,
+    95281,
+    98959,
+    109106,
+    98667,
+    91807,
+    93735,
+    97207,
+    75427
+   ]
+  },
+  {
+   "label": "Other non-current liabilities",
+   "kind": "line",
+   "values": [
+    41549,
+    45888,
+    49848,
+    49142,
+    53325,
+    54490,
+    50503,
+    47977,
+    43251,
+    39004
+   ]
+  },
+  {
+   "label": "Total Non-Current Liabilities",
+   "kind": "total",
+   "values": [
+    119877,
+    131638,
+    145129,
+    148101,
+    162431,
+    153157,
+    142310,
+    141712,
+    140458,
+    114431
+   ]
+  },
+  {
+   "label": "TOTAL LIABILITIES",
+   "kind": "total",
+   "values": [
+    285508,
+    308030,
+    290437,
+    302083,
+    287912,
+    258549,
+    248028,
+    258578,
+    241272,
+    193437
+   ]
+  },
+  {
+   "label": "Stockholders' Equity:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Common stock and additional paid-in capital",
+   "kind": "line",
+   "values": [
+    93568,
+    83276,
+    73812,
+    64849,
+    57365,
+    50779,
+    45174,
+    40201,
+    35867,
+    31251
+   ]
+  },
+  {
+   "label": "Retained earnings / (Accumulated deficit)",
+   "kind": "line",
+   "values": [
+    -14264,
+    -19154,
+    -214,
+    -3068,
+    5562,
+    14966,
+    45898,
+    70400,
+    98330,
+    96364
+   ]
+  },
+  {
+   "label": "Accumulated other comprehensive income / (loss)",
+   "kind": "line",
+   "values": [
+    -5571,
+    -7172,
+    -11452,
+    -11109,
+    163,
+    -406,
+    -584,
+    -3454,
+    -150,
+    634
+   ]
+  },
+  {
+   "label": "TOTAL STOCKHOLDERS' EQUITY",
+   "kind": "total",
+   "values": [
+    73733,
+    56950,
+    62146,
+    50672,
+    63090,
+    65339,
+    90488,
+    107147,
+    134047,
+    128249
+   ]
+  },
+  {
+   "label": "TOTAL LIABILITIES AND STOCKHOLDERS' EQUITY",
+   "kind": "total",
+   "values": [
+    359241,
+    364980,
+    352583,
+    352755,
+    351002,
+    323888,
+    338516,
+    365725,
+    375319,
+    321686
+   ]
+  }
+ ],
+ "cashFlow": [
+  {
+   "label": "Operating Activities:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Net income",
+   "kind": "line",
+   "values": [
+    112010,
+    93736,
+    96995,
+    99803,
+    94680,
+    57411,
+    55256,
+    59531,
+    48351,
+    45687
+   ]
+  },
+  {
+   "label": "Adjustments: Depreciation and amortization",
+   "kind": "line",
+   "values": [
+    11698,
+    11445,
+    11519,
+    11104,
+    11284,
+    11056,
+    12547,
+    10903,
+    10157,
+    10505
+   ]
+  },
+  {
+   "label": "Adjustments: Share-based compensation expense",
+   "kind": "line",
+   "values": [
+    12863,
+    11688,
+    10833,
+    9038,
+    7906,
+    6829,
+    6068,
+    5340,
+    4840,
+    4210
+   ]
+  },
+  {
+   "label": "Other adjustments & changes in working capital",
+   "kind": "line",
+   "values": [
+    -25089,
+    1385,
+    -8804,
+    2206,
+    -9832,
+    5378,
+    -4480,
+    1660,
+    250,
+    5422
+   ]
+  },
+  {
+   "label": "Cash Generated by Operating Activities",
+   "kind": "total",
+   "values": [
+    111482,
+    118254,
+    110543,
+    122151,
+    104038,
+    80674,
+    69391,
+    77434,
+    63598,
+    65824
+   ]
+  },
+  {
+   "label": "Investing Activities:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Payments for acquisition of property, plant and equipment",
+   "kind": "line",
+   "values": [
+    -12715,
+    -9447,
+    -10959,
+    -10708,
+    -11085,
+    -7309,
+    -10495,
+    -13313,
+    -12451,
+    -12734
+   ]
+  },
+  {
+   "label": "Marketable securities: purchases, maturities & sales, net",
+   "kind": "line",
+   "values": [
+    29390,
+    13690,
+    15999,
+    -9560,
+    -3075,
+    5453,
+    57460,
+    32363,
+    -33147,
+    -30634
+   ]
+  },
+  {
+   "label": "Other investing (acquisitions, non-marketable securities, other)",
+   "kind": "line",
+   "values": [
+    -1480,
+    -1308,
+    -1335,
+    -2086,
+    -385,
+    -2433,
+    -1069,
+    -2984,
+    -848,
+    -2609
+   ]
+  },
+  {
+   "label": "Cash Generated by / (Used in) Investing Activities",
+   "kind": "total",
+   "values": [
+    15195,
+    2935,
+    3705,
+    -22354,
+    -14545,
+    -4289,
+    45896,
+    16066,
+    -46446,
+    -45977
+   ]
+  },
+  {
+   "label": "Financing Activities:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Repurchases of common stock",
+   "kind": "line",
+   "values": [
+    -90711,
+    -94949,
+    -77550,
+    -89402,
+    -85971,
+    -72358,
+    -66897,
+    -72738,
+    -32900,
+    -29722
+   ]
+  },
+  {
+   "label": "Payments for dividends and dividend equivalents",
+   "kind": "line",
+   "values": [
+    -15421,
+    -15234,
+    -15025,
+    -14841,
+    -14467,
+    -14081,
+    -14119,
+    -13712,
+    -12769,
+    -12150
+   ]
+  },
+  {
+   "label": "Term debt & commercial paper, net",
+   "kind": "line",
+   "values": [
+    -8483,
+    -5998,
+    -9901,
+    -123,
+    12665,
+    2499,
+    -7819,
+    432,
+    29014,
+    22057
+   ]
+  },
+  {
+   "label": "Other financing (net share settlement taxes, stock issuance, other)",
+   "kind": "line",
+   "values": [
+    -6071,
+    -5802,
+    -6012,
+    -6383,
+    -5580,
+    -2880,
+    -2141,
+    -1858,
+    -692,
+    -668
+   ]
+  },
+  {
+   "label": "Cash Used in Financing Activities",
+   "kind": "total",
+   "values": [
+    -120686,
+    -121983,
+    -108488,
+    -110749,
+    -93353,
+    -86820,
+    -90976,
+    -87876,
+    -17347,
+    -20483
+   ]
+  },
+  {
+   "label": "Net Increase / (Decrease) in Cash, Cash Equivalents & Restricted Cash",
+   "kind": "total",
+   "values": [
+    5991,
+    -794,
+    5760,
+    -10952,
+    -3860,
+    -10435,
+    24311,
+    5624,
+    -195,
+    -636
+   ]
+  }
+ ],
+ "ratios": [
+  {
+   "name": "Current Ratio",
+   "category": "Liquidity",
+   "formula": "Current Assets / Current Liabilities",
+   "values": [
+    0.893292922218667,
+    0.867312576534083,
+    0.988011671759298,
+    0.879356028626723,
+    1.0745531195958,
+    1.36360444815546,
+    1.54012561720804,
+    1.12384269162973,
+    1.27606284841391,
+    1.35266941751259
+   ]
+  },
+  {
+   "name": "Debt-to-Assets Ratio",
+   "category": "Solvency",
+   "formula": "Total Liabilities / Total Assets",
+   "values": [
+    0.794753382826571,
+    0.843964052824812,
+    0.823740792948044,
+    0.856353559836147,
+    0.820257434430573,
+    0.798266684779924,
+    0.732692103179761,
+    0.707028505024267,
+    0.642845153056467,
+    0.601322407565141
+   ]
+  },
+  {
+   "name": "Asset Turnover",
+   "category": "Efficiency",
+   "formula": "Net Sales / Average Total Assets",
+   "values": [
+    1.14926521048133,
+    1.08989733305647,
+    1.08681228006998,
+    1.12063681071734,
+    1.08407888692972,
+    0.828844632580721,
+    0.73887774213657,
+    0.716813036742758,
+    0.657768595634178,
+    0.70451267223706
+   ]
+  },
+  {
+   "name": "Net Profit Margin",
+   "category": "Profitability",
+   "formula": "Net Income / Net Sales",
+   "values": [
+    0.269150641218182,
+    0.239712557699439,
+    0.253062342643203,
+    0.253096407051997,
+    0.258817933556942,
+    0.209136112780722,
+    0.212380945059845,
+    0.224142020745872,
+    0.210924208450753,
+    0.211867983064288
+   ]
+  }
+ ],
+ "sentiment": [
+  {
+   "year": 2025,
+   "total": 2693,
+   "positive": 29,
+   "negative": 42,
+   "uncertainty": 35,
+   "litigious": 17,
+   "strongModal": 0,
+   "weakModal": 12,
+   "constraining": 35,
+   "pn": 0.690476190476191,
+   "score": -0.00482733011511326
+  },
+  {
+   "year": 2024,
+   "total": 2338,
+   "positive": 23,
+   "negative": 31,
+   "uncertainty": 29,
+   "litigious": 16,
+   "strongModal": 0,
+   "weakModal": 8,
+   "constraining": 32,
+   "pn": 0.741935483870968,
+   "score": -0.00342172797262618
+  },
+  {
+   "year": 2023,
+   "total": 2385,
+   "positive": 21,
+   "negative": 24,
+   "uncertainty": 29,
+   "litigious": 14,
+   "strongModal": 0,
+   "weakModal": 8,
+   "constraining": 25,
+   "pn": 0.875,
+   "score": -0.00125786163522013
+  },
+  {
+   "year": 2022,
+   "total": 2647,
+   "positive": 34,
+   "negative": 34,
+   "uncertainty": 31,
+   "litigious": 16,
+   "strongModal": 0,
+   "weakModal": 8,
+   "constraining": 25,
+   "pn": 1,
+   "score": 0
+  },
+  {
+   "year": 2021,
+   "total": 2816,
+   "positive": 43,
+   "negative": 26,
+   "uncertainty": 38,
+   "litigious": 16,
+   "strongModal": 0,
+   "weakModal": 10,
+   "constraining": 29,
+   "pn": 1.65384615384615,
+   "score": 0.00603693181818182
+  },
+  {
+   "year": 2020,
+   "total": 4799,
+   "positive": 45,
+   "negative": 89,
+   "uncertainty": 89,
+   "litigious": 28,
+   "strongModal": 0,
+   "weakModal": 23,
+   "constraining": 62,
+   "pn": 0.50561797752809,
+   "score": -0.00916857678683059
+  },
+  {
+   "year": 2019,
+   "total": 4659,
+   "positive": 44,
+   "negative": 75,
+   "uncertainty": 107,
+   "litigious": 30,
+   "strongModal": 0,
+   "weakModal": 22,
+   "constraining": 53,
+   "pn": 0.586666666666667,
+   "score": -0.00665378836660228
+  },
+  {
+   "year": 2018,
+   "total": 8375,
+   "positive": 110,
+   "negative": 138,
+   "uncertainty": 188,
+   "litigious": 45,
+   "strongModal": 2,
+   "weakModal": 49,
+   "constraining": 82,
+   "pn": 0.797101449275362,
+   "score": -0.00334328358208955
+  },
+  {
+   "year": 2017,
+   "total": 8363,
+   "positive": 98,
+   "negative": 138,
+   "uncertainty": 193,
+   "litigious": 38,
+   "strongModal": 4,
+   "weakModal": 43,
+   "constraining": 83,
+   "pn": 0.710144927536232,
+   "score": -0.00478297261748177
+  },
+  {
+   "year": 2016,
+   "total": 8495,
+   "positive": 101,
+   "negative": 158,
+   "uncertainty": 188,
+   "litigious": 48,
+   "strongModal": 4,
+   "weakModal": 42,
+   "constraining": 88,
+   "pn": 0.639240506329114,
+   "score": -0.00670982931135962
+  }
+ ],
+ "prices": [
+  {
+   "year": 2025,
+   "bsDate": "2025-09-27",
+   "tradeDate": "2025-09-26",
+   "close": 254.23,
+   "splitFactor": 1,
+   "splitAdjClose": 254.23
+  },
+  {
+   "year": 2024,
+   "bsDate": "2024-09-28",
+   "tradeDate": "2024-09-27",
+   "close": 227.79,
+   "splitFactor": 1,
+   "splitAdjClose": 227.79
+  },
+  {
+   "year": 2023,
+   "bsDate": "2023-09-30",
+   "tradeDate": "2023-09-29",
+   "close": 171.21,
+   "splitFactor": 1,
+   "splitAdjClose": 171.21
+  },
+  {
+   "year": 2022,
+   "bsDate": "2022-09-24",
+   "tradeDate": "2022-09-23",
+   "close": 150.43,
+   "splitFactor": 1,
+   "splitAdjClose": 150.43
+  },
+  {
+   "year": 2021,
+   "bsDate": "2021-09-25",
+   "tradeDate": "2021-09-24",
+   "close": 146.92,
+   "splitFactor": 1,
+   "splitAdjClose": 146.92
+  },
+  {
+   "year": 2020,
+   "bsDate": "2020-09-26",
+   "tradeDate": "2020-09-25",
+   "close": 112.28,
+   "splitFactor": 1,
+   "splitAdjClose": 112.28
+  },
+  {
+   "year": 2019,
+   "bsDate": "2019-09-28",
+   "tradeDate": "2019-09-27",
+   "close": 218.82,
+   "splitFactor": 4,
+   "splitAdjClose": 54.705
+  },
+  {
+   "year": 2018,
+   "bsDate": "2018-09-29",
+   "tradeDate": "2018-09-28",
+   "close": 225.74,
+   "splitFactor": 4,
+   "splitAdjClose": 56.435
+  },
+  {
+   "year": 2017,
+   "bsDate": "2017-09-30",
+   "tradeDate": "2017-09-29",
+   "close": 154.12,
+   "splitFactor": 4,
+   "splitAdjClose": 38.53
+  },
+  {
+   "year": 2016,
+   "bsDate": "2016-09-24",
+   "tradeDate": "2016-09-23",
+   "close": 112.71,
+   "splitFactor": 4,
+   "splitAdjClose": 28.1775
+  }
+ ],
+ "downloads": [
+  {
+   "label": "10-year analysis workbook (Excel)",
+   "file": "data/AAPL/AAPL_10_Year_Analysis.xlsx"
+  }
+ ],
+ "notes": {
+  "ratios": [
+   "Liquidity: the current ratio fell from 1.35 in FY2016 to below 1.0 in every year since FY2022 (0.89 in FY2025). Current liabilities now exceed current assets.",
+   "Solvency: debt-to-assets rose from 0.60 in FY2016 to a peak of 0.86 in FY2022, easing to 0.79 in FY2025. Large share buybacks shrank equity while liabilities grew.",
+   "Efficiency: asset turnover climbed from 0.70 to 1.15, with the jump in FY2021. Apple now generates more sales per dollar of assets.",
+   "Profitability: net margin held near 21% from FY2016 to FY2020, then stepped up to roughly 24-27% from FY2021 onward."
+  ],
+  "sentiment": [
+   "The MD&A tone is net negative (P/N below 1.0) in 8 of 10 years, which is typical for 10-K language that discusses risks and uncertainties.",
+   "FY2021 is the clear outlier at 1.65, the only year with far more positive than negative words, matching Apple's record pandemic-era growth.",
+   "Word counts drop from about 8,400 (FY2016-FY2018) to about 2,300-2,800 (FY2021-FY2025). Check that the extraction captured the full MD&A in recent years."
+  ]
+ }
+}
