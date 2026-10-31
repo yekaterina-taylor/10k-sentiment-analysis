@@ -1363,7 +1363,7 @@
   }
  ],
  "pending": {
-  "price": "This comparison needs NVIDIA's fiscal year-end stock prices and sentiment results, which are still being collected. Prices will be split-adjusted for the 4-for-1 (2021) and 10-for-1 (2024) stock splits."
+  "price": "This comparison needs NVIDIA's fiscal year-end stock prices, which are still being collected. Prices will be split-adjusted for the 4-for-1 (2021) and 10-for-1 (2024) stock splits."
  },
  "notes": {
   "ratios": [
