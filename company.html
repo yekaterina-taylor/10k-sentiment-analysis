@@ -194,6 +194,13 @@
       <h2>Sentiment</h2>
       <p class="sub">Loughran-McDonald dictionary scores of the MD&amp;A section (Item 7).</p>
 
+      <div class="kpis" id="sent-kpis"></div>
+      <div class="card" style="margin-bottom:24px">
+        <h3>Positive vs. negative words</h3>
+        <div class="meta">Word counts per fiscal year</div>
+        <div class="chart tall"><canvas id="posneg-chart"></canvas></div>
+      </div>
+      <div class="table-scroll"><table id="sent-table"></table></div>
       <details class="explain">
         <summary>How to read this: what each sentiment measure means</summary>
         <div class="explain-body">
@@ -213,14 +220,6 @@
              are small numbers close to zero.</p>
         </div>
       </details>
-
-      <div class="kpis" id="sent-kpis"></div>
-      <div class="card" style="margin-bottom:24px">
-        <h3>Positive vs. negative words</h3>
-        <div class="meta">Word counts per fiscal year</div>
-        <div class="chart tall"><canvas id="posneg-chart"></canvas></div>
-      </div>
-      <div class="table-scroll"><table id="sent-table"></table></div>
       <div class="notes"><h3>What the data shows</h3><ul id="sent-notes"></ul></div>
     </section>
 
