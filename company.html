@@ -425,8 +425,36 @@
         ["Avg. P/N ratio", avg("pn").toFixed(2)],
         ["Most positive year", `FY ${best.year} (${best.pn.toFixed(2)})`],
       ]);
+      // Draws a white smiley (positive) or sad face (negative) near the top of each bar
+      const facesPlugin = {
+        id: "faces",
+        afterDatasetsDraw(chart) {
+          const ctx = chart.ctx;
+          chart.data.datasets.forEach((ds, di) => {
+            const happy = di === 0;
+            chart.getDatasetMeta(di).data.forEach((bar) => {
+              const w = bar.width, h = bar.base - bar.y;
+              const r = Math.min(w * 0.38, 11);
+              if (r < 4 || h < r * 2 + 6) return;
+              const cx = bar.x, cy = bar.y + r + 4;
+              ctx.save();
+              ctx.strokeStyle = "#fff"; ctx.fillStyle = "#fff";
+              ctx.lineWidth = Math.max(1.2, r / 6); ctx.lineCap = "round";
+              ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.stroke();
+              const eo = r * 0.38, ey = cy - r * 0.25, er = Math.max(1, r * 0.11);
+              ctx.beginPath(); ctx.arc(cx - eo, ey, er, 0, Math.PI * 2); ctx.arc(cx + eo, ey, er, 0, Math.PI * 2); ctx.fill();
+              ctx.beginPath();
+              if (happy) ctx.arc(cx, cy + r * 0.05, r * 0.5, 0.15 * Math.PI, 0.85 * Math.PI);
+              else ctx.arc(cx, cy + r * 0.65, r * 0.45, 1.2 * Math.PI, 1.8 * Math.PI);
+              ctx.stroke();
+              ctx.restore();
+            });
+          });
+        },
+      };
       new Chart(el("posneg-chart"), {
         type: "bar",
+        plugins: [facesPlugin],
         data: { labels: chrono, datasets: [
           { label: "Positive", data: sChrono.map((x) => x.positive), backgroundColor: css("--series-1"), borderRadius: 4, borderSkipped: "bottom" },
           { label: "Negative", data: sChrono.map((x) => x.negative), backgroundColor: css("--series-2"), borderRadius: 4, borderSkipped: "bottom" }] },
