@@ -1441,18 +1441,6 @@
   {
    "label": "All MD&A text files, FY2017-FY2026 (.zip)",
    "file": "data/NVDA/NVDA_MDA_Text_Files.zip"
-  },
-  {
-   "label": "Fiscal year-end stock prices (.csv)",
-   "file": "data/NVDA/NVDA_fiscal_year_end_prices.csv"
-  },
-  {
-   "label": "Daily stock prices, 2017-2026 (.csv)",
-   "file": "data/NVDA/NVDA_daily_prices_2017_2026.csv"
-  },
-  {
-   "label": "Stock price program (get_nvda_stock_prices.py)",
-   "file": "src/get_nvda_stock_prices.py"
   }
  ],
  "pending": {},
