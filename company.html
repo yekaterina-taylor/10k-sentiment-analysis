@@ -87,13 +87,19 @@
     .st-mid  { background: #FFF1C2; }
     .st-weak { background: #FCE1E8; }
     td .ic { display: inline-block; width: 1.1em; margin-right: 4px; font-weight: bold; color: var(--muted); }
-    .ratio-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; margin-bottom: 10px; font-size: 0.85rem; }
-    .legend-item { display: inline-flex; align-items: center; gap: 6px; }
-    .chip { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 4px; font-weight: bold;
-            color: var(--muted); border: 1px solid rgba(0,0,0,.08); }
-    .ratio-legend .bench { flex-basis: 100%; margin: 4px 0 0; padding-left: 18px; color: var(--muted); }
-    .ratio-legend .bench li { margin-bottom: 2px; }
-    .bench-caveat { margin-top: -12px; font-size: 0.85rem; }
+    .section-rule { border: 0; border-top: 2px solid var(--line); margin: 32px 0 24px; }
+    .bench-block { margin-bottom: 28px; }
+    .bench-block h3 { color: var(--blue); font-size: 1.25rem; margin: 0 0 8px; }
+    .bench-block .lead { font-size: 1.02rem; line-height: 1.6; margin: 0 0 18px; max-width: 820px; }
+    .legend-row { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-bottom: 18px; font-size: 1rem; }
+    .legend-item { display: inline-flex; align-items: center; gap: 10px; }
+    .chip { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 6px; font-weight: bold;
+            font-size: 1rem; color: var(--muted); border: 1px solid rgba(0,0,0,.08); }
+    #bench-table { min-width: 720px; font-size: 0.98rem; }
+    #bench-table th, #bench-table td { padding: 12px 14px; text-align: left; white-space: normal; vertical-align: top; }
+    #bench-table td:first-child { font-weight: bold; white-space: nowrap; }
+    #bench-table .what { font-weight: normal; color: var(--muted); font-size: 0.9rem; line-height: 1.45; }
+    .bench-caveat { font-size: 0.95rem; line-height: 1.6; margin: 0; max-width: 820px; }
     details.explain { border: 2px solid var(--blue); border-radius: 8px; margin-bottom: 24px; background: var(--paper); }
     details.explain summary {
       cursor: pointer; padding: 14px 16px; font-weight: bold; color: var(--blue);
@@ -173,10 +179,18 @@
       <h2>Ratios</h2>
       <p class="sub">One ratio each for liquidity, solvency, efficiency, and profitability.</p>
       <div class="grid2" id="ratio-charts"></div>
-      <div class="ratio-legend" id="ratio-legend"></div>
+      <hr class="section-rule">
+      <div class="bench-block">
+        <h3>How to read the colors</h3>
+        <p class="lead">Each value in the table below is shaded by comparing it with general rule-of-thumb benchmarks.
+          The symbol in each cell gives the same information without relying on color.</p>
+        <div class="legend-row" id="ratio-legend"></div>
+        <div class="table-scroll"><table id="bench-table"></table></div>
+        <p class="bench-caveat"><strong>Keep in mind:</strong> these are general standards, not rules. Healthy levels differ by
+          industry and business model. For example, a very profitable company with steady cash flow can safely run a current
+          ratio below 1.0, and heavy share buybacks raise debt-to-assets without signaling distress.</p>
+      </div>
       <div class="table-scroll"><table id="ratio-table"></table></div>
-      <p class="sub bench-caveat">Colors use general rule-of-thumb benchmarks. Healthy levels differ by industry and business
-        model. For example, a very profitable company can safely run a current ratio below 1.0.</p>
       <div class="notes"><h3>What the data shows</h3><ul id="ratio-notes"></ul></div>
     </section>
 
@@ -368,10 +382,22 @@
         return b.good(v) ? "good" : b.weak(v) ? "weak" : "mid";
       };
       el("ratio-legend").innerHTML =
-        Object.values(STATUS).map((s) => `<span class="legend-item"><span class="chip ${s.cls}">${s.icon}</span>${s.label}</span>`).join("") +
-        "<ul class=\"bench\">" + d.ratios.map((r) => `<li><strong>${r.name}:</strong> ${BENCH[r.category]?.text || ""}</li>`).join("") + "</ul>";
-      el("ratio-table").innerHTML = "<thead><tr><th>Ratio</th>" + years.map((y) => `<th>${y}</th>`).join("") + "</tr></thead><tbody>" +
-        d.ratios.map((r) => `<tr><td>${r.name}</td>` + r.values.map((v) => {
+        Object.values(STATUS).map((s) => `<span class="legend-item"><span class="chip ${s.cls}">${s.icon}</span>${s.label}</span>`).join("");
+      const WHAT = {
+        Liquidity: "Can short-term assets cover bills due within a year?",
+        Solvency: "How much of the company's assets are financed with liabilities?",
+        Efficiency: "How many dollars of sales each dollar of assets produces.",
+        Profitability: "How many cents of profit the company keeps from each dollar of sales.",
+      };
+      el("bench-table").innerHTML =
+        "<thead><tr><th>Ratio</th><th>✓ Strong</th><th>● Adequate / moderate</th><th>! Weak / high risk</th></tr></thead><tbody>" +
+        d.ratios.map((r) => {
+          const parts = (BENCH[r.category]?.text || "").split(" · ").map((t) => t.replace(/^\S+\s/, ""));
+          return `<tr><td>${r.name}<div class="what">${WHAT[r.category] || ""}</div></td>` +
+            `<td class="st-good">${parts[0] || ""}</td><td class="st-mid">${parts[1] || ""}</td><td class="st-weak">${parts[2] || ""}</td></tr>`;
+        }).join("") + "</tbody>";
+      el("ratio-table").innerHTML = "<thead><tr><th>Ratio</th>" + chrono.map((y) => `<th>${y}</th>`).join("") + "</tr></thead><tbody>" +
+        d.ratios.map((r) => `<tr><td>${r.name}</td>` + [...r.values].reverse().map((v) => {
           const st = statusOf(r.category, v);
           const s = st ? STATUS[st] : null;
           const txt = r.category === "Profitability" ? fmtPct(v) : fmt2(v);

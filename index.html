@@ -50,6 +50,8 @@
       background: var(--blue);
       color: #fff;
       cursor: pointer;
+      text-decoration: none;
+      box-sizing: border-box;
       transition: background 0.15s, color 0.15s;
     }
     .btn:hover, .btn:focus-visible { background: var(--gold); color: var(--blue); outline: none; }
@@ -123,14 +125,14 @@
     <p class="label">Featured analyses</p>
 
     <!-- To show a logo, add logos/apple.png and logos/nvidia.png to the repo. -->
-    <button class="btn company" type="button" data-company="AAPL">
+    <a class="btn company" href="company.html?t=AAPL">
       <img class="logo" src="logos/apple.png" alt="" onerror="this.remove()">
       <span>Apple Inc. (AAPL)</span>
-    </button>
-    <button class="btn company" type="button" data-company="NVDA">
+    </a>
+    <a class="btn company" href="company.html?t=NVDA">
       <img class="logo" src="logos/nvidia.png" alt="" onerror="this.remove()">
       <span>NVIDIA Corp. (NVDA)</span>
-    </button>
+    </a>
   </main>
 
   <footer>Data source: SEC EDGAR 10-K filings</footer>
