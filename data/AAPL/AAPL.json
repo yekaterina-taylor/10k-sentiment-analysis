@@ -108,7 +108,7 @@
    "label": "Products Net Sales",
    "kind": "line",
    "values": [
-    304364,
+    307003,
     294866,
     298085,
     316199,
@@ -124,7 +124,7 @@
    "label": "Services Net Sales",
    "kind": "line",
    "values": [
-    111797,
+    109158,
     96169,
     85200,
     78129,
@@ -172,8 +172,8 @@
    "label": "Cost of Sales - Products",
    "kind": "line",
    "values": [
-    187014,
-    184815,
+    194116,
+    185233,
     189282,
     201471,
     192266,
@@ -188,8 +188,8 @@
    "label": "Cost of Sales - Services",
    "kind": "line",
    "values": [
-    33946,
-    25537,
+    26844,
+    25119,
     24855,
     22075,
     20715,
@@ -316,7 +316,7 @@
    "label": "Total Other Income / (Expense), Net",
    "kind": "total",
    "values": [
-    47,
+    -321,
     269,
     -565,
     -334,
@@ -332,7 +332,7 @@
    "label": "Income Before Provision for Income Taxes",
    "kind": "total",
    "values": [
-    133097,
+    132729,
     123485,
     113736,
     119103,
@@ -348,7 +348,7 @@
    "label": "Provision for Income Taxes",
    "kind": "total",
    "values": [
-    21087,
+    20719,
     29749,
     16741,
     19300,
@@ -1501,6 +1501,10 @@
   {
    "label": "10-year analysis workbook (Excel)",
    "file": "data/AAPL/AAPL_10_Year_Analysis.xlsx"
+  },
+  {
+   "label": "All MD&A text files, FY2016-FY2025 (.zip)",
+   "file": "data/AAPL/AAPL_MDA_Text_Files.zip"
   }
  ],
  "notes": {
@@ -1514,6 +1518,74 @@
    "The MD&A tone is net negative (P/N below 1.0) in 8 of 10 years, which is typical for 10-K language that discusses risks and uncertainties.",
    "FY2021 is the clear outlier at 1.65, the only year with far more positive than negative words, matching Apple's record pandemic-era growth.",
    "Word counts drop from about 8,400 (FY2016-FY2018) to about 2,300-2,800 (FY2021-FY2025)."
+  ],
+  "mda": [
+   "Cleaned: Item 7 text as extracted by the program (lowercased, HTML removed). Table cells remain as short lines of numbers.",
+   "Sentiment-ready: table fragments and page headers removed and broken sentences rejoined. The wording is unchanged, so dictionary counts are not affected.",
+   "Table numbers and symbols made up about 10-13% of the original total word count. Using the sentiment-ready word count makes sentiment scores slightly stronger; P/N ratios do not change.",
+   "FY2016-FY2019: the extraction dropped fiscal-year numbers in 6-15 places (for example \"net sales ... for , and\"), and some short paragraphs next to tables appear to be missing."
   ]
- }
+ },
+ "mda": [
+  {
+   "year": 2025,
+   "words": 2373,
+   "cleaned": "data/AAPL/mda/AAPL_FY2025_MDA_Cleaned.txt",
+   "ready": "data/AAPL/mda/AAPL_FY2025_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2024,
+   "words": 2016,
+   "cleaned": "data/AAPL/mda/AAPL_FY2024_MDA_Cleaned.txt",
+   "ready": "data/AAPL/mda/AAPL_FY2024_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2023,
+   "words": 2063,
+   "cleaned": "data/AAPL/mda/AAPL_FY2023_MDA_Cleaned.txt",
+   "ready": "data/AAPL/mda/AAPL_FY2023_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2022,
+   "words": 2341,
+   "cleaned": "data/AAPL/mda/AAPL_FY2022_MDA_Cleaned.txt",
+   "ready": "data/AAPL/mda/AAPL_FY2022_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2021,
+   "words": 2520,
+   "cleaned": "data/AAPL/mda/AAPL_FY2021_MDA_Cleaned.txt",
+   "ready": "data/AAPL/mda/AAPL_FY2021_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2020,
+   "words": 4326,
+   "cleaned": "data/AAPL/mda/AAPL_FY2020_MDA_Cleaned.txt",
+   "ready": "data/AAPL/mda/AAPL_FY2020_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2019,
+   "words": 4167,
+   "cleaned": "data/AAPL/mda/AAPL_FY2019_MDA_Cleaned.txt",
+   "ready": "data/AAPL/mda/AAPL_FY2019_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2018,
+   "words": 7665,
+   "cleaned": "data/AAPL/mda/AAPL_FY2018_MDA_Cleaned.txt",
+   "ready": "data/AAPL/mda/AAPL_FY2018_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2017,
+   "words": 7558,
+   "cleaned": "data/AAPL/mda/AAPL_FY2017_MDA_Cleaned.txt",
+   "ready": "data/AAPL/mda/AAPL_FY2017_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2016,
+   "words": 7707,
+   "cleaned": "data/AAPL/mda/AAPL_FY2016_MDA_Cleaned.txt",
+   "ready": "data/AAPL/mda/AAPL_FY2016_MDA_SentimentReady.txt"
+  }
+ ]
 }

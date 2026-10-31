@@ -1,0 +1,131 @@
+item 7. management's discussion and analysis of financial condition and results of operations the following discussion should be read in conjunction with the consolidated financial statements and accompanying notes included in part ii, item 8 of this form 10-k. this item generally discusses 2025 and 2024 items and year-to-year comparisons between 2025 and 2024. discussions of 2023 items and year-to-year comparisons between 2024 and 2023 are not included, and can be found in "management's discussion and analysis of financial condition and results of operations" in part ii, item 7 of the company's annual report on form 10-k for the fiscal year ended september 28, 2024.
+product, service and software announcements
+the company announces new product, service and software offerings at various times during the year. significant announcements during fiscal year 2025 included the following:
+first quarter 2025:
+macbook pro
+mac mini
+imac
+ipad mini
+second quarter 2025:
+iphone 16e
+ipad air
+ipad
+macbook air
+mac studio
+third quarter 2025:
+ios 26, macos tahoe 26, ipados 26, watchos 26, visionos 26 and tvos 26 fourth quarter 2025:
+iphone 17, iphone air, iphone 17 pro and iphone 17 pro max
+apple watch series 11, apple watch se 3 and apple watch ultra 3 airpods pro 3 fiscal period the company's fiscal year is the 52- or 53-week period that ends on the last saturday of september. an additional week is included in the first fiscal quarter every five or six years to realign the company's fiscal quarters with calendar quarters, which occurred in the first quarter of 2023. the company's fiscal years 2025 and 2024 spanned 52 weeks each, whereas fiscal year 2023 spanned 53 weeks.
+macroeconomic conditions
+macroeconomic conditions, including inflation, interest rates and currency fluctuations, have directly and indirectly impacted, and could in the future materially impact, the company's results of operations and financial condition.
+tariffs and other measures
+beginning in the second quarter of 2025, new u.s. tariffs were announced, including additional tariffs on imports from china, india, japan, south korea, taiwan, vietnam and the eu, among others. in response, several countries have imposed, or threatened to impose, reciprocal tariffs on imports from the u.s. and other retaliatory measures. various modifications to the u.s. tariffs have been announced and further changes could be made in the future, which may include additional sector-based tariffs or other measures. for example, the u.s. department of commerce has initiated an investigation under section 232 of the trade expansion act of 1962, as amended, into, among other things, imports of semiconductors, semiconductor manufacturing equipment, and their derivative products, including downstream products that contain semiconductors. tariffs and other measures that are applied to the company's products or their components can have a material adverse impact on the company's business, results of operations and financial condition, including impacting the company's supply chain, the availability of rare earths and other raw materials and components, pricing and gross margin. the ultimate impact remains uncertain and will depend on several factors, including whether additional or incremental u.s. tariffs or other measures are announced or imposed, to what extent other countries implement tariffs or other retaliatory measures in response, and the overall magnitude and duration of these measures. trade and other international disputes can have an adverse impact on the overall macroeconomic environment and result in shifts and reductions in consumer spending and negative consumer sentiment for the company's products and services, all of which can further adversely affect the company's business and results of operations.
+segment operating performance
+the following table shows net sales by reportable segment for 2025, 2024 and 2023 (dollars in millions):
+change
+change
+americas
+europe
+greater china
+japan
+rest of asia pacific
+total net sales
+americas
+americas net sales increased during 2025 compared to 2024 primarily due to higher net sales of iphone and services. the weakness in foreign currencies relative to the u.s. dollar had an unfavorable year-over-year impact on americas net sales during 2025.
+europe
+europe net sales increased during 2025 compared to 2024 primarily due to higher net sales of services, iphone and mac.
+greater china
+greater china net sales decreased during 2025 compared to 2024 primarily due to lower net sales of iphone, partially offset by higher net sales of mac.
+japan
+japan net sales increased during 2025 compared to 2024 primarily due to higher net sales of iphone, services and ipad.
+rest of asia pacific
+rest of asia pacific net sales increased during 2025 compared to 2024 primarily due to higher net sales of iphone, services and mac.
+products and services performance
+the following table shows net sales by category for 2025, 2024 and 2023 (dollars in millions):
+change
+change
+iphone
+mac
+ipad
+wearables, home and accessories
+services
+total net sales
+services net sales include amortization of the deferred value of services bundled in the sales price of certain products.
+iphone
+iphone net sales increased during 2025 compared to 2024 due to higher net sales of pro models.
+mac
+mac net sales increased during 2025 compared to 2024 primarily due to higher net sales of laptops and desktops.
+ipad
+ipad net sales increased during 2025 compared to 2024 primarily due to higher net sales of ipad air, ipad mini and ipad, partially offset by lower net sales of ipad pro.
+wearables, home and accessories
+wearables, home and accessories net sales decreased during 2025 compared to 2024 primarily due to lower net sales of accessories and wearables.
+services
+services net sales increased during 2025 compared to 2024 primarily due to higher net sales from advertising, the app store and cloud services.
+gross margin
+products and services gross margin and gross margin percentage for 2025, 2024 and 2023 were as follows (dollars in millions):
+gross margin:
+products
+services
+total gross margin
+gross margin percentage:
+products
+services
+total gross margin percentage
+products gross margin
+products gross margin increased during 2025 compared to 2024 primarily due to favorable costs and a different mix of products, partially offset by tariff costs.
+products gross margin percentage decreased during 2025 compared to 2024 primarily due to a different mix of products and tariff costs, partially offset by other favorable costs.
+services gross margin
+services gross margin increased during 2025 compared to 2024 primarily due to higher services net sales and a different mix of services.
+services gross margin percentage increased during 2025 compared to 2024 primarily due to a different mix of services, partially offset by higher costs.
+the company's future gross margins can be impacted by a variety of factors, as discussed in part i, item 1a of this form 10-k under the heading "risk factors." as a result, the company believes, in general, gross margins will be subject to volatility and downward pressure.
+operating expenses
+operating expenses for 2025, 2024 and 2023 were as follows (dollars in millions):
+change
+change
+research and development
+percentage of total net sales
+selling, general and administrative
+percentage of total net sales
+total operating expenses
+percentage of total net sales
+research and development
+the growth in r&d expense during 2025 compared to 2024 was primarily driven by increases in headcount-related expenses and infrastructure-related costs.
+selling, general and administrative
+the growth in selling, general and administrative expense during 2025 compared to 2024 was primarily driven by increases in headcount-related expenses and variable selling expenses.
+provision for income taxes
+provision for income taxes, effective tax rate and statutory federal income tax rate for 2025, 2024 and 2023 were as follows (dollars in millions):
+provision for income taxes
+effective tax rate
+statutory federal income tax rate
+the company's effective tax rate for 2025 was lower than the statutory federal income tax rate primarily due to a lower effective tax rate on foreign earnings, including the impact of changes in unrecognized tax benefits, the impact of the u.s. federal r&d credit, and tax benefits from share-based compensation, partially offset by a change in valuation allowance and state income taxes.
+the company's effective tax rate for 2025 was lower compared to 2024 due to a $10.7 billion year-over-year decrease in the provision for income taxes related to the state aid decision (refer to note 7, "income taxes" in the notes to consolidated financial statements in part ii, item 8 of this form 10-k) and the impact of changes in unrecognized tax benefits, partially offset by a change in valuation allowance and a higher effective tax rate on foreign earnings.
+liquidity and capital resources
+the company believes its balances of cash, cash equivalents and marketable securities, which totaled $132.4 billion as of september 27, 2025, along with cash generated by ongoing operations and continued access to debt markets, will be sufficient to satisfy its cash requirements and capital return program over the next 12 months and beyond.
+the company's material cash requirements include the following contractual obligations:
+debt
+as of september 27, 2025, the company had outstanding fixed-rate notes with varying maturities for an aggregate principal amount of $91.3 billion (collectively the "notes"), with $12.4 billion payable within 12 months. future interest payments associated with the notes total $37.0 billion, with $2.6 billion payable within 12 months.
+the company also issues unsecured short-term promissory notes pursuant to a commercial paper program. as of september 27, 2025, the company had $8.0 billion of commercial paper outstanding, which was payable within 12 months.
+leases
+the company has lease arrangements for certain equipment and facilities, including corporate, data center, manufacturing and retail space. as of september 27, 2025, the company had fixed lease payment obligations of $16.8 billion, with $2.6 billion payable within 12 months.
+manufacturing purchase obligations
+the company utilizes several outsourcing partners to manufacture subassemblies for the company's products and to perform final assembly and testing of finished products. the company also obtains individual components for its products from a wide variety of individual suppliers. as of september 27, 2025, the company had manufacturing purchase obligations of $56.2 billion, with $55.4 billion payable within 12 months.
+other purchase obligations
+the company's other purchase obligations primarily consist of noncancelable obligations to acquire capital assets, including assets related to product manufacturing, and noncancelable obligations related to supplier arrangements, licensed intellectual property and content, and distribution rights. as of september 27, 2025, the company had other purchase obligations of $14.8 billion, with $7.0 billion payable within 12 months.
+deemed repatriation tax payable
+as of september 27, 2025, the balance of the deemed repatriation tax payable imposed by the u.s. tax cuts and jobs act of 2017 ("tcja") was $8.8 billion, which was payable within 12 months.
+capital return program
+in addition to its contractual cash requirements, the company has an authorized share repurchase program. the program does not obligate the company to acquire a minimum amount of shares. as of september 27, 2025, the company's quarterly cash dividend was $0.26 per share. the company intends to increase its dividend on an annual basis, subject to declaration by the board.
+in may 2025, the company announced a new share repurchase program of up to $100 billion and raised its quarterly dividend from $0.25 to $0.26 per share beginning in may 2025. during 2025, the company repurchased $89.3 billion of its common stock and paid dividends and dividend equivalents of $15.4 billion.
+recent accounting pronouncements
+internal-use software
+in september 2025, the financial accounting standards board ("fasb") issued accounting standards update ("asu") no. 2025-06, intangibles-goodwill and other-internal-use software (subtopic 350-40): targeted improvements to the accounting for internal-use software ("asu 2025-06"), which modernizes the accounting for internal-use software. asu 2025-06 removes all references to software development stages and requires capitalization of software costs when management has committed to the software project and it is probable the software will be completed and perform its intended use. asu 2025-06 will be effective for the company in its first quarter of 2029, and early adoption is permitted. the company is currently evaluating the timing and method of its adoption of asu 2025-06.
+disaggregation of income statement expenses
+in november 2024, the fasb issued asu no. 2024-03, income statement-reporting comprehensive income-expense disaggregation disclosures (subtopic 220-40): disaggregation of income statement expenses ("asu 2024-03") and in january 2025, the fasb issued asu no. 2025-01, income statement-reporting comprehensive income-expense disaggregation disclosures (subtopic 220-40): clarifying the effective date, which clarified the effective date of asu 2024-03. asu 2024-03 will require the company to disclose the amounts of purchases of inventory, employee compensation, depreciation and intangible asset amortization, as applicable, included in certain expense captions in the consolidated statements of operations, as well as qualitatively describe remaining amounts included in those captions. asu 2024-03 will also require the company to disclose both the amount and the company's definition of selling expenses. the company will adopt asu 2024-03 in its fourth quarter of 2028 using a prospective transition method.
+income taxes
+in december 2023, the fasb issued asu no. 2023-09, income taxes (topic 740): improvements to income tax disclosures ("asu 2023-09"), which will require the company to disclose specified additional information in its income tax rate reconciliation and provide additional information for reconciling items that meet a quantitative threshold. asu 2023-09 will also require the company to disaggregate its income taxes paid disclosure by federal, state and foreign taxes, with further disaggregation required for significant individual jurisdictions. the company will adopt asu 2023-09 in its fourth quarter of 2026 using a prospective transition method.
+critical accounting estimates
+the preparation of financial statements and related disclosures in conformity with u.s. generally accepted accounting principles ("gaap") and the company's discussion and analysis of its financial condition and operating results require the company's management to make judgments, assumptions and estimates that affect the amounts reported. note 1, "summary of significant accounting policies" of the notes to consolidated financial statements in part ii, item 8 of this form 10-k describes the significant accounting policies and methods used in the preparation of the company's consolidated financial statements. management bases its estimates on historical experience and on various other assumptions it believes to be reasonable under the circumstances, the results of which form the basis for making judgments about the carrying values of assets and liabilities.
+uncertain tax positions
+the company is subject to income taxes in the u.s. and numerous foreign jurisdictions. the evaluation of the company's uncertain tax positions involves significant judgment in the interpretation and application of gaap and complex domestic and international tax laws, including the tcja and the allocation of international taxation rights between countries. although management believes the company's reserves are reasonable, no assurance can be given that the final outcome of these uncertainties will not be different from that reflected in the company's reserves. reserves are adjusted considering changing facts and circumstances, such as the closing of a tax examination. resolution of these uncertainties in a manner inconsistent with management's expectations could have a material impact on the company's financial condition and operating results.
+legal and other contingencies
+the company is subject to various legal proceedings and claims that arise in the ordinary course of business, the outcomes of which are inherently uncertain. the company records a liability when it is probable a loss has been incurred and the amount is reasonably estimable, the determination of which requires significant judgment. resolution of legal matters in a manner inconsistent with management's expectations could have a material impact on the company's financial condition and operating results.

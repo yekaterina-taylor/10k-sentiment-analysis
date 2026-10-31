@@ -109,6 +109,8 @@
     .dl.pending { border-style: dashed; color: var(--muted); }
     .dl .tag { font-weight: bold; color: var(--blue); }
     .error { color: #a40000; font-weight: bold; }
+    .dl-head { color: var(--blue); margin: 32px 0 10px; }
+    #mda-table td a { font-weight: bold; }
     footer { background: var(--blue); color: #fff; text-align: center; padding: 14px 16px; font-size: 0.85rem; }
   </style>
 </head>
@@ -220,6 +222,12 @@
       <h2>Downloads</h2>
       <p class="sub">Program outputs for this company.</p>
       <div class="downloads" id="dl-list"></div>
+
+      <div id="mda-block" hidden>
+        <h3 class="dl-head">MD&amp;A text files by year</h3>
+        <div class="table-scroll" style="max-width:760px"><table id="mda-table"></table></div>
+        <div class="notes" style="max-width:760px"><h3>About these files</h3><ul id="mda-notes"></ul></div>
+      </div>
     </section>
   </main>
 
@@ -413,7 +421,16 @@
           <td>${p.splitFactor}:1</td><td>$${p.splitAdjClose.toFixed(2)}</td><td>${fmt2(s[i].pn)}</td></tr>`).join("") + "</tbody>";
 
       // 6. Downloads
-      const pending = ["MD&A text files (raw and cleaned)", "Python program (sec_analysis.py)"];
+      const pending = ["Python program (sec_analysis.py)"];
+      if (d.mda) {
+        el("mda-block").hidden = false;
+        el("mda-table").innerHTML =
+          "<thead><tr><th>Fiscal year</th><th>Words (sentiment-ready)</th><th>Cleaned text</th><th>Sentiment-ready text</th></tr></thead><tbody>" +
+          d.mda.map((m) => `<tr><td>FY ${m.year}</td><td>${m.words.toLocaleString()}</td>
+            <td><a href="${m.cleaned}" download>Download</a></td><td><a href="${m.ready}" download>Download</a></td></tr>`).join("") +
+          "</tbody>";
+        el("mda-notes").innerHTML = (d.notes?.mda || []).map((n) => `<li>${n}</li>`).join("");
+      }
       el("dl-list").innerHTML =
         d.downloads.map((f) => `<a class="dl" href="${f.file}" download><span>${f.label}</span><span class="tag">Download</span></a>`).join("") +
         pending.map((p) => `<div class="dl pending"><span>${p}</span><span>Coming soon</span></div>`).join("");
