@@ -1465,7 +1465,7 @@
    "The most positive years are FY2024 (0.76) and FY2022 (0.71), both record-growth years. The most negative are FY2017 (0.44, heavy on litigation, restructuring and impairment language), FY2021 (0.50) and FY2023 (0.54, inventory charges, export controls and the Arm deal termination).",
    "FY2026 shows that tone does not simply follow results: revenue hit a record $216 billion, yet P/N fell to 0.54 as the MD&A focused on export controls, the $4.5 billion H20 charge and supply challenges.",
    "Some negative words are boilerplate or dictionary quirks: \"critical\" comes mostly from the \"Critical Accounting Estimates\" heading, and \"termination\" (FY2023-FY2024) and \"closing\" (FY2021) refer to the Arm deal.",
-   "Method: exact matching against the Loughran-McDonald Master Dictionary, using the sentiment-ready text (src/lm_sentiment.py). Apple's sentiment numbers came from a different program, so the two companies' word counts are not yet directly comparable."
+   "Method: exact matching against the Loughran-McDonald Master Dictionary on the sentiment-ready text (src/lm_sentiment.py). Apple is scored the same way, so the two companies are directly comparable."
   ],
   "price": [
    "Prices come from Yahoo Finance via the yfinance library (src/get_nvda_stock_prices.py). Yahoo's \"Close\" is already split-adjusted, so the actual closing price shown is reconstructed by multiplying by the split factor (40 before July 2021, 10 until June 2024).",
