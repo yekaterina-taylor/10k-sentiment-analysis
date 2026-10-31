@@ -1,0 +1,1243 @@
+{
+ "ticker": "NVDA",
+ "name": "NVIDIA Corp.",
+ "cik": "0001045810",
+ "fiscalYearEnd": "Last Sunday of January",
+ "years": [
+  2026,
+  2025,
+  2024,
+  2023,
+  2022,
+  2021,
+  2020,
+  2019,
+  2018,
+  2017
+ ],
+ "filings": [
+  {
+   "year": 2026,
+   "period": "2026-01-25",
+   "filed": "Pending",
+   "accession": "Pending",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm"
+  },
+  {
+   "year": 2025,
+   "period": "2025-01-26",
+   "filed": "Pending",
+   "accession": "Pending",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm"
+  },
+  {
+   "year": 2024,
+   "period": "2024-01-28",
+   "filed": "Pending",
+   "accession": "Pending",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000028/q4fy24pr.htm"
+  },
+  {
+   "year": 2023,
+   "period": "2023-01-29",
+   "filed": "Pending",
+   "accession": "Pending",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000028/q4fy24pr.htm"
+  },
+  {
+   "year": 2022,
+   "period": "2022-01-30",
+   "filed": "Pending",
+   "accession": "Pending",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000008/q4fy22pr.htm"
+  },
+  {
+   "year": 2021,
+   "period": "2021-01-31",
+   "filed": "Pending",
+   "accession": "Pending",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000008/q4fy22pr.htm"
+  },
+  {
+   "year": 2020,
+   "period": "2020-01-26",
+   "filed": "Pending",
+   "accession": "Pending",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581020000007/q4fy20pr.htm"
+  },
+  {
+   "year": 2019,
+   "period": "2019-01-27",
+   "filed": "Pending",
+   "accession": "Pending",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581020000007/q4fy20pr.htm"
+  },
+  {
+   "year": 2018,
+   "period": "2018-01-28",
+   "filed": "Pending",
+   "accession": "Pending",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581018000004/q4fy18pr.htm"
+  },
+  {
+   "year": 2017,
+   "period": "2017-01-29",
+   "filed": "Pending",
+   "accession": "Pending",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581018000004/q4fy18pr.htm"
+  }
+ ],
+ "incomeStatement": [
+  {
+   "label": "Revenue",
+   "kind": "total",
+   "values": [
+    215938,
+    130497,
+    60922,
+    26974,
+    26914,
+    16675,
+    10918,
+    11716,
+    9714,
+    6910
+   ]
+  },
+  {
+   "label": "Cost of revenue",
+   "kind": "line",
+   "values": [
+    62475,
+    32639,
+    16621,
+    11618,
+    9439,
+    6279,
+    4150,
+    4545,
+    3892,
+    2847
+   ]
+  },
+  {
+   "label": "Gross Profit",
+   "kind": "total",
+   "values": [
+    153463,
+    97858,
+    44301,
+    15356,
+    17475,
+    10396,
+    6768,
+    7171,
+    5822,
+    4063
+   ]
+  },
+  {
+   "label": "Operating Expenses:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Research and development",
+   "kind": "line",
+   "values": [
+    18497,
+    12914,
+    8675,
+    7339,
+    5268,
+    3924,
+    2829,
+    2376,
+    1797,
+    1466
+   ]
+  },
+  {
+   "label": "Sales, general and administrative",
+   "kind": "line",
+   "values": [
+    4579,
+    3491,
+    2654,
+    2440,
+    2166,
+    1940,
+    1093,
+    991,
+    815,
+    663
+   ]
+  },
+  {
+   "label": "Acquisition termination cost (Arm)",
+   "kind": "line",
+   "values": [
+    0,
+    0,
+    0,
+    1353,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "label": "Total Operating Expenses",
+   "kind": "total",
+   "values": [
+    23076,
+    16405,
+    11329,
+    11132,
+    7434,
+    5864,
+    3922,
+    3367,
+    2612,
+    2129
+   ]
+  },
+  {
+   "label": "Operating Income",
+   "kind": "total",
+   "values": [
+    130387,
+    81453,
+    32972,
+    4224,
+    10041,
+    4532,
+    2846,
+    3804,
+    3210,
+    1934
+   ]
+  },
+  {
+   "label": "Other Income / (Expense):",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Interest income",
+   "kind": "line",
+   "values": [
+    2300,
+    1786,
+    866,
+    267,
+    29,
+    57,
+    178,
+    136,
+    69,
+    54
+   ]
+  },
+  {
+   "label": "Interest expense",
+   "kind": "line",
+   "values": [
+    -259,
+    -247,
+    -257,
+    -262,
+    -236,
+    -184,
+    -52,
+    -58,
+    -61,
+    -58
+   ]
+  },
+  {
+   "label": "Other, net",
+   "kind": "line",
+   "values": [
+    9022,
+    1034,
+    237,
+    -48,
+    107,
+    4,
+    -2,
+    14,
+    -22,
+    -25
+   ]
+  },
+  {
+   "label": "Total Other Income / (Expense), Net",
+   "kind": "total",
+   "values": [
+    11063,
+    2573,
+    846,
+    -43,
+    -100,
+    -123,
+    124,
+    92,
+    -14,
+    -29
+   ]
+  },
+  {
+   "label": "Income Before Income Tax",
+   "kind": "total",
+   "values": [
+    141450,
+    84026,
+    33818,
+    4181,
+    9941,
+    4409,
+    2970,
+    3896,
+    3196,
+    1905
+   ]
+  },
+  {
+   "label": "Income tax expense / (benefit)",
+   "kind": "line",
+   "values": [
+    21383,
+    11146,
+    4058,
+    -187,
+    189,
+    77,
+    174,
+    -245,
+    149,
+    239
+   ]
+  },
+  {
+   "label": "Net Income",
+   "kind": "total",
+   "values": [
+    120067,
+    72880,
+    29760,
+    4368,
+    9752,
+    4332,
+    2796,
+    4141,
+    3047,
+    1666
+   ]
+  }
+ ],
+ "balanceSheet": [
+  {
+   "label": "Current Assets:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Cash, cash equivalents and marketable securities",
+   "kind": "line",
+   "values": [
+    62556,
+    43210,
+    25984,
+    13296,
+    21208,
+    11561,
+    10897,
+    7422,
+    7108,
+    6798
+   ]
+  },
+  {
+   "label": "Accounts receivable, net",
+   "kind": "line",
+   "values": [
+    38466,
+    23065,
+    9999,
+    3827,
+    4650,
+    2429,
+    1657,
+    1424,
+    1265,
+    826
+   ]
+  },
+  {
+   "label": "Inventories",
+   "kind": "line",
+   "values": [
+    21403,
+    10080,
+    5282,
+    5159,
+    2605,
+    1826,
+    979,
+    1575,
+    796,
+    794
+   ]
+  },
+  {
+   "label": "Prepaid expenses and other current assets",
+   "kind": "line",
+   "values": [
+    3180,
+    3771,
+    3080,
+    791,
+    366,
+    239,
+    157,
+    136,
+    86,
+    118
+   ]
+  },
+  {
+   "label": "Total Current Assets",
+   "kind": "total",
+   "values": [
+    125605,
+    80126,
+    44345,
+    23073,
+    28829,
+    16055,
+    13690,
+    10557,
+    9255,
+    8536
+   ]
+  },
+  {
+   "label": "Non-Current Assets:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Property and equipment, net",
+   "kind": "line",
+   "values": [
+    10383,
+    6283,
+    3914,
+    3807,
+    2778,
+    2149,
+    1674,
+    1404,
+    997,
+    521
+   ]
+  },
+  {
+   "label": "Operating lease assets",
+   "kind": "line",
+   "values": [
+    2867,
+    1793,
+    1346,
+    1038,
+    829,
+    707,
+    618,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "label": "Goodwill",
+   "kind": "line",
+   "values": [
+    20832,
+    5188,
+    4430,
+    4372,
+    4349,
+    4193,
+    618,
+    618,
+    618,
+    618
+   ]
+  },
+  {
+   "label": "Intangible assets, net",
+   "kind": "line",
+   "values": [
+    3306,
+    807,
+    1112,
+    1676,
+    2339,
+    2737,
+    49,
+    45,
+    52,
+    104
+   ]
+  },
+  {
+   "label": "Deferred income tax assets",
+   "kind": "line",
+   "values": [
+    13258,
+    10979,
+    6081,
+    3396,
+    1222,
+    806,
+    548,
+    560,
+    0,
+    0
+   ]
+  },
+  {
+   "label": "Non-marketable equity securities",
+   "kind": "line",
+   "values": [
+    22251,
+    3387,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "label": "Other assets",
+   "kind": "line",
+   "values": [
+    8301,
+    3038,
+    4500,
+    3820,
+    3841,
+    2144,
+    118,
+    108,
+    319,
+    62
+   ]
+  },
+  {
+   "label": "Total Non-Current Assets",
+   "kind": "total",
+   "values": [
+    81198,
+    31475,
+    21383,
+    18109,
+    15358,
+    12736,
+    3625,
+    2735,
+    1986,
+    1305
+   ]
+  },
+  {
+   "label": "TOTAL ASSETS",
+   "kind": "total",
+   "values": [
+    206803,
+    111601,
+    65728,
+    41182,
+    44187,
+    28791,
+    17315,
+    13292,
+    11241,
+    9841
+   ]
+  },
+  {
+   "label": "Current Liabilities:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Accounts payable",
+   "kind": "line",
+   "values": [
+    9812,
+    6310,
+    2699,
+    1193,
+    1783,
+    1149,
+    687,
+    511,
+    596,
+    485
+   ]
+  },
+  {
+   "label": "Accrued and other current liabilities",
+   "kind": "line",
+   "values": [
+    21352,
+    11737,
+    6682,
+    4120,
+    2552,
+    1777,
+    1097,
+    818,
+    542,
+    507
+   ]
+  },
+  {
+   "label": "Short-term debt (incl. convertible)",
+   "kind": "line",
+   "values": [
+    999,
+    0,
+    1250,
+    1250,
+    0,
+    999,
+    0,
+    0,
+    15,
+    796
+   ]
+  },
+  {
+   "label": "Total Current Liabilities",
+   "kind": "total",
+   "values": [
+    32163,
+    18047,
+    10631,
+    6563,
+    4335,
+    3925,
+    1784,
+    1329,
+    1153,
+    1788
+   ]
+  },
+  {
+   "label": "Non-Current Liabilities:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Long-term debt",
+   "kind": "line",
+   "values": [
+    7469,
+    8463,
+    8459,
+    9703,
+    10946,
+    5964,
+    1991,
+    1988,
+    1985,
+    1983
+   ]
+  },
+  {
+   "label": "Long-term operating lease liabilities",
+   "kind": "line",
+   "values": [
+    2572,
+    1519,
+    1119,
+    902,
+    741,
+    634,
+    561,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "label": "Other long-term liabilities",
+   "kind": "line",
+   "values": [
+    7306,
+    4245,
+    2541,
+    1913,
+    1553,
+    1375,
+    775,
+    633,
+    632,
+    277
+   ]
+  },
+  {
+   "label": "Total Non-Current Liabilities",
+   "kind": "total",
+   "values": [
+    17347,
+    14227,
+    12119,
+    12518,
+    13240,
+    7973,
+    3327,
+    2621,
+    2617,
+    2260
+   ]
+  },
+  {
+   "label": "TOTAL LIABILITIES",
+   "kind": "total",
+   "values": [
+    49510,
+    32274,
+    22750,
+    19081,
+    17575,
+    11898,
+    5111,
+    3950,
+    3770,
+    4048
+   ]
+  },
+  {
+   "label": "Convertible debt conversion obligation",
+   "kind": "line",
+   "values": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    31
+   ]
+  },
+  {
+   "label": "TOTAL SHAREHOLDERS' EQUITY",
+   "kind": "total",
+   "values": [
+    157293,
+    79327,
+    42978,
+    22101,
+    26612,
+    16893,
+    12204,
+    9342,
+    7471,
+    5762
+   ]
+  },
+  {
+   "label": "TOTAL LIABILITIES AND SHAREHOLDERS' EQUITY",
+   "kind": "total",
+   "values": [
+    206803,
+    111601,
+    65728,
+    41182,
+    44187,
+    28791,
+    17315,
+    13292,
+    11241,
+    9841
+   ]
+  },
+  {
+   "label": "Accounting Balance Check (Assets - Liab & Eq)",
+   "kind": "line",
+   "values": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  }
+ ],
+ "cashFlow": [
+  {
+   "label": "Operating Activities:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Net income",
+   "kind": "line",
+   "values": [
+    120067,
+    72880,
+    29760,
+    4368,
+    9752,
+    4332,
+    2796,
+    4141,
+    3047,
+    1666
+   ]
+  },
+  {
+   "label": "Depreciation and amortization",
+   "kind": "line",
+   "values": [
+    2843,
+    1864,
+    1508,
+    1544,
+    1174,
+    1098,
+    381,
+    262,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Stock-based compensation expense",
+   "kind": "line",
+   "values": [
+    6386,
+    4737,
+    3549,
+    2709,
+    2004,
+    1397,
+    844,
+    557,
+    391,
+    248
+   ]
+  },
+  {
+   "label": "Other adjustments & changes in working capital",
+   "kind": "line",
+   "values": [
+    -26578,
+    -15392,
+    -6727,
+    -2980,
+    -3822,
+    -1005,
+    740,
+    -1217,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Net Cash Provided by Operating Activities",
+   "kind": "total",
+   "values": [
+    102718,
+    64089,
+    28090,
+    5641,
+    9108,
+    5822,
+    4761,
+    3743,
+    3502,
+    1672
+   ]
+  },
+  {
+   "label": "Investing Activities:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Purchases of property, equipment & intangibles",
+   "kind": "line",
+   "values": [
+    -6042,
+    -3236,
+    -1069,
+    -1833,
+    -976,
+    -1128,
+    -489,
+    -600,
+    -593,
+    -176
+   ]
+  },
+  {
+   "label": "Marketable securities: purchases, maturities & sales, net",
+   "kind": "line",
+   "values": [
+    -14233,
+    -14885,
+    -8429,
+    9334,
+    -8567,
+    -9989,
+    6648,
+    -3488,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Other investing (acquisitions, equity investments, other)",
+   "kind": "line",
+   "values": [
+    -31953,
+    -2300,
+    -1068,
+    -126,
+    -287,
+    -8558,
+    -14,
+    -9,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Net Cash Provided by / (Used in) Investing Activities",
+   "kind": "total",
+   "values": [
+    -52228,
+    -20421,
+    -10566,
+    7375,
+    -9830,
+    -19675,
+    6145,
+    -4097,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Financing Activities:",
+   "kind": "header",
+   "values": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Repurchases of common stock",
+   "kind": "line",
+   "values": [
+    -40086,
+    -33706,
+    -9533,
+    -10039,
+    0,
+    0,
+    0,
+    -1579,
+    null,
+    -739
+   ]
+  },
+  {
+   "label": "Dividends paid",
+   "kind": "line",
+   "values": [
+    -974,
+    -834,
+    -395,
+    -398,
+    -399,
+    -395,
+    -390,
+    -371,
+    null,
+    -261
+   ]
+  },
+  {
+   "label": "Debt issuance / (repayment), net",
+   "kind": "line",
+   "values": [
+    0,
+    -1250,
+    -1250,
+    0,
+    3977,
+    4968,
+    0,
+    -16,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Other financing (employee stock plans, RSU taxes, other)",
+   "kind": "line",
+   "values": [
+    -7414,
+    -6569,
+    -2455,
+    -1180,
+    -1713,
+    -769,
+    -402,
+    -900,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Net Cash Provided by / (Used in) Financing Activities",
+   "kind": "total",
+   "values": [
+    -48474,
+    -42359,
+    -13633,
+    -11617,
+    1865,
+    3804,
+    -792,
+    -2866,
+    null,
+    null
+   ]
+  },
+  {
+   "label": "Change in Cash and Cash Equivalents",
+   "kind": "total",
+   "values": [
+    2016,
+    1309,
+    3891,
+    1399,
+    1143,
+    -10049,
+    10114,
+    -3220,
+    null,
+    null
+   ]
+  }
+ ],
+ "ratios": [
+  {
+   "name": "Current Ratio",
+   "category": "Liquidity",
+   "formula": "Current Assets / Current Liabilities",
+   "values": [
+    3.90526381245531,
+    4.43985149886408,
+    4.1712915059731,
+    3.51561785768703,
+    6.65028835063437,
+    4.09044585987261,
+    7.6737668161435,
+    7.94356659142212,
+    8.02688638334779,
+    4.77404921700224
+   ]
+  },
+  {
+   "name": "Debt-to-Assets Ratio",
+   "category": "Solvency",
+   "formula": "Total Liabilities / Total Assets",
+   "values": [
+    0.239406585010856,
+    0.289190957070277,
+    0.346123417721519,
+    0.463333495216357,
+    0.397741417158893,
+    0.41325414191935,
+    0.295177591683511,
+    0.297171230815528,
+    0.335379414642825,
+    0.41134031094401
+   ]
+  },
+  {
+   "name": "Asset Turnover",
+   "category": "Efficiency",
+   "formula": "Revenue / Average Total Assets",
+   "values": [
+    1.35637743244432,
+    1.47180664189163,
+    1.13968758769058,
+    0.631938994248498,
+    0.737592151059223,
+    0.723333188738993,
+    0.713431567941974,
+    0.955121672848816,
+    0.92154444549853,
+    0.802974841671024
+   ]
+  },
+  {
+   "name": "Net Profit Margin",
+   "category": "Profitability",
+   "formula": "Net Income / Revenue",
+   "values": [
+    0.556025340607026,
+    0.558480271577124,
+    0.488493483470667,
+    0.161933713946764,
+    0.362339302965,
+    0.259790104947526,
+    0.256090859131709,
+    0.353448275862069,
+    0.313670990323245,
+    0.2410998552822
+   ]
+  }
+ ],
+ "sentiment": [],
+ "prices": [],
+ "downloads": [
+  {
+   "label": "10-year analysis workbook (Excel)",
+   "file": "data/NVDA/NVDA_10_Year_Analysis.xlsx"
+  }
+ ],
+ "pending": {
+  "sentiment": "NVIDIA's sentiment results will appear here once the MD&A (Item 7) text files for FY2017-FY2026 are extracted by the program.",
+  "price": "This comparison needs NVIDIA's fiscal year-end stock prices and sentiment results, which are still being collected. Prices will be split-adjusted for the 4-for-1 (2021) and 10-for-1 (2024) stock splits."
+ },
+ "notes": {
+  "ratios": [
+   "Liquidity: the current ratio stayed very high, between 3.5 and 8.0. It peaked near 8.0 in FY2018-FY2019 and eased to 3.9 in FY2026 as payables and accrued liabilities grew with sales. NVIDIA can cover short-term obligations several times over.",
+   "Solvency: debt-to-assets ranged from 0.24 to 0.46. It peaked at 0.46 in FY2023, after debt issued in FY2021-FY2022 and a weak year, then fell to 0.24 in FY2026 as retained earnings grew equity much faster than liabilities.",
+   "Efficiency: asset turnover fell to 0.63 in FY2023, then jumped to 1.47 in FY2025 as AI data center demand pushed revenue up far faster than assets.",
+   "Profitability: net margin dropped to 16% in FY2023 (a crypto and gaming slowdown, inventory charges and the $1.35B Arm termination cost), then rose to 49% in FY2024 and about 56% in FY2025-FY2026."
+  ],
+  "statements": "Source: NVIDIA Q4 earnings releases (Form 8-K Ex. 99.1). A dash in the FY2017-FY2018 cash flow statement means the detail is not in the earnings releases; it will be filled from the full 10-K statements."
+ }
+}

@@ -153,6 +153,7 @@
         <button data-stmt="cashFlow" aria-pressed="false">Cash Flows</button>
       </div>
       <div class="table-scroll"><table id="stmt-table"></table></div>
+      <p class="sub" id="stmt-note"></p>
     </section>
 
     <!-- 3. Ratios -->
@@ -237,7 +238,7 @@
     // ---------- helpers ----------
     const ticker = (new URLSearchParams(location.search).get("t") || "AAPL").toUpperCase();
     const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
-    const fmtM = (v) => v == null ? "" : v < 0 ? `(${Math.abs(v).toLocaleString()})` : v.toLocaleString();
+    const fmtM = (v) => v == null ? "–" : v < 0 ? `(${Math.abs(v).toLocaleString()})` : v.toLocaleString();
     const fmt2 = (v) => v == null ? "" : Number(v).toFixed(2);
     const fmtPct = (v) => v == null ? "" : (v * 100).toFixed(1) + "%";
     const el = (id) => document.getElementById(id);
@@ -296,7 +297,7 @@
       const chrono = [...d.years].reverse().map((y) => "FY " + y);
 
       // 1. Overview
-      const rev = d.incomeStatement.find((r) => r.label === "Total Net Sales").values;
+      const rev = d.incomeStatement.find((r) => ["Total Net Sales", "Revenue"].includes(r.label)).values;
       const ni = d.incomeStatement.find((r) => r.label === "Net Income").values;
       kpis("overview-kpis", [
         ["Fiscal years covered", `FY ${d.years.at(-1)} – FY ${d.years[0]}`],
@@ -322,6 +323,7 @@
         document.querySelectorAll("[data-stmt]").forEach((x) => x.setAttribute("aria-pressed", x === b));
         drawStmt(b.dataset.stmt);
       }));
+      el("stmt-note").textContent = d.notes?.statements || "";
       drawStmt("incomeStatement");
 
       // 3. Ratios
@@ -338,9 +340,22 @@
           `<td>${r.category === "Profitability" ? fmtPct(v) : fmt2(v)}</td>`).join("") + "</tr>").join("") + "</tbody>";
       el("ratio-notes").innerHTML = (d.notes?.ratios || []).map((n) => `<li>${n}</li>`).join("");
 
+      // Sections that depend on MD&A text or prices may still be pending for a company
+      const pendingBox = (title, msg) =>
+        `<h2>${title}</h2><div class="notes"><h3>Pending</h3><p style="margin:0;line-height:1.5">${msg}</p></div>`;
+      const hasSent = Array.isArray(d.sentiment) && d.sentiment.length > 0;
+      const hasPrices = hasSent && Array.isArray(d.prices) && d.prices.length > 0 &&
+                        d.prices.every((p) => p.close != null);
+      if (!hasSent) el("sentiment").innerHTML = pendingBox("Sentiment",
+        d.pending?.sentiment || "Sentiment results are not available yet.");
+      if (!hasPrices) el("price").innerHTML = pendingBox("Stock Price vs. Sentiment",
+        d.pending?.price || "Stock prices and sentiment results are not available yet.");
+      let s = [], sChrono = [];
+
       // 4. Sentiment
-      const s = d.sentiment;                     // most recent first
-      const sChrono = [...s].reverse();
+      if (hasSent) {
+      s = d.sentiment;                           // most recent first
+      sChrono = [...s].reverse();
       const avg = (k) => s.reduce((a, x) => a + x[k], 0) / s.length;
       const best = s.reduce((a, x) => (x.pn > a.pn ? x : a));
       kpis("sent-kpis", [
@@ -394,8 +409,10 @@
       ).join("");
 
       el("sent-notes").innerHTML = (d.notes?.sentiment || []).map((n) => `<li>${n}</li>`).join("");
+      }
 
       // 5. Price vs sentiment (two aligned charts, shared years — no dual axis)
+      if (hasPrices) {
       const pChrono = [...d.prices].reverse();
       const price = pChrono.map((p) => p.splitAdjClose);
       const pn = sChrono.map((x) => x.pn);
@@ -419,6 +436,7 @@
         "<thead><tr><th>Fiscal year</th><th>Balance sheet date</th><th>Trading date</th><th>Closing price</th><th>Split factor</th><th>Split-adjusted close</th><th>P/N ratio</th></tr></thead><tbody>" +
         d.prices.map((p, i) => `<tr><td>FY ${p.year}</td><td>${p.bsDate}</td><td>${p.tradeDate}</td><td>$${p.close.toFixed(2)}</td>
           <td>${p.splitFactor}:1</td><td>$${p.splitAdjClose.toFixed(2)}</td><td>${fmt2(s[i].pn)}</td></tr>`).join("") + "</tbody>";
+      }
 
       // 6. Downloads
       const pending = ["Python program (sec_analysis.py)"];
