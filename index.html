@@ -37,6 +37,7 @@
       margin: 0 auto;
       padding: 40px 16px;
       display: grid;
+      align-content: start;
       gap: 16px;
     }
     .btn {
@@ -55,21 +56,6 @@
       transition: background 0.15s, color 0.15s;
     }
     .btn:hover, .btn:focus-visible { background: var(--gold); color: var(--blue); outline: none; }
-    .custom {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .custom input {
-      flex: 1 1 200px;
-      padding: 18px;
-      font-size: 1.1rem;
-      border: 3px solid var(--blue);
-      border-radius: 8px;
-      text-transform: uppercase;
-    }
-    .custom .btn { flex: 0 1 180px; background: var(--gold); color: var(--blue); }
-    .custom .btn:hover, .custom .btn:focus-visible { background: var(--blue); color: #fff; }
     .company {
       display: flex;
       align-items: center;
@@ -94,12 +80,6 @@
       text-transform: uppercase;
       color: var(--blue);
     }
-    #message {
-      min-height: 1.5em;
-      text-align: center;
-      color: var(--blue);
-      font-weight: bold;
-    }
     footer {
       background: var(--blue);
       color: #fff;
@@ -116,13 +96,6 @@
   </header>
 
   <main>
-    <form class="custom" id="custom-form">
-      <input id="ticker" type="text" placeholder="Any ticker, e.g. WMT" maxlength="10"
-             aria-label="Company ticker symbol" autocomplete="off">
-      <button class="btn" type="submit">Analyze</button>
-    </form>
-
-    <p id="message" role="status"></p>
 
     <p class="label">Featured analyses</p>
 
@@ -142,31 +115,5 @@
 
   <footer>Data source: SEC EDGAR 10-K filings</footer>
 
-  <script>
-    // Placeholder behavior only: analysis pages will be added later.
-    const message = document.getElementById("message");
-
-    // Companies with a published analysis open their page; others show a notice.
-    const published = ["AAPL", "NVDA"];
-
-    document.querySelectorAll("[data-company]").forEach((button) => {
-      button.addEventListener("click", () => {
-        const t = button.dataset.company;
-        if (published.includes(t)) {
-          location.href = `company.html?t=${t}`;
-        } else {
-          message.textContent = `${t} analysis coming soon.`;
-        }
-      });
-    });
-
-    document.getElementById("custom-form").addEventListener("submit", (event) => {
-      event.preventDefault();
-      const ticker = document.getElementById("ticker").value.trim().toUpperCase();
-      message.textContent = ticker
-        ? `${ticker} analysis coming soon.`
-        : "Please enter a ticker symbol.";
-    });
-  </script>
 </body>
 </html>
