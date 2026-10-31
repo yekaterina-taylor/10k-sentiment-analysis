@@ -1,0 +1,727 @@
+item 7. management's discussion and analysis of financial condition and results of operations
+the following discussion and analysis of our financial condition and results of operations should be read in conjunction with "item 1a. risk factors", "item 6. selected financial data", our consolidated financial statements and related notes thereto, as well as other cautionary statements and risks described elsewhere in this annual report on form 10-k, before deciding to purchase, hold or sell shares of our common stock.
+overview
+our company and our businesses
+starting with a focus on pc graphics, nvidia invented the gpu to solve some of the most complex problems in computer science. we have extended our focus in recent years to the revolutionary field of ai. fueled by the sustained demand for better 3d graphics and the scale of the gaming market, nvidia has evolved the gpu into a computer brain at the intersection of vr, hpc, and ai.
+our two reportable segments - gpu and tegra processor - are based on a single underlying architecture. from our proprietary processors, we have created platforms that address four large markets where our expertise is critical: gaming, professional visualization, datacenter, and automotive.
+while our gpu and cuda architecture is unified, our gpu product brands are aimed at specialized markets including geforce for gamers; quadro for designers; tesla and dgx for ai data scientists and big data researchers; and grid for cloud-based visual computing users. our tegra brand integrates an entire computer onto a single chip, and incorporates gpus and multi-core cpus to drive supercomputing for autonomous robots, drones, and cars, as well as for consoles and mobile gaming and entertainment devices.
+headquartered in santa clara, california, nvidia was incorporated in california in april 1993 and reincorporated in delaware in april 1998.
+recent developments, future objectives and challenges
+fiscal year
+summary
+year ended
+january 28,
+january 29,
+change
+($ in millions, except per share data)
+revenue
+$
+9,714
+$
+6,910
+up 41%
+gross margin
+59.9
+%
+58.8
+%
+up 110 bps
+operating expenses
+$
+2,612
+$
+2,129
+up 23%
+income from operations
+$
+3,210
+$
+1,934
+up 66%
+net income
+$
+3,047
+$
+1,666
+up 83%
+net income per diluted share
+$
+4.82
+$
+2.57
+up 88%
+revenue for fiscal year
+grew 41% to $9.71 billion, reflecting broad growth in each of our market platforms - gaming, professional visualization, datacenter, and automotive.
+gpu business revenue was $8.14 billion, up 40% from a year earlier, led by growth in gaming, datacenter, and professional visualization. strong growth across our pascal-based geforce gaming gpus was driven by growth associated with gpu refreshes/upgrades, new gamers, new games, esports, and cryptocurrency mining. revenue for datacenter, including tesla, nvidia grid and nvidia dgx, was $1.93 billion, up 133% year on year, led by strong sales of our volta architecture, including v100 gpu accelerators, which began shipping in the first half of fiscal year 2018 and are available through major computer makers and cloud providers, new dgx systems, and design wins in hpc. professional visualization revenue grew 12% year over year to $934 million, led by ultra-high-end and high-end desktop workstations, as well as unique form factors and emerging opportunities, including ai, deep learning, vr and rendering.
+table of contents
+tegra processor business revenue was $1.53 billion, up 86% from a year ago. tegra processor business revenue includes soc modules for the nintendo switch gaming console and development services. also included was automotive revenue of $558 million, which was up 15% from a year earlier, incorporating infotainment modules, production drive px platforms, and development agreements for self-driving cars.
+revenue from our patent license agreement with intel concluded in the first quarter of fiscal year
+.
+gross margin for fiscal year
+was 59.9%, compared with 58.8% a year earlier, reflecting a favorable shift in mix, the growth of our geforce gaming gpus, and the growth of our gpu computing platform for cloud, deep learning, ai, and graphics virtualization, partially offset by the conclusion of our patent license agreement with intel.
+operating expenses for fiscal year
+were $2.61 billion, up from $2.13 billion in the previous year. this reflects growth in employees and related costs, as well as investments in growth initiatives, including gaming, ai, and autonomous driving.
+we recorded a u.s. tax reform provisional net tax benefit of $133 million associated with the one-time transition tax on our historical foreign earnings and the adjustment of deferred tax balances to the lower corporate tax rate.
+net income and net income per diluted share for fiscal year
+were $3.05 billion and $4.82, respectively, up 83% and 88%, respectively, from a year earlier, fueled by strong revenue growth and improved gross and operating margins.
+we returned $1.25 billion to shareholders in fiscal year
+through a combination of $909 million in share repurchases and $341 million in quarterly cash dividends. in november 2017, we declared an increase in our quarterly cash dividend to $0.15 per share from $0.14 per share. for fiscal year 2019, we intend to return $1.25 billion to shareholders through ongoing quarterly cash dividends and share repurchases.
+cash, cash equivalents and marketable securities were $7.11 billion as of
+january 28, 2018
+, compared with $6.80 billion as of
+january 29, 2017
+. the increase was primarily related to the increase in operating income.
+gpu business
+during fiscal year
+, we released many new gaming gpu products based on our new nvidia pascal architecture, including geforce gtx 1070 ti, 1080 ti, and titan xp. we also announced gaming laptops using the max-q design, which are 3x faster and 3x thinner than previous-generation gaming laptops, and enhanced geforce experience with new tools, including nvidia freestyle for customizing gameplay and an updated interface for the nvidia ansel photo mode, as well as new titles including playerunknown's battleground and fortnite that support nvidia shadowplay highlights for capturing gaming achievements.
+for our professional visualization platform, we opened early access to nvidia holodeck, and launched the quadro virtual data center workstation; introduced project holodeck, a photorealistic, collaborative vr environment; launched external gpu support for creative professionals; and released the nvidia optix 5.0 and nvidia vrworks 360 video software development kits.
+for our datacenter platform, we announced that nvidia tesla v100 gpu accelerators are available through virtually every major computer maker and have been chosen by nearly every major cloud provider to deliver ai and hpc. we added 34 gpu-accelerated systems to the top 500 supercomputer list, bringing the total number of systems relying on nvidia gpus to 87, announced partnerships to further ai in key vertical industries, and launched the nvidia gpu cloud container registry to support scientists using hpc applications and ai researchers using desktop gpus.
+tegra processor business
+during fiscal year
+, for the automotive market, we announced the nvidia drive ai self-driving platform, which enables automakers and tier-1 suppliers to accelerate production of automated and autonomous vehicles, the nvidia drive xavier autonomous machine processor to power the nvidia drive software stack, and nvidia drive px pegasus, an auto-grade ai computer designed to enable driverless robotaxis without steering wheels, pedals or mirrors. we also announced several new partnerships aimed at getting ai-powered cars, trucks and commercial vehicles on the road, including partnerships with aurora, autoliv, baidu, bosch, continental, mercedes-benz, uber, volkswagen, volvo, toyota, and zf.
+in addition, we introduced nvidia jetson tx2, a high-performance, low-power computer platform for delivering ai at the edge, with deep learning and computer vision capabilities for robots, drones and smart cameras, the nvidia isaac robot simulator for training intelligent machines in simulated real-world conditions before deployment, and the nvidia metropolis platform, used by more than 50 partners to make cities safer and smarter by applying deep learning to surveillance video streams.
+table of contents
+critical accounting policies and estimates
+management's discussion and analysis of financial condition and results of operations are based upon our consolidated financial statements, which have been prepared in accordance with accounting principles generally accepted in the united states, or u.s. gaap. the preparation of these financial statements requires us to make estimates and judgments that affect the reported amounts of assets, liabilities, revenue, cost of revenue, expenses and related disclosure of contingencies. on an on-going basis, we evaluate our estimates, including those related to revenue recognition, inventories, income taxes, goodwill, cash equivalents and marketable securities, stock-based compensation, and litigation, investigation and settlement costs and other contingencies. we base our estimates on historical experience and on various other assumptions that are believed to be reasonable under the circumstances, the results of which form the basis for making judgments about the carrying values of assets and liabilities.
+we believe the following critical accounting policies affect our significant judgments and estimates used in the preparation of our consolidated financial statements. our management has discussed the development and selection of these critical accounting policies and estimates with the audit committee of our board of directors. the audit committee has reviewed our disclosures relating to our critical accounting policies and estimates in this annual report on form 10-k.
+revenue recognition
+product revenue
+we recognize revenue from product sales when persuasive evidence of an arrangement exists, the product has been delivered, the price is fixed or determinable and collection of the related receivable is reasonably assured.
+our customer programs primarily involve rebates, which are designed to serve as sales incentives to resellers of our products in various target markets. we account for rebates as a reduction of revenue and accrue for 100% of the potential rebates and do not apply a breakage factor, as we typically find that over 95% of the rebates we accrue each year are eventually claimed, which is substantially close to 100%, and that this percentage varies by program and by customer. we recognize a liability for these rebates at the later of the date at which we record the related revenue or the date at which we offer the rebate. rebates typically expire six months from the date of the original sale, unless we reasonably believe that the customer intends to claim the rebate. unclaimed rebates are reversed to revenue, the amount of which typically represents less than 0.5% of total revenue.
+our customer programs also include marketing development funds, or mdfs. mdfs represent monies paid to our partners that are earmarked for market segment development and expansion and are typically designed to support our partners' activities while also promoting nvidia products. we account for mdfs as a reduction of revenue and apply a breakage factor to certain types of mdf program accruals for which we believe we can make a reasonable and reliable estimate of the amount that will ultimately be unclaimed.
+we also record a reduction to revenue by establishing a sales return allowance for estimated product returns at the time revenue is recognized, based primarily on historical return rates. however, if product returns for a particular fiscal period exceed historical return rates we may determine that additional sales return allowances are required to properly reflect our estimated exposure for product returns.
+license and development revenue
+for license arrangements that require significant customization of our intellectual property components, we generally recognize the related revenue over the period that services are performed. for most license and service arrangements, we determine progress to completion based on actual cost incurred to date as a percentage of the estimated total cost required to complete the project. we periodically evaluate the actual status of each project to ensure that the estimates to complete each contract remain accurate. revenue recognized in any period is dependent on our progress toward completion of projects in progress. significant management judgment and discretion are used to estimate total cost. any changes in or deviations from these estimates could have a material effect on the amount of revenue we recognize in any period.
+for license arrangements that do not require significant customization but where we are obligated to provide further deliverables over the term of the license agreement, we record revenue over the life of the license term, with consideration received in advance of the performance period classified as deferred revenue.
+refer to note 1 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information.
+table of contents
+inventories
+inventory cost is computed on an adjusted standard basis, which approximates actual cost on an average or first-in, first-out basis. we charge cost of sales for inventory provisions to write down our inventory to the lower of cost or net realizable value or to completely write off obsolete or excess inventory. most of our inventory provisions relate to the write-off of excess quantities of products, based on our inventory levels and future product purchase commitments compared to assumptions about future demand and m
+arket conditions.
+situations that may result in excess or obsolete inventory include changes in business and economic conditions, changes in market conditions, sudden and significant decreases in demand for our products, inventory obsolescence because of changing technology and customer requirements, failure to estimate customer demand properly, or unexpected competitive pricing actions by our competition. in addition, cancellation or deferral of customer purchase orders could result in our holding excess inventory.
+the overall net effect on our gross margin from inventory provisions and sales of items previously written down was insignificant in fiscal years
+and
+and an unfavorable impact of 1.6% in fiscal year
+. the charges we took to cost of sales for inventory provisions during these fiscal years were primarily related to the write-off of excess quantities of products whose inventory levels were higher than our updated forecasts of future demand for those products. as a fabless semiconductor company, we must make commitments to purchase inventory based on forecasts of future customer demand. in doing so, we must account for our third-party manufacturers' lead times and constraints. we also adjust to other market factors, such as product offerings and pricing actions by our competitors, new product transitions, and macroeconomic conditions - all of which may impact demand for our products.
+refer to the gross profit and gross margin discussion below in this management's discussion and analysis for further discussion.
+income taxes
+we recognize federal, state and foreign current tax liabilities or assets based on our estimate of taxes payable or refundable in the current fiscal year by tax jurisdiction. we recognize federal, state and foreign deferred tax assets or liabilities, as appropriate, for our estimate of future tax effects attributable to temporary differences and carryforwards; and we record a valuation allowance to reduce any deferred tax assets by the amount of any tax benefits that, based on available evidence and judgment, are not expected to be realized.
+our calculation of deferred tax assets and liabilities is based on certain estimates and judgments and involves dealing with uncertainties in the application of complex tax laws. our estimates of deferred tax assets and liabilities may change based, in part, on added certainty or finality to an anticipated outcome, changes in accounting standards or tax laws in the united states, or foreign jurisdictions where we operate, or changes in other facts or circumstances. in addition, we recognize liabilities for potential united states and foreign income tax contingencies based on our estimate of whether, and the extent to which, additional taxes may be due. if we determine that payment of these amounts is unnecessary or if the recorded tax liability is less than our current assessment, we may be required to recognize an income tax benefit or additional income tax expense in our financial statements accordingly.
+as of
+january 28, 2018
+, we had a valuation allowance of $469 million related to state and certain foreign deferred tax assets that management determined are not likely to be realized due to projections of future taxable income and potential utilization limitations of tax attributes acquired as a result of stock ownership changes. to the extent realization of the deferred tax assets becomes more-likely-than-not, we would recognize such deferred tax asset as an income tax benefit during the period.
+we recognize the benefit from a tax position only if it is more-likely-than-not that the position would be sustained upon audit based solely on the technical merits of the tax position. our policy is to include interest and penalties related to unrecognized tax benefits as a component of income tax expense.
+the tcja, which was enacted in december 2017, significantly changes u.s. tax law, including a reduction of the u.s. federal corporate income tax rate from 35% to 21%, a requirement for companies to pay a one-time transition tax on the earnings of certain foreign subsidiaries that were previously tax deferred and the creation of new taxes on certain foreign-source earnings. as a fiscal year-end taxpayer, certain provisions of the tcja began to impact us in the fourth quarter of fiscal year 2018, while other provisions will impact us beginning in fiscal year 2019. refer to note 13 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information specific to accounting for income taxes and the impacts from the enactment of the tcja.
+table of contents
+goodwill
+goodwill is subject to our annual impairment test during the fourth quarter of our fiscal year, or earlier, if indicators of potential impairment exist, using either a qualitative or a quantitative assessment. our impairment review process compares the fair value of the reporting unit in which the goodwill resides to its carrying value. we have identified two reporting units, gpu and
+tegra processor, for the purposes of completing our goodwill analysis. goodwill assigned to the gpu and tegra processor reporting units as of
+january 28, 2018
+was
+$210 million
+and
+$408 million
+, respectively. determining the fair value of a reporting unit requires us to make judgments and involves the use of significant estimates and assumptions. we also make judgments and assumptions in allocating assets and liabilities to each of our reporting units. we base our fair value estimates on assumptions we believe to be reasonable but that are unpredictable and inherently uncertain.
+we use the quantitative assessment to test goodwill for impairment for each reporting unit. in applying the fair value based test of each reporting unit, the results from the income approach and the market approach were equally weighted. these valuation approaches consider a number of factors that include, but are not limited to, prospective financial information, growth rates, terminal or residual values, discount rates and comparable multiples from publicly traded companies in our industry and require us to make certain assumptions and estimates regarding industry economic factors and the future profitability of our business.
+during the fourth quarter of fiscal year
+, we concluded that there was no impairment of our goodwill. the fair values of our gpu and tegra processor reporting units significantly exceeded their respective carrying values. as such, even the application of a hypotheti
+cal 10% decrease to the fair value of each reporting unit would not have resulted in the fair value of either reporting unit being less than its carrying value.
+refe
+r to note 4 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information.
+cash equivalents and marketable securities
+cash equivalents consist of financial instruments which are readily convertible into cash and have original maturities of three months or less at the time of acquisition. marketable securities consist primarily of highly liquid investments with maturities greater than three months when purchased. we measure our cash equivalents and marketable securities at fair value. the fair values of our financial assets are determined using quoted market prices of identical assets or quoted market prices of similar assets from active markets. all of our available-for-sale investments are subject to a periodic impairment review. we record a charge to earnings when a decline in fair value is significantly below cost basis and judged to be other-than-temporary, or have other indicators of impairments.
+we performed an impairment review of our investment portfolio as of
+january 28, 2018
+. we concluded that our investments were appropriately valued and that no other-than-temporary impairment charges were necessary on our portfolio of available-for-sale investments as of
+january 28, 2018
+.
+refe
+r to notes 6 and 7 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information.
+stock-based compensation
+our stock-based compensation expense is associated with restricted stock units, or rsus, performance stock units that are based on our corporate financial performance targets, or psus, performance stock units that are based on market conditions, or market-based psus, and our employee stock purchase plan, or espp. the number of psus and market-based psus that will ultimately be awarded is contingent on the company's level of achievement compared with the corporate financial performance target established by our compensation committee in the beginning of each fiscal year.
+re
+fer to notes 1 and 2 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information.
+litigation, investigation and settlement costs
+from time to time, we are involved in legal actions and/or investigations by regulatory bodies. we are aggressively defending our current litigation matters. however, there are many uncertainties associated with any litigation or investigations, and we cannot be certain that these actions or other third-party claims against us will be resolved without costly litigation, fines and/or substantial settlement payments. if that occurs, our business, financial condition and results of operations co
+uld be materially and adversely affected. if information becomes available that causes us to determine that a loss in any of our pending litigation, investigations or settlements is probable, and we can reasonably estimate the loss associated with such
+table of contents
+events, we will record the loss in accordance with u.s. gaap. however, the actual liability in any such litigation or investigation may be materially different from our estimates, which could require us to record additional costs.
+results of operations
+the following table sets forth, for the periods indicated, certain items in our consolidated statements of income expressed as a percentage of revenue.
+year ended
+january 28,
+january 29,
+january 31,
+revenue
+100.0
+%
+100.0
+%
+100.0
+%
+cost of revenue
+40.1
+41.2
+43.9
+gross profit
+59.9
+58.8
+56.1
+operating expenses:
+research and development
+18.5
+21.2
+26.6
+sales, general and administrative
+8.4
+9.6
+12.0
+restructuring and other charges
+-
+-
+2.6
+total operating expenses
+26.9
+30.8
+41.2
+income from operations
+33.0
+28.0
+14.9
+interest income
+0.7
+0.8
+0.8
+interest expense
+(0.6
+)
+(0.8
+)
+(0.9
+)
+other, net
+(0.2
+)
+(0.4
+)
+0.1
+total other income (expense)
+(0.1
+)
+(0.4
+)
+-
+income before income tax expense
+32.9
+27.6
+14.9
+income tax expense
+1.5
+3.5
+2.6
+net income
+31.4
+%
+24.1
+%
+12.3
+%
+revenue
+revenue by reportable segments
+year ended
+year ended
+january 28,
+january 29,
+$
+change
+%
+change
+january 29,
+january 31,
+$
+change
+%
+change
+($ in millions)
+($ in millions)
+gpu
+$
+8,137
+$
+5,822
+$
+2,315
+%
+$
+5,822
+$
+4,187
+$
+1,635
+%
+tegra processor
+1,534
+%
+%
+all other
+(221
+)
+(84
+)%
+-
+-
+%
+total
+$
+9,714
+$
+6,910
+$
+2,804
+%
+$
+6,910
+$
+5,010
+$
+1,900
+%
+gpu business.
+gpu business revenue increased by
+40%
+in fiscal year
+compared to fiscal year
+led by growth in gaming, datacenter and professional visualization. revenue from sales of geforce gpu products for gaming increased over 20%, reflecting continued strong demand for our pascal-based gpu products. datacenter revenue, including tesla, grid and dgx, increased 133%, reflecting strong demand from hyperscale and cloud customers for deep learning training and accelerated gpu computing as well as demand for hpc, dgx ai supercomputing and grid virtualization platforms. revenue from quadro gpus for professional visualization increased by 12% due primarily to higher sales in both high end desktop and mobile workstation products. revenue from geforce gpu products for mainstream pc oems increased by over 90% due primarily to strong demand for gpu products targeted for cryptocurrency mining.
+gpu business revenue increased by
+39%
+in fiscal year
+compared to fiscal year
+. this increase was primarily due to increased revenue from our geforce gpu gaming and datacenter platforms. sales of high-end geforce gpu products for gaming increased over 40%, reflecting a combination of continued strength in pc gaming and strong demand for our recent pascal-based gpu products. datacenter revenue, including our tesla, nvidia grid, and dgx-1 brands, increased by 145%, reflecting strong demand for deep learning training for ai, cloud, accelerated, and virtualized
+table of contents
+computing and initial dgx-1 sales. revenue from quadro gpus for professional visualization increased 11% due primarily to higher sales in high end desktop and mobile workstation products. revenue from geforce gpu products for mainstream pc oems declined compared to fiscal year 2016.
+tegra processor business.
+tegra processor business revenue increased by
+86%
+in
+fiscal year 2018
+compared to
+fiscal year 2017
+. this was driven by an increase of over 300% in revenue from soc modules for gaming platforms and development services, and an increase of 15% in automotive revenue, primarily from infotainment modules, drive px platforms and development agreements for self-driving cars.
+tegra processor business revenue increased by 47% in
+fiscal year 2017
+compared to
+fiscal year 2016
+. this was driven by an increase of over 50% in sales of tegra products and services serving automotive systems and an increase of almost 50% in gaming development platforms and services compared to fiscal year 2016.
+all other.
+our patent license agreement with intel concluded in the first quarter of fiscal year 2018. for fiscal year 2018, we recognized related revenue of
+$43 million
+, down from
+$264 million
+for fiscal years 2017 and 2016.
+concentration of revenue
+revenue from sales to customers outside of the united states and other americas accounted for
+79%
+,
+80%
+, and
+79%
+of total revenue for fiscal years
+,
+, and
+, respectively. revenue by geographic region is allocated to individual countries based o
+n the location to which the products are initially billed even if the revenue is attributable to end customers in a different location.
+no single customer represented more than 10% of total revenue for fiscal year 2018. in fiscal years 2017 and 2016, we had one customer that represented 12% and 11% of our total revenue, respectively.
+gross profit and gross margin
+gross profit consists of total revenue, net of allowances, less cost of revenue. cost of revenue consists primarily of the cost of semiconductors purchased from subcontractors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, and shipping costs. cost of revenue also includes development costs for license and service arrangements and stock-based compensation related to personnel associated with manufacturing.
+our overall gross margin was
+59.9%
+,
+58.8%
+, and
+56.1%
+for fiscal years
+,
+, and
+, respectively. these increases were driven primarily by a favorable shift in mix, the growth of our geforce gaming gpu revenue, and the growth of our datacenter revenue for cloud, deep learning, ai, and graphics virtualization. the increase in fiscal year 2018 was partially offset by the conclusion of our patent license agreement with intel in the first quarter of fiscal year 2018.
+charges to cost of sales for inventory provisions totaled $48 million, $62 million, and $112 million for fiscal years
+,
+, and
+, respectively. sales of inventory that was previously written-off or written-down totaled $35 million, $51 million, and $32 million for fiscal years
+,
+, and 2016, respectively. as a result, the overall net effect on our gross margin from inventory provisions and sales of items previously written down was insignificant for fiscal years
+and
+, and an unfavorable impact of 1.6% for fiscal year
+.
+a discussion of our gross margin results for each of our reportable segments is as follows:
+gpu business.
+the gross margin of our gpu business increased during
+fiscal year 2018
+when compared to
+fiscal year 2017
+, primarily due to strong sales of our geforce gaming gpu products and revenue growth in datacenter, including tesla, grid and dgx, for cloud, deep learning, ai, and graphics virtualization. the gross margin of our gpu business increased during
+fiscal year 2017
+when compared to
+fiscal year 2016
+primarily due to product mix resulting from increased sales of our gaming, datacenter, and professional visualization gpu products, as well as a continued decrease in sales volumes of lower margin pc oem products.
+tegra processor business.
+the gross margin of our tegra processor business increased during
+fiscal year 2018
+when compared to
+fiscal year 2017
+, primarily due to revenue growth in gaming development platforms and automotive. the gross margin of our tegra processor business increased during
+fiscal year 2017
+when compared to
+fiscal year 2016
+, primarily due to fewer inventory provisions, and the absence of the warranty charge associated with the shield tablet product recall during
+fiscal year 2016
+.
+table of contents
+operating expenses
+year ended
+year ended
+january 28,
+january 29,
+$
+change
+%
+change
+january 29,
+january 31,
+$
+change
+%
+change
+($ in millions)
+($ in millions)
+research and development expenses
+$
+1,797
+$
+1,463
+$
+%
+$
+1,463
+$
+1,331
+$
+%
+% of net revenue
+18.5
+%
+21.2
+%
+21.2
+%
+26.6
+%
+sales, general and administrative expenses
+%
+%
+% of net revenue
+8.4
+%
+9.6
+%
+9.6
+%
+12.0
+%
+restructuring and other charges
+-
+(3
+)
+(100
+)%
+(128
+)
+(98
+)%
+% of net revenue
+-
+%
+-
+%
+-
+%
+2.6
+%
+total operating expenses
+$
+2,612
+$
+2,129
+$
+%
+$
+2,129
+$
+2,064
+$
+%
+research and development
+research and development expenses increased by
+23%
+in fiscal year
+compared to fiscal year
+and increased
+10%
+in fiscal year
+compared to fiscal year
+, driven primarily by employee additions and increases in employee compensation and other related costs, including stock-based compensation expense.
+sales, general and administrative
+sales, general and administrative expenses increased by
+23%
+in fiscal year
+compared to fiscal year
+and increased by
+10%
+in fiscal year
+compared to fiscal year
+, driven primarily by employee additions and increases in employee compensation and other related costs, including stock-based compensation expense. offsetting these increases was a decrease in outside professional fees of $11 million in fiscal year 2018 and $57 million in fiscal year 2017 resulting from the resolution of our intellectual property disputes with samsung and qualcomm.
+restructuring and other charges
+in fiscal year 2016, we began to wind down our icera modem operations. as a result, our operating expenses for fiscal year 2016 included $131 million of restructuring and other charges.
+total other income (expense)
+interest income and interest expense
+interest income consists of interest earned on cash, cash equivalents and marketable securities. interest income was
+$69 million
+,
+$54 million
+, and
+$39 million
+in fiscal years
+,
+, and
+, respectively. the increase in interest income was primarily due to higher average invested balances and higher yields on our investments from a rising interest rate environment.
+interest expense is primarily comprised of coupon interest and debt discount amortization related to the 2.20% notes due 2021 and 3.20% notes due 2026 issued in september 2016, and the convertible notes issued in december 2013. interest expense was
+$61 million
+,
+$58 million
+, and
+$47 million
+in fiscal years
+,
+, and
+.
+other, net
+other, net, consists primarily of realized gains and losses from the sale of marketable securities, sales or impairments of investments in non-affiliated companies, losses on early conversions of the convertible notes, and the impact of changes in foreign currency rates. net other expense was $22 million and $25 million in fiscal years 2018 and 2017, respectively, and was insignificant in fiscal year 2016. the net other expense in fiscal years 2018 and 2017 was primarily due to losses on early conversions of the convertible notes.
+table of contents
+income taxes
+the tcja, which was enacted in december 2017, significantly changes u.s. tax law, including a reduction of the u.s. federal corporate income tax rate from 35% to 21%, a requirement for companies to pay a one-time transition tax on the earnings of certain foreign subsidiaries that were previously tax deferred and the creation of new taxes on certain foreign-source earnings. as a fiscal year-end taxpayer, certain provisions of the tcja began to impact us in the fourth quarter of fiscal year 2018, while other provisions will impact us beginning in fiscal year 2019.
+the corporate tax reduction is effective as of january 1, 2018. since we operate on a fiscal year rather than a calendar year, we are subject to transitional tax rules. as a result, our fiscal year 2018 federal statutory rate is a blended rate of 33.9%. the change in the statutory tax rate from 35% to 33.9% for fiscal year 2018 did not have a significant impact on the effective tax rate.
+we recognized income tax expense of $149 million, $239 million and $129 million for fiscal years 2018, 2017, and 2016, respectively. our annual effective tax rate was 4.7%, 12.5%, and 17.3% for fiscal years 2018, 2017, and 2016, respectively. the decrease in our effective tax rate in fiscal year 2018 as compared to fiscal years 2017 and 2016 was primarily due to the provisional impact of the recent tax law changes and the recognition of excess tax benefits related to stock-based compensation. the decrease in our effective tax rate in fiscal year 2017 as compared to fiscal year 2016 was primarily due to the recognition of excess tax benefits from our adoption of a new accounting standard in fiscal year 2017 related to the simplification of certain aspects of stock-based compensation accounting.
+our effective tax rate for fiscal year 2018 was lower than the blended u.s. federal statutory rate of 33.9% due primarily to income earned in jurisdictions, including british virgin islands, hong kong, china, taiwan and united kingdom, where the tax rate was lower than the u.s. federal statutory tax rates, favorable recognition of the u.s. federal research tax credit, the provisional impact of the recent tax law changes in 2018, and excess tax benefits related to stock-based compensation.
+our effective tax rate for fiscal years 2017 and 2016 was lower than u.s. federal statutory tax rate of 35% due primarily to income earned in jurisdictions, including british virgin islands, hong kong, china, taiwan and united kingdom, where the tax rate was lower than the u.s. federal statutory tax rates, favorable recognition in those fiscal years of the u.s. federal research tax credit, favorable discrete events primarily attributable to the tax benefit recognized upon the expiration of the applicable statutes of limitations, and adoption of an accounting standard related to stock-based compensation in fiscal year 2017.
+for fiscal year 2018, we recognized provisional amounts for the tax effects of the tcja, which were included as components of income tax expense and reflected in our effective tax rate for fiscal year 2018. we will continue to assess the impact of the recently enacted tax law on our business and our consolidated financial statements. the final impact of the tcja recorded by us may vary materially from the provisional impact recorded due to a number of uncertainties and factors, including the need for further guidance and clarification of the new law by u.s. federal and state tax authorities and the need for further guidance on the income tax accounting.
+in addition to the impact on fiscal year 2018, the tcja also establishes new tax laws that will be effective for our fiscal year 2019. while each of these new tax laws is expected to have some impact on our tax expense for fiscal year 2019 and future periods, we expect the provision designed to tax the low-taxed income of foreign subsidiaries to have the most significant impact.
+because of the complexity of the new tax laws on the low-taxed income of certain foreign subsidiaries, we are continuing to evaluate this provision of the tcja and the application of related accounting standards. based on recent deliberations of the financial accounting standards board, or fasb, we expect to be allowed to make an accounting policy choice of either (1) treating taxes due on future taxable income in the u.s. as a current-period expense when incurred or (2) factoring such amounts into our measurement of deferred taxes. our selection of an accounting policy will depend, in part, on our analysis of relevant facts to determine what the expected impact would be under each method.
+refer to
+note 13
+of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information.
+table of contents
+liquidity and capital resources
+january 28,
+january 29,
+(in millions)
+cash and cash equivalents
+$
+4,002
+$
+1,766
+marketable securities
+3,106
+5,032
+cash, cash equivalents, and marketable securities
+$
+7,108
+$
+6,798
+year ended
+january 28,
+january 29,
+january 31,
+(in millions)
+net cash provided by operating activities
+$
+3,502
+$
+1,672
+$
+1,175
+net cash provided by (used in) investing activities
+$
+1,278
+$
+(793
+)
+$
+(400
+)
+net cash provided by (used in) financing activities
+$
+(2,544
+)
+$
+$
+(676
+)
+as of
+january 28, 2018
+, we had
+$7.11 billion
+in cash, cash equivalents and marketable securities, an increase of
+$310 million
+from the end of fiscal year
+. our portfolio of cash equivalents and marketable securities is managed on our behalf by several financial institutions. our portfolio managers are required to follow our investment policy, which requires the purchase of high grade investment securities, the diversification of asset types, and certain limits on our portfolio duration.
+cash provided by operating activities increased in fiscal year
+compared to fiscal year
+and in fiscal year 2017 compared to fiscal year 2016, primarily due to higher net income and changes in working capital.
+cash provided by investing activities increased in fiscal year
+compared to fiscal year
+, primarily due to a reduction in purchases of marketable securities, partially offset by the purchase of our previously-financed santa clara campus building. cash used in investing activities for fiscal year
+increased from fiscal year
+, primarily due to higher purchases of property and equipment and intangible assets and lower proceeds from sales and maturities of marketable securities.
+cash used in financing activities increased in fiscal year
+compared to fiscal year
+, primarily due to cash provided from the issuance of $2.00 billion of notes in fiscal year 2017 as well as higher repayments of convertible notes, tax payments related to employee stock plans, share repurchases and dividend payments in fiscal year 2018. cash provided by financing activities in fiscal year
+increased from fiscal year
+, primarily due to the $2.00 billion of notes issued in september 2016, partially offset by the repayments of convertible notes and $1.00 billion of capital return to shareholders in the form of share repurchases and dividend payments.
+liquidity
+our primary sources of liquidity are our cash and cash equivalents, our marketable securities, and the cash generated by our operations. as of
+january 28, 2018
+and
+january 29, 2017
+, we had $
+7.11 billion
+and $
+6.80 billion
+, respectively, in cash, cash equivalents and marketable securities. our marketable securities consist of debt securities issued by the united states government and its agencies, highly rated corporations and financial institutions, asset-backed issuers, mortgage-backed securities by government-sponsored enterprises, and foreign government entities. these marketable securities are denominated in united states dollars. refer to critical accounting policies and estimates in part ii, item 7, quantitative and qualitative disclosures about market risk in part ii, item 7a and note 6 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information.
+the recent tcja that was signed into law in december 2017 subjects u.s. companies to a one-time transition tax on certain earnings of foreign subsidiaries. our reasonable estimate of the one-time transition tax that resulted from enactment of the tcja is $401 million, which will be payable in eight annual installments. accordingly, substantially all of our cash, cash equivalents and marketable securities held outside of the united states as of january 28, 2018 will now be available for use in the u.s. without incurring additional u.s. federal income taxes. refer to note 13 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information.
+table of contents
+capital return to shareholders
+during fiscal year
+, we repurchased a total of
+6 million
+shares for
+$909 million
+and paid
+$341 million
+in cash dividends to our shareholders. as a result, we returned
+$1.25 billion
+to shareholders during fiscal year
+.
+for fiscal year
+, we intend to return
+$1.25 billion
+to shareholders through ongoing quarterly cash dividends and share repurchases.
+our cash dividend program and the payment of future cash dividends under that program are subject to our board's continuing determination that the dividend program and the declaration of dividends thereunder are in the best interests of our shareholders. refer to note 14 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for further discussion.
+notes due 2021 and notes due 2026
+in fiscal year 2017, we issued $1.00 billion of the notes due 2021 and $1.00 billion of the notes due 2026. the net proceeds from the notes were $1.98 billion, after deducting debt discounts and issuance costs.
+convertible notes
+as of
+january 28, 2018
+, we had
+$15 million
+of convertible notes outstanding. refer to note 11 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for further discussion.
+revolving credit facility
+in fiscal year 2017, we entered into a credit agreement under which we may borrow, repay and re-borrow amounts from time to time, up to $575 million. the commitments under the credit agreement are available for a 5-year period ending on october 7, 2021. the credit agreement also permits us to obtain additional revolving loan commitments and/or commitments to issue letters of credit of up to $425 million, subject to certain conditions. as of
+january 28, 2018
+, we had not borrowed any amounts and were in compliance with all related covenants under the credit agreement.
+commercial paper
+in december 2017, we established a commercial paper program to support general corporate purposes. under the program, we can issue up to $575 million in commercial paper. as of
+january 28, 2018
+, there was no commercial paper outstanding.
+operating capital and capital expenditure requirements
+we believe that our existing cash balances and anticipated cash flows from operations will be sufficient to meet our operating and capital expenditure requirements for at least the next twelve months.
+off-balance sheet arrangements
+in january 2018, we terminated the off-balance sheet, build-to-suit operating lease financing arrangement related to our new santa clara campus building and exercised our option to purchase the property for $335 million, which was recorded in property and equipment, net, in our consolidated balance sheet. refer to note 12 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for further discussion.
+contractual obligations
+the following table summarizes our contractual obligations as of
+january 28, 2018
+:
+table of contents
+payment due by period
+contractual obligations
+total
+less than
+1 year
+1-3 years
+4-5 years
+more than
+5 years
+all other
+(in millions)
+long-term debt (1)
+$
+2,376
+$
+$
+$
+1,064
+$
+1,096
+$
+-
+inventory purchase obligations
+1,331
+1,331
+-
+-
+-
+-
+transition tax payable (2)
+-
+uncertain tax positions, interest and penalties (3)
+-
+-
+-
+-
+operating leases
+-
+capital purchase obligations
+-
+-
+-
+-
+1.00% convertible notes (4)
+-
+-
+-
+-
+total contractual obligations
+$
+4,694
+$
+1,630
+$
+$
+1,197
+$
+1,348
+$
+(1)
+represents the aggregate principal amount of $2.00 billion and anticipated interest payments of $376 million for the notes. refer to
+note 11
+of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k.
+(2)
+represents our reasonable estimate of a provisional tax payable amount of $401 million for the one-time transition tax that resulted from enactment of the tcja in fiscal year 2018, which will be payable in eight annual installments. the first installment of $32 million is classified as a current income tax payable. the installment amounts will be equal to 8% of the total liability, payable in fiscal years 2019 through 2023, 15% in fiscal year 2024, 20% in fiscal year 2025 and 25% in fiscal year 2026. refer to note 13 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k, for additional information about the one-time transition tax.
+(3)
+represents unrecognized tax benefits of
+$190 million
+which consists of
+$175 million
+and the related interest and penalties of
+$15 million
+recorded in non-current income tax payable as of
+january 28, 2018
+. we are unable to reasonably estimate the timing of any potential tax liability or interest/penalty payments in individual years due to uncertainties in the underlying income tax positions and the timing of the effective settlement of such tax positions.
+(4)
+represents the aggregate principal amount of
+$15 million
+for the convertible notes. refer to
+note 11
+of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k.
+adoption of new and recently issued accounting pronouncements
+refer to
+note 1
+of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for a discussion of adoption of new and recently issued accounting pronouncements.

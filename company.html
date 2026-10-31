@@ -481,10 +481,15 @@
       const pending = ["Python program (sec_analysis.py)"];
       if (d.mda) {
         el("mda-block").hidden = false;
+        const hasRaw = d.mda.some((m) => m.raw);
+        const link = (f) => `<td><a href="${f}" download>Download</a></td>`;
         el("mda-table").innerHTML =
-          "<thead><tr><th>Fiscal year</th><th>Words (sentiment-ready)</th><th>Cleaned text</th><th>Sentiment-ready text</th></tr></thead><tbody>" +
-          d.mda.map((m) => `<tr><td>FY ${m.year}</td><td>${m.words.toLocaleString()}</td>
-            <td><a href="${m.cleaned}" download>Download</a></td><td><a href="${m.ready}" download>Download</a></td></tr>`).join("") +
+          "<thead><tr><th>Fiscal year</th><th>Words (sentiment-ready)</th>" +
+          (hasRaw ? "<th>Raw text</th>" : "") +
+          "<th>Cleaned text</th><th>Sentiment-ready text</th></tr></thead><tbody>" +
+          d.mda.map((m) => `<tr><td>FY ${m.year}</td><td>${m.words.toLocaleString()}</td>` +
+            (hasRaw ? (m.raw ? link(m.raw) : "<td>–</td>") : "") +
+            link(m.cleaned) + link(m.ready) + "</tr>").join("") +
           "</tbody>";
         el("mda-notes").innerHTML = (d.notes?.mda || []).map((n) => `<li>${n}</li>`).join("");
       }

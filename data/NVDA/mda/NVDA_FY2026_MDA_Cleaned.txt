@@ -1,0 +1,382 @@
+item 7. management's discussion and analysis of financial condition and results of operations
+the following discussion and analysis of our financial condition and results of operations should be read in conjunction with "item 1a. risk factors," our consolidated financial statements and related notes thereto, as well as other cautionary statements and risks described elsewhere in this annual report on form 10-k, before deciding to purchase, hold, or sell shares of our common stock.
+overview
+our company and our businesses
+nvidia pioneered accelerated computing to help solve the most challenging computational problems. since our original focus on pc graphics, we have expanded to several other large and important computationally intensive fields. fueled by the sustained demand for exceptional 3d graphics and the scale of the gaming market, nvidia has leveraged its gpu architecture to create platforms for scientific computing, ai, data science, autonomous vehicles, robotics, and digital twin applications. nvidia is now a data center scale ai infrastructure company reshaping all industries.
+our two operating segments are "compute & networking" and "graphics." refer to note 16 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information.
+headquartered in santa clara, california, nvidia was incorporated in california in april 1993 and reincorporated in delaware in april 1998.
+recent developments, future objectives and challenges
+revenue growth in fiscal year 2026 was driven by data center compute and networking platforms for accelerated computing and ai solutions. our blackwell architectures represented the majority of our data center revenue.
+the availability of data centers, energy, and capital to support the buildout of nvidia ai infrastructure by our customers and partners is crucial, and any shortage of these or other necessary resources could impact our future revenue and financial performance. expanding energy capacity to meet demand is a complex, multi-year process that involves significant regulatory, technical, and construction challenges. in addition, access to capital can be particularly constrained for less-capitalized companies, which may face difficulties securing financing for large-scale infrastructure projects. these limitations could delay customer and partner deployments or reduce the scale of accelerated computing and ai adoption.
+we continue to execute data center compute product introductions, bringing new advanced architectures on a one-year product cadence, including our rubin platform. we began shipping production units of our new blackwell ultra platforms including gb300 in the second quarter of fiscal year 2026. the complexity of our product transitions and sophisticated system configurations has and may in the future cause delays in production and create challenges in managing supply and demand. this could further result in revenue volatility, quality issues, increased inventory provisions, decreases in product yields and higher material costs, and/or increased warranty costs. customers may postpone purchasing new architectures or may adopt new technologies more gradually than anticipated, affecting our revenue timing and supply chain expenses.
+in april 2025, the usg informed us that a license is required for exports of our h20 product into the china market. as a result of these requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026 associated with h20 for excess inventory and purchase obligations, as the demand for h20 diminished. in august 2025, the usg granted licenses that would allow us to ship certain h20 products to certain china-based customers. we generated approximately $60 million in h20 revenue under those licenses.
+in february 2026, the usg granted a license that would allow us to ship small amounts of h200 products to specific china-based customers. to date, we have not generated any revenue under the h200 licensing program, and do not yet know whether any imports will be allowed into china. the license requires that the h200s go through an inspection process in the united states prior to any shipment to the customer. as a result, any h200 shipped under the new licensing program will be subject to a 25% tariff upon importation into the united states.
+the recent rise in high-quality open-source foundation models is making advanced ai capabilities broadly accessible. open-source ai is dependent on developer adoption and if deployed on our competitors' platforms, it could reduce demand for our products and services.
+while currently our supply chain is mainly concentrated in asia, we are expanding into the u.s. and latin america. these moves are expected to strengthen our supply chain, add resiliency and redundancy, and meet the growing demand for ai infrastructure. our ability to increase manufacturing capabilities will depend on the local region's manufacturing ecosystem's capacity to ramp production supply to the required volume and on a timely basis.
+table of contents
+we have made, and expect to continue making, investments that support our technology roadmap and the broader ai ecosystem. in fiscal year 2026, we made the following investments:
+we invested $17.5 billion in private companies and infrastructure funds, primarily to support early‐stage startups. these investments include ai model makers that purchase our products directly or through csps. many of these investments are illiquid and non‐marketable. the related early-stage startups may not become profitable in the near term, or at all, and there can be no assurance that we will realize a return on our investments.
+we made investments in publicly-held equity securities where the value may fluctuate significantly due to changes in stock prices and could adversely affect our financial results.
+to support the build-out of complex datacenter infrastructures, we enter into commercial arrangements, including guarantees with partners. we provided $3.5 billion in land, power, and shell guarantees to early‐stage companies, generally over multi‐year periods. if the escrow and the partners' operating activities are not sufficient to cover an event of default under these guarantees, we may elect to assume the underlying leases for internal use or sublease them to third parties.
+macroeconomic factors, including tariffs, inflation, interest rate changes, capital market volatility, global supply chain constraints, and global economic and geopolitical developments, have direct and indirect impacts on our results of operations, particularly demand for our products. while difficult to isolate and quantify, these macroeconomic factors impact our supply chain and manufacturing costs, employee wages, costs for capital equipment, the value of our investments, revenue and competitive position. our product and solution pricing generally does not fluctuate with short-term changes in our costs. within our supply chain, we continuously manage product availability and costs with our vendors.
+refer to "item 1a. risk factors - risks related to regulatory, legal, our stock and other matters" for a further discussion of the potential impact of these factors on our business.
+fiscal year 2026 summary
+year ended
+jan 25, 2026
+jan 26, 2025
+change
+($ in millions, except per share data)
+revenue
+$
+215,938
+$
+130,497
+up 65%
+gross margin
+71.1
+%
+75.0
+%
+-3.9 pts
+operating expenses
+$
+23,076
+$
+16,405
+up 41%
+operating income
+$
+130,387
+$
+81,453
+up 60%
+net income
+$
+120,067
+$
+72,880
+up 65%
+net income per diluted share
+$
+4.90
+$
+2.94
+up 67%
+revenue for fiscal year 2026 was $215.9 billion, up 65% from a year ago.
+data center revenue for fiscal year 2026 was up 68% from a year ago. the strong year-on-year growth was driven by the major platform shifts - accelerated computing and ai.
+gaming revenue for fiscal year 2026 was up 41% from a year ago, driven by strong blackwell demand. we expect supply constraints to be a headwind to gaming in the first quarter of fiscal 2027 and beyond.
+professional visualization revenue for fiscal year 2026 was up 70% from a year ago, driven by exceptional demand for blackwell as well as the launch of our new dgx spark.
+automotive revenue for fiscal year 2026 was up 39% from a year ago, driven by continued adoption of our self-driving platforms.
+gross margin decreased in fiscal year 2026 as our business model transitioned from offering hopper hgx systems to blackwell full-scale datacenter solutions. the gross margin decrease was also impacted by a $4.5 billion charge associated with h20 excess inventory and purchase obligations.
+operating expenses for fiscal year 2026 were up 41% from a year ago, driven by higher compensation and benefits expenses due to employee growth and compute and infrastructure costs.
+table of contents
+critical accounting estimates
+our consolidated financial statements are prepared in accordance with accounting principles generally accepted in the united states, or u.s. gaap. the preparation of these financial statements requires us to make estimates and judgments that affect the reported amounts of assets, liabilities, revenue, cost of revenue, expenses and related disclosure of contingencies. critical accounting estimates are those estimates that involve a significant level of estimation uncertainty and could have a material impact on our financial condition or results of operations. we have critical accounting estimates in the areas of inventories, income taxes, non-marketable equity securities, and revenue recognition. refer to note 1 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for a summary of significant accounting policies.
+inventories
+we charge cost of sales for inventory provisions to write-down our inventory to the lower of cost or net realizable value or for obsolete or excess inventory, and for excess product purchase commitments. most of our inventory provisions relate to excess quantities of products or components, based on our inventory levels and future product purchase commitments compared to assumptions about future demand and market conditions, which requires management judgment.
+situations that may result in excess or obsolete inventory or excess product purchase commitments include changes in business and economic conditions, changes in market conditions, sudden and significant decreases in demand for our products, including potential cancellation or deferral of customer purchase orders, inventory obsolescence because of changing technology and customer requirements, new product introductions resulting in less demand for existing products or inconsistent spikes in demand, failure to estimate customer demand properly, ordering in advance of historical lead-times, government regulations and the impact of changes in future demand, or increase in demand for competitive products, including competitive actions.
+the net effect on our gross margin from inventory provisions and sales of items previously written down was an unfavorable impact of 2.6% in fiscal year 2026 and 2.3% in fiscal year 2025. our inventory and capacity purchase commitments are based on forecasts of future customer demand and consider our third-party manufacturers' lead times and constraints. our manufacturing lead times can be and have been long, and in some cases, extended beyond twelve months for some products. we may place non-cancellable inventory orders for certain product components in advance of our historical lead times, pay premiums and provide deposits to secure future supply and capacity. we also adjust to other market factors, such as product offerings and pricing actions by our competitors, new product transitions, and macroeconomic conditions - all of which may impact demand for our products.
+refer to the gross profit and gross margin discussion below in this management's discussion and analysis for further discussion.
+income taxes
+we are subject to income taxes in the u.s. and foreign jurisdictions. our calculation of deferred tax assets and liabilities is based on certain estimates and judgments and involves dealing with uncertainties in the application of complex tax laws. our estimates of deferred tax assets and liabilities may change based, in part, on added certainty or finality to an anticipated outcome, changes in accounting standards or tax laws in the u.s. or foreign jurisdictions where we operate, or changes in other facts or circumstances. in addition, we recognize liabilities for potential u.s. and foreign income tax contingencies based on our estimate of whether, and the extent to which, additional taxes may be due. if we determine that payment of these amounts is unnecessary or if the recorded tax liability is less than our current assessment, we may be required to recognize an income tax benefit or additional income tax expense in our financial statements accordingly.
+we record a valuation allowance to reduce deferred tax assets to the amount that is believed more likely than not to be realized based on all available evidence. to the extent realization of the deferred tax assets becomes more-likely-than-not, we would recognize such deferred tax assets as income tax benefits during the period.
+we recognize the benefit from a tax position only if it is more-likely-than-not that the position would be sustained upon audit based solely on the technical merits of the tax position. our policy is to include interest and penalties related to unrecognized tax benefits as a component of income tax expense.
+non-marketable equity securities
+non-marketable equity securities consist of investments in private companies without readily determinable fair values. they are measured at cost minus impairment, if any, and are adjusted for observable price changes in orderly transactions for a similar investment in the same issuer (the measurement alternative). these adjustments may require use of unobservable inputs.
+we assess impairment quarterly based on qualitative and quantitative factors, including the investee's operating performance and market trends.
+table of contents
+revenue recognition
+revenue allowances
+for products sold with a right of return, we record a reduction to revenue by establishing a sales return allowance for estimated product returns at the time revenue is recognized, based primarily on historical return rates. however, if product returns for a fiscal period are anticipated to exceed historical return rates, we may determine that additional sales return allowances are required to reflect our estimated exposure for product returns. return rights for certain stocking distributors for specific products are contractually limited based on a percentage of prior quarter shipments. for shipments to other customers, we do not allow returns, although we may approve returns for credit or refund based on applicable facts and circumstances.
+we account for customer programs, which involve rebates and marketing development funds, or mdfs, as a reduction in revenue and accrue for such programs based on the amount we expect to be claimed by customers. certain customer programs include distributor price incentives or other channel programs for specific products and customer classes which require judgment as to whether the applicable incentives will be attained. estimates for customer program accruals include a combination of historical attainment and claim rates and may be adjusted based on relevant internal and external factors.
+contracts with multiple performance obligations
+our contracts may contain more than one performance obligation. judgment is required in determining whether each performance obligation within a customer contract is distinct. except for license and development arrangements, nvidia products and services function on a standalone basis and do not require a significant amount of integration or interdependency. therefore, multiple performance obligations contained within a customer contract are considered distinct and are not combined for revenue recognition purposes.
+we allocate the total transaction price to each distinct performance obligation in an arrangement with multiple performance obligations on a relative standalone selling price basis. in most cases, we can establish standalone selling price based on directly observable prices of products or services sold separately in comparable circumstances to similar customers. if standalone selling price is not directly observable, such as when we do not sell a product or service separately, we determine standalone selling price based on market data and other observable inputs.
+results of operations
+a discussion regarding our financial condition and results of operations for fiscal year 2026 compared to fiscal year 2025 is presented below. a discussion regarding our financial condition and results of operations for fiscal year 2025 compared to fiscal year 2024 can be found under item 7 in our annual report on form 10-k for the fiscal year ended january 26, 2025, filed with the sec on february 26, 2025, which is available free of charge on the sec's website at http://www.sec.gov and at our investor relations website, http://investor.nvidia.com.
+table of contents
+the following table sets forth, for the periods indicated, certain items in our consolidated statements of income expressed as a percentage of revenue.
+year ended
+jan 25, 2026
+jan 26, 2025
+revenue
+100.0
+%
+100.0
+%
+cost of revenue
+28.9
+25.0
+gross profit
+71.1
+75.0
+operating expenses
+research and development
+8.6
+9.9
+sales, general and administrative
+2.1
+2.7
+total operating expenses
+10.7
+12.6
+operating income
+60.4
+62.4
+interest income
+1.1
+1.4
+interest expense
+(0.1)
+(0.2)
+other income, net
+4.2
+0.8
+total other income, net
+5.2
+2.0
+income before income tax
+65.5
+64.4
+income tax expense
+9.9
+8.6
+net income
+55.6
+%
+55.8
+%
+reportable segments
+revenue by reportable segments
+year ended
+jan 25, 2026
+jan 26, 2025
+$
+change
+%
+change
+($ in millions)
+compute & networking
+$
+193,479
+$
+116,193
+$
+77,286
+%
+graphics
+22,459
+14,304
+8,155
+%
+total
+$
+215,938
+$
+130,497
+$
+85,441
+%
+operating income by reportable segments
+year ended
+jan 25, 2026
+jan 26, 2025
+$
+change
+%
+change
+($ in millions)
+compute & networking
+$
+130,141
+$
+82,875
+$
+47,266
+%
+graphics
+9,156
+5,085
+4,071
+%
+total
+$
+139,297
+$
+87,960
+$
+51,337
+%
+compute & networking revenue
+- the year over year increase was driven by the major platform shifts - accelerated computing and ai. revenue from data center computing grew 59% driven by demand for our blackwell computing platform. revenue from data center networking grew 142% driven by the introduction and continued ramp of nvlink compute fabric for gb200 and gb300 systems and the growth of ethernet and infiniband platforms.
+graphics revenue
+- the year over year increase was driven by sales of our blackwell architecture.
+reportable segment operating income
+- the year over year increase in compute & networking segment operating income was driven by growth in revenue, partially offset by a $4.5 billion charge associated with h20 excess inventory and purchase obligations in the first quarter of fiscal year 2026. the year over year increase in graphics segment operating income was driven by the growth in revenue.
+table of contents
+concentration of revenue
+we refer to customers who purchase products directly from nvidia as direct customers, such as aibs, distributors, odms, oems, csps, ai model makers, and system integrators. certain direct customers may use either internal resources or third-party system integrators to complete their build. we refer to indirect customers as those who purchase products through our direct customers; indirect customers include csps, neocloud builders, ai model makers, enterprises, and public sector entities. our revenue is concentrated among a limited number of direct and indirect customers and this trend may continue.
+direct customers
+- for fiscal year 2026, sales to one direct customer represented 22% of total revenue and sales to another direct customer represented 14% of total revenue, all of which were primarily attributable to the compute & networking segment.
+for fiscal year 2025, sales to one direct customer represented 12% of total revenue and sales to two direct customers each represented 11% of total revenue, all of which were primarily attributable to the compute & networking segment.
+for fiscal year 2024, sales to one direct customer represented 13% of total revenue, and were primarily attributable to the compute & networking segment.
+indirect customers
+- indirect customer revenue is an estimation based upon multiple factors including customer purchase order information, product specifications, internal sales data, and other sources. indirect customers primarily purchase our products through system integrators and distributors. we generate a significant amount of our revenue from a limited number of indirect customers, some individually representing 10% or more of our revenue. certain companies purchase cloud and related services through various direct and indirect customers. we estimate that one ai research and deployment company contributed to a meaningful amount of our revenue purchasing cloud services from our customers in fiscal year 2026.
+revenue by geographic region is designated based on the location of the headquarters of direct customers. the end customer and shipping location may be different from our customers' headquarters location. revenue from sales to customers headquartered outside of the united states accounted for 31% and 41% of total revenue for fiscal years 2026 and 2025, respectively.
+gross profit and gross margin
+gross profit consists of total net revenue less cost of revenue. cost of revenue consists of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. cost of revenue also includes acquisition-related intangible amortization expense, costs for license and development and service arrangements, ip-related costs, and stock-based compensation related to personnel associated with manufacturing operations.
+gross margins decreased to 71.1% in fiscal year 2026 from 75.0% in fiscal year 2025 as our business model transitioned from offering hopper hgx systems to blackwell full-scale datacenter solutions and a $4.5 billion charge associated with h20 excess inventory and purchase obligations in the first quarter of fiscal year 2026.
+provisions for inventory and excess inventory purchase obligations totaled $7.2 billion and $3.7 billion for fiscal years 2026 and 2025, respectively, including $4.5 billion associated with h20 excess inventory and purchase obligations for the first quarter of fiscal year 2026. sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $1.5 billion and $689 million for fiscal years 2026 and 2025, respectively. the net effect on our gross margin was an unfavorable impact of 2.6% and 2.3% in fiscal years 2026 and 2025, respectively.
+operating expenses
+year ended
+jan 25, 2026
+jan 26, 2025
+$
+change
+%
+change
+($ in millions)
+research and development
+$
+18,497
+$
+12,914
+$
+5,583
+%
+sales, general and administrative
+4,579
+3,491
+1,088
+%
+total operating expenses
+$
+23,076
+$
+16,405
+$
+6,671
+%
+the increases in research and development expenses for fiscal year 2026 were driven by a 29% increase in compensation and benefits expense, including stock-based compensation, reflecting employee growth and compensation increases and a 79% increase in compute and infrastructure.
+table of contents
+the increases in sales, general and administrative expenses for fiscal year 2026 were primarily driven by compensation and benefits expense, including stock-based compensation, reflecting employee growth and compensation increases.
+total other income, net
+year ended
+jan 25, 2026
+jan 26, 2025
+$
+change
+($ in millions)
+interest income
+$
+2,300
+$
+1,786
+$
+interest expense
+(259)
+(247)
+(12)
+other income, net
+9,022
+1,034
+7,988
+total other income, net
+$
+11,063
+$
+2,573
+$
+8,490
+the increase in interest income was primarily due to growth in cash, cash equivalents, and debt securities.
+interest expense is primarily comprised of coupon interest and debt discount amortization related to our notes.
+other income, net primarily consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity securities, and the impact of changes in foreign currency rates. the change in other income, net, compared to fiscal year 2025, was primarily driven by unrealized gains in non-marketable and publicly-held equity securities, including gains from our previously announced investment in intel's common stock. refer to note 7 and 8 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information regarding our non-marketable equity securities.
+income taxes
+income tax expense was $21.4 billion and $11.1 billion for fiscal years 2026 and 2025, respectively. income tax as a percentage of income before income tax was an expense of 15.1% and 13.3% for fiscal years 2026 and 2025, respectively.
+the effective tax rate increased primarily due to a lower percentage of tax benefits from stock-based compensation, fddei, and u.s. federal research tax credit relative to the increase in income before income tax.
+our effective tax rates for fiscal years 2026 and 2025 were lower than the u.s. federal statutory rate of 21.0% primarily due to tax benefits from fddei, stock-based compensation, income earned in jurisdictions that are subject to taxes at rates lower than the u.s. federal statutory tax rate, and the u.s. federal research tax credit.
+in july 2025, the one big beautiful bill act (obbba) was enacted into law and contains several changes to key u.s. federal income tax laws. we have recognized the tax effects of currently effective obbba provisions in our results for fiscal year 2026. we will continue to evaluate the impact of these legislative changes as tax authorities provide additional guidance and interpretation.
+as of january 25, 2026, based on recent jurisdictional taxable income and expected future earnings, we concluded certain state deferred tax assets are more likely than not realizable and released $711 million of valuation allowance.
+refer to note 13 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information.
+liquidity and capital resources
+jan 25, 2026
+jan 26, 2025
+(in millions)
+cash and cash equivalents
+$
+10,605
+$
+8,589
+marketable securities
+51,951
+34,621
+cash, cash equivalents, and marketable securities
+$
+62,556
+$
+43,210
+table of contents
+year ended
+jan 25, 2026
+jan 26, 2025
+(in millions)
+net cash provided by operating activities
+$
+102,718
+$
+64,089
+net cash used in investing activities
+$
+(52,228)
+$
+(20,421)
+net cash used in financing activities
+$
+(48,474)
+$
+(42,359)
+our fixed income security investments include highly rated, diversified investment types and credit exposures with shorter maturities.
+cash provided by operating activities increased in fiscal year 2026 compared to fiscal year 2025, due to higher revenue.
+cash used in investing activities increased in fiscal year 2026 compared to fiscal year 2025, primarily driven by higher purchases of equity investment securities and the execution of a non-exclusive license agreement with groq.
+cash used in financing activities increased in fiscal year 2026 compared to fiscal year 2025, mainly due to higher share repurchases.
+liquidity
+our primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. as of january 25, 2026, we had $62.6 billion in cash, cash equivalents, and marketable securities. we believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and for the foreseeable future, including our future obligations. we continuously evaluate our liquidity and capital resources, including our access to external capital, to ensure we can finance future capital requirements.
+our marketable securities consist of publicly-held equity securities, debt securities issued by the u.s. government and its agencies, highly-rated corporations and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly-rated financial institutions. these marketable securities are primarily denominated in u.s. dollars. refer to note 7 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for additional information.
+except for approximately $1.7 billion of cash, cash equivalents, and marketable securities held outside the u.s. for which we have not accrued any related foreign or state taxes if we repatriate these amounts to the u.s., substantially all of our cash, cash equivalents and marketable securities held outside the u.s. at the end of fiscal year 2026 are available for use in the u.s. without incurring additional u.s. federal income taxes. our first quarter of any fiscal year (including fiscal year 2027) generally does not include any estimated federal and state income tax payments and our second quarter of any fiscal year (including fiscal year 2027) generally includes two estimated federal and state income tax payments.
+capital return to shareholders
+on august 26, 2025, our board of directors approved an additional $60.0 billion in share repurchase authorization, without expiration. in fiscal year 2026, we repurchased 282 million shares of our common stock for $40.4 billion. as of january 25, 2026, we were authorized, subject to certain specifications, to repurchase up to $58.5 billion of our common stock.
+from january 26, 2026 through february 20, 2026, we repurchased 8 million shares for $1.5 billion pursuant to a pre-established trading plan. we may execute repurchases from time to time, subject to market conditions, operating requirements, and other investment opportunities, in the open market, in privately negotiated transactions, pursuant to a rule 10b5-1 trading plan or in structured share repurchase agreements in compliance with rule 10b-18 of the exchange act. our share repurchase program may be suspended at any time at our discretion.
+in fiscal year 2026, we paid cash dividends to our shareholders of $974 million. the payment of future cash dividends is subject to our board of directors' continuing determination that the declaration of dividends is in the best interests of our shareholders.
+the u.s. inflation reduction act of 2022 requires a 1% excise tax on certain share repurchases in excess of shares issued for employee compensation made after december 31, 2022. the excise tax is included in our share repurchase cost and was not material for fiscal years 2026 and 2025.
+table of contents
+outstanding indebtedness and commercial paper program
+our aggregate debt maturities as of january 25, 2026, by year payable, are as follows:
+jan 25, 2026
+(in millions)
+due in one year
+$
+1,000
+due in one to five years
+2,750
+due in five to ten years
+1,250
+due in greater than ten years
+3,500
+unamortized debt discount and issuance costs
+(32)
+net carrying amount
+$
+8,468
+less short-term portion
+total long-term portion
+$
+7,469
+in january 2026, we increased the amount of our commercial paper program, pursuant to which we may issue unsecured commercial paper notes from time to time or all at once up to $25.0 billion. as of january 25, 2026, no commercial paper was outstanding. we will continue to evaluate issuing commercial paper as a component of our overall liquidity strategy.
+refer to note 11 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for further discussion.
+material cash requirements and other obligations
+for descriptions of our facility lease guarantees, long-term debt, purchase commitments, and operating lease obligations, refer to note 10, note 11, note 12, and note 17 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k, respectively.
+we expect to continue investing in our ecosystem. we are finalizing an investment and partnership agreement with openai. there is no assurance that we will enter into an investment and partnership agreement with openai or that a transaction will be completed. refer to item 1a. risk factors for additional information regarding our investments.
+during fiscal year 2026 and fiscal year 2025, we spent $6.1 billion and $3.4 billion on capital expenditures, respectively. we expect to increase capital expenditures in fiscal year 2027 relative to fiscal year 2026 to support the future growth of our business.
+unrecognized tax benefits of $4.0 billion, which includes related interest and penalties of $374 million, were recorded in non-current income tax payable at the end of fiscal year 2026. we are unable to estimate the timing of any potential tax liability, interest payments, or penalties in individual years due to uncertainties in the underlying income tax positions and the timing of the effective settlement of such tax positions. we are currently under examination by the internal revenue service for our fiscal years 2023 and 2024. refer to note 13 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for further information.
+adoption of new and recently issued accounting pronouncements
+refer to note 1 of the notes to the consolidated financial statements in part iv, item 15 of this annual report on form 10-k for a discussion of adoption of new and recently issued accounting pronouncements.

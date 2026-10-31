@@ -1225,10 +1225,14 @@
   {
    "label": "10-year analysis workbook (Excel)",
    "file": "data/NVDA/NVDA_10_Year_Analysis.xlsx"
+  },
+  {
+   "label": "All MD&A text files, FY2017-FY2026 (.zip)",
+   "file": "data/NVDA/NVDA_MDA_Text_Files.zip"
   }
  ],
  "pending": {
-  "sentiment": "NVIDIA's sentiment results will appear here once the MD&A (Item 7) text files for FY2017-FY2026 are extracted by the program.",
+  "sentiment": "The MD&A text files for FY2017-FY2026 are ready (see Downloads). Sentiment scores will be added next.",
   "price": "This comparison needs NVIDIA's fiscal year-end stock prices and sentiment results, which are still being collected. Prices will be split-adjusted for the 4-for-1 (2021) and 10-for-1 (2024) stock splits."
  },
  "notes": {
@@ -1238,6 +1242,86 @@
    "Efficiency: asset turnover fell to 0.63 in FY2023, then jumped to 1.47 in FY2025 as AI data center demand pushed revenue up far faster than assets.",
    "Profitability: net margin dropped to 16% in FY2023 (a crypto and gaming slowdown, inventory charges and the $1.35B Arm termination cost), then rose to 49% in FY2024 and about 56% in FY2025-FY2026."
   ],
-  "statements": "Source: NVIDIA Q4 earnings releases (Form 8-K Ex. 99.1). A dash in the FY2017-FY2018 cash flow statement means the detail is not in the earnings releases; it will be filled from the full 10-K statements."
- }
+  "statements": "Source: NVIDIA Q4 earnings releases (Form 8-K Ex. 99.1). A dash in the FY2017-FY2018 cash flow statement means the detail is not in the earnings releases; it will be filled from the full 10-K statements.",
+  "mda": [
+   "Raw: Item 7 text as extracted from the 10-K, with original capitalization, page numbers and one table cell per line.",
+   "Cleaned: the raw text lowercased, with page numbers removed. Table cells remain as short lines of numbers.",
+   "Sentiment-ready: table fragments and page headers removed, broken sentences rejoined, and words the SEC page split in two repaired (for example \"refe\" + \"r\" became \"refer\"). The wording is otherwise unchanged.",
+   "All ten files are complete: each runs from the Item 7 heading to the last MD&A section (new accounting pronouncements).",
+   "Table numbers and symbols made up about 6-9% of the cleaned text. The cleaning step also dropped standalone years (\"fiscal year 2017\" became \"fiscal year\"); numbers are not counted as words, so sentiment counts are unaffected.",
+   "Word counts fall from about 7,000 (FY2017-FY2019) to about 5,000-6,000 from FY2020, when NVIDIA began discussing only the latest two years instead of three."
+  ]
+ },
+ "mda": [
+  {
+   "year": 2026,
+   "words": 4829,
+   "raw": "data/NVDA/mda/NVDA_FY2026_MDA_Raw.txt",
+   "cleaned": "data/NVDA/mda/NVDA_FY2026_MDA_Cleaned.txt",
+   "ready": "data/NVDA/mda/NVDA_FY2026_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2025,
+   "words": 5417,
+   "raw": "data/NVDA/mda/NVDA_FY2025_MDA_Raw.txt",
+   "cleaned": "data/NVDA/mda/NVDA_FY2025_MDA_Cleaned.txt",
+   "ready": "data/NVDA/mda/NVDA_FY2025_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2024,
+   "words": 5748,
+   "raw": "data/NVDA/mda/NVDA_FY2024_MDA_Raw.txt",
+   "cleaned": "data/NVDA/mda/NVDA_FY2024_MDA_Cleaned.txt",
+   "ready": "data/NVDA/mda/NVDA_FY2024_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2023,
+   "words": 5497,
+   "raw": "data/NVDA/mda/NVDA_FY2023_MDA_Raw.txt",
+   "cleaned": "data/NVDA/mda/NVDA_FY2023_MDA_Cleaned.txt",
+   "ready": "data/NVDA/mda/NVDA_FY2023_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2022,
+   "words": 5992,
+   "raw": "data/NVDA/mda/NVDA_FY2022_MDA_Raw.txt",
+   "cleaned": "data/NVDA/mda/NVDA_FY2022_MDA_Cleaned.txt",
+   "ready": "data/NVDA/mda/NVDA_FY2022_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2021,
+   "words": 5991,
+   "raw": "data/NVDA/mda/NVDA_FY2021_MDA_Raw.txt",
+   "cleaned": "data/NVDA/mda/NVDA_FY2021_MDA_Cleaned.txt",
+   "ready": "data/NVDA/mda/NVDA_FY2021_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2020,
+   "words": 4916,
+   "raw": "data/NVDA/mda/NVDA_FY2020_MDA_Raw.txt",
+   "cleaned": "data/NVDA/mda/NVDA_FY2020_MDA_Cleaned.txt",
+   "ready": "data/NVDA/mda/NVDA_FY2020_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2019,
+   "words": 6823,
+   "raw": "data/NVDA/mda/NVDA_FY2019_MDA_Raw.txt",
+   "cleaned": "data/NVDA/mda/NVDA_FY2019_MDA_Cleaned.txt",
+   "ready": "data/NVDA/mda/NVDA_FY2019_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2018,
+   "words": 6964,
+   "raw": "data/NVDA/mda/NVDA_FY2018_MDA_Raw.txt",
+   "cleaned": "data/NVDA/mda/NVDA_FY2018_MDA_Cleaned.txt",
+   "ready": "data/NVDA/mda/NVDA_FY2018_MDA_SentimentReady.txt"
+  },
+  {
+   "year": 2017,
+   "words": 7549,
+   "raw": "data/NVDA/mda/NVDA_FY2017_MDA_Raw.txt",
+   "cleaned": "data/NVDA/mda/NVDA_FY2017_MDA_Cleaned.txt",
+   "ready": "data/NVDA/mda/NVDA_FY2017_MDA_SentimentReady.txt"
+  }
+ ]
 }
