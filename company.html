@@ -279,7 +279,7 @@
     tabs.forEach((t) => t.addEventListener("click", () => showTab(t.dataset.tab)));
 
     // ---------- render ----------
-    fetch(`data/${ticker}/${ticker}.json`)
+    fetch(`data/${ticker}/${ticker}.json?v=${Date.now()}`, { cache: "no-store" })
       .then((r) => { if (!r.ok) throw new Error(); return r.json(); })
       .then(render)
       .catch(() => {
