@@ -1513,7 +1513,7 @@
   "sentiment": [
    "The MD&A tone is net negative (P/N below 1.0) in 8 of 10 years, which is typical for 10-K language that discusses risks and uncertainties.",
    "FY2021 is the clear outlier at 1.65, the only year with far more positive than negative words, matching Apple's record pandemic-era growth.",
-   "Word counts drop from about 8,400 (FY2016-FY2018) to about 2,300-2,800 (FY2021-FY2025). Check that the extraction captured the full MD&A in recent years."
+   "The MD&A shrinks from about 8,400 words (FY2016-FY2018) to about 2,300-2,800 (FY2021-FY2025). This is mostly real: Apple's MD&A ran 14 pages in the FY2016 10-K but only 6 pages in FY2021 and FY2025, after the SEC's 2020 MD&A rule changes first applied to Apple's FY2021 filing. Fewer words means each positive or negative word moves the P/N ratio more in recent years."
   ]
  }
 }
