@@ -312,9 +312,40 @@ notes(hp, 16, ["Notes:",
                "3. FY2026 close ($187.67, Jan 23, 2026) per FinancialContent historical data; other years pending."])
 
 sa = sheet("Sentiment Analysis", "NVIDIA Corp. - Loughran-McDonald MD&A Sentiment Analysis",
-           "Pending: requires NVIDIA MD&A text files from the program's extraction step", first=False)
-sa["A4"] = "Sentiment results will be added when the FY2017-FY2026 MD&A files are available."
-sa["A4"].font = NORM
+           "Item 7 (MD&A) word counts from src/lm_sentiment.py, sentiment-ready text", first=False)
+# Counts per fiscal year: total, positive, negative, uncertainty, litigious, strong modal, weak modal, constraining
+SENT = {
+    2026: [4882, 22, 41, 60, 24, 10, 31, 48],
+    2025: [5458, 30, 47, 76, 22, 9, 45, 63],
+    2024: [5803, 42, 55, 72, 25, 8, 39, 55],
+    2023: [5553, 33, 61, 52, 20, 7, 25, 45],
+    2022: [6062, 41, 58, 75, 27, 6, 30, 37],
+    2021: [6051, 24, 48, 83, 24, 15, 22, 40],
+    2020: [4965, 31, 49, 42, 26, 6, 13, 35],
+    2019: [6916, 37, 70, 60, 43, 9, 15, 41],
+    2018: [7046, 49, 75, 57, 46, 17, 18, 45],
+    2017: [7627, 42, 96, 89, 37, 20, 33, 49],
+}
+for j, v in enumerate(["Fiscal Year", "Total Words", "Positive", "Negative", "Uncertainty", "Litigious",
+                       "Strong Modal", "Weak Modal", "Constraining", "P/N Ratio", "Sentiment Score"]):
+    c = sa.cell(4, 1 + j, v)
+    c.font, c.fill = HDR, FILL
+for k, y in enumerate(YEARS):
+    r = 5 + k
+    sa.cell(r, 1, f"FY {y}").font = BOLD
+    for j, v in enumerate(SENT[y]):
+        c = sa.cell(r, 2 + j, v)
+        c.font, c.number_format = INPUT, "#,##0"
+    c = sa.cell(r, 10, f"=IF(D{r}=0,\"\",C{r}/D{r})")
+    c.font, c.number_format = NORM, "0.00"
+    c = sa.cell(r, 11, f"=(C{r}-D{r})/B{r}")
+    c.font, c.number_format = NORM, "0.0000"
+for col in "BCDEFGHIJK":
+    sa.column_dimensions[col].width = 14
+notes(sa, 17, ["Notes:",
+               "1. Counts use exact matching against the Loughran-McDonald Master Dictionary (no stemming); Strong/Weak modal = LM modal codes 1 and 3.",
+               "2. P/N Ratio = Positive / Negative. Sentiment Score = (Positive - Negative) / Total Words.",
+               "3. Text: NVDA_FY<year>_MDA_SentimentReady.txt (table fragments and page headers removed)."])
 
 so = sheet("Sources", "NVIDIA Corp. - Sources", "SEC EDGAR, CIK 0001045810", first=False)
 for j, v in enumerate(["Fiscal years covered", "Document", "URL"]):

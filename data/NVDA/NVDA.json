@@ -1219,7 +1219,138 @@
    ]
   }
  ],
- "sentiment": [],
+ "sentiment": [
+  {
+   "year": 2026,
+   "total": 4882,
+   "positive": 22,
+   "negative": 41,
+   "uncertainty": 60,
+   "litigious": 24,
+   "strongModal": 10,
+   "weakModal": 31,
+   "constraining": 48,
+   "pn": 0.5365853658536586,
+   "score": -0.0038918476034412127
+  },
+  {
+   "year": 2025,
+   "total": 5458,
+   "positive": 30,
+   "negative": 47,
+   "uncertainty": 76,
+   "litigious": 22,
+   "strongModal": 9,
+   "weakModal": 45,
+   "constraining": 63,
+   "pn": 0.6382978723404256,
+   "score": -0.00311469402711616
+  },
+  {
+   "year": 2024,
+   "total": 5803,
+   "positive": 42,
+   "negative": 55,
+   "uncertainty": 72,
+   "litigious": 25,
+   "strongModal": 8,
+   "weakModal": 39,
+   "constraining": 55,
+   "pn": 0.7636363636363637,
+   "score": -0.0022402205755643633
+  },
+  {
+   "year": 2023,
+   "total": 5553,
+   "positive": 33,
+   "negative": 61,
+   "uncertainty": 52,
+   "litigious": 20,
+   "strongModal": 7,
+   "weakModal": 25,
+   "constraining": 45,
+   "pn": 0.5409836065573771,
+   "score": -0.0050423194669547994
+  },
+  {
+   "year": 2022,
+   "total": 6062,
+   "positive": 41,
+   "negative": 58,
+   "uncertainty": 75,
+   "litigious": 27,
+   "strongModal": 6,
+   "weakModal": 30,
+   "constraining": 37,
+   "pn": 0.7068965517241379,
+   "score": -0.0028043549983503796
+  },
+  {
+   "year": 2021,
+   "total": 6051,
+   "positive": 24,
+   "negative": 48,
+   "uncertainty": 83,
+   "litigious": 24,
+   "strongModal": 15,
+   "weakModal": 22,
+   "constraining": 40,
+   "pn": 0.5,
+   "score": -0.0039662865642042635
+  },
+  {
+   "year": 2020,
+   "total": 4965,
+   "positive": 31,
+   "negative": 49,
+   "uncertainty": 42,
+   "litigious": 26,
+   "strongModal": 6,
+   "weakModal": 13,
+   "constraining": 35,
+   "pn": 0.6326530612244898,
+   "score": -0.0036253776435045317
+  },
+  {
+   "year": 2019,
+   "total": 6916,
+   "positive": 37,
+   "negative": 70,
+   "uncertainty": 60,
+   "litigious": 43,
+   "strongModal": 9,
+   "weakModal": 15,
+   "constraining": 41,
+   "pn": 0.5285714285714286,
+   "score": -0.0047715442452284556
+  },
+  {
+   "year": 2018,
+   "total": 7046,
+   "positive": 49,
+   "negative": 75,
+   "uncertainty": 57,
+   "litigious": 46,
+   "strongModal": 17,
+   "weakModal": 18,
+   "constraining": 45,
+   "pn": 0.6533333333333333,
+   "score": -0.0036900369003690036
+  },
+  {
+   "year": 2017,
+   "total": 7627,
+   "positive": 42,
+   "negative": 96,
+   "uncertainty": 89,
+   "litigious": 37,
+   "strongModal": 20,
+   "weakModal": 33,
+   "constraining": 49,
+   "pn": 0.4375,
+   "score": -0.007080110135046545
+  }
+ ],
  "prices": [],
  "downloads": [
   {
@@ -1232,7 +1363,6 @@
   }
  ],
  "pending": {
-  "sentiment": "The MD&A text files for FY2017-FY2026 are ready (see Downloads). Sentiment scores will be added next.",
   "price": "This comparison needs NVIDIA's fiscal year-end stock prices and sentiment results, which are still being collected. Prices will be split-adjusted for the 4-for-1 (2021) and 10-for-1 (2024) stock splits."
  },
  "notes": {
@@ -1250,6 +1380,13 @@
    "All ten files are complete: each runs from the Item 7 heading to the last MD&A section (new accounting pronouncements).",
    "Table numbers and symbols made up about 6-9% of the cleaned text. The cleaning step also dropped standalone years (\"fiscal year 2017\" became \"fiscal year\"); numbers are not counted as words, so sentiment counts are unaffected.",
    "Word counts fall from about 7,000 (FY2017-FY2019) to about 5,000-6,000 from FY2020, when NVIDIA began discussing only the latest two years instead of three."
+  ],
+  "sentiment": [
+   "The MD&A tone is net negative (P/N below 1.0) in all 10 years, ranging from 0.44 (FY2017) to 0.76 (FY2024). That is typical for 10-K language, which must discuss risks.",
+   "The most positive years are FY2024 (0.76) and FY2022 (0.71), both record-growth years. The most negative are FY2017 (0.44, heavy on litigation, restructuring and impairment language), FY2021 (0.50) and FY2023 (0.54, inventory charges, export controls and the Arm deal termination).",
+   "FY2026 shows that tone does not simply follow results: revenue hit a record $216 billion, yet P/N fell to 0.54 as the MD&A focused on export controls, the $4.5 billion H20 charge and supply challenges.",
+   "Some negative words are boilerplate or dictionary quirks: \"critical\" comes mostly from the \"Critical Accounting Estimates\" heading, and \"termination\" (FY2023-FY2024) and \"closing\" (FY2021) refer to the Arm deal.",
+   "Method: exact matching against the Loughran-McDonald Master Dictionary, using the sentiment-ready text (src/lm_sentiment.py). Apple's sentiment numbers came from a different program, so the two companies' word counts are not yet directly comparable."
   ]
  },
  "mda": [
