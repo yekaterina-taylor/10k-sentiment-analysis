@@ -82,6 +82,24 @@
     .notes ul { margin: 0; padding-left: 18px; }
     .notes li { margin-bottom: 6px; line-height: 1.45; }
 
+    details.explain { border: 2px solid var(--blue); border-radius: 8px; margin-bottom: 24px; background: var(--paper); }
+    details.explain summary {
+      cursor: pointer; padding: 14px 16px; font-weight: bold; color: var(--blue);
+      list-style: none; display: flex; align-items: center; gap: 10px;
+    }
+    details.explain summary::-webkit-details-marker { display: none; }
+    details.explain summary::before {
+      content: "+"; display: inline-grid; place-items: center; width: 24px; height: 24px; flex: 0 0 24px;
+      border-radius: 50%; background: var(--gold); color: var(--blue); font-size: 1.1rem;
+    }
+    details.explain[open] summary::before { content: "\2212"; }
+    details.explain[open] summary { border-bottom: 1px solid var(--line); }
+    .explain-body { padding: 4px 16px 6px; line-height: 1.5; }
+    .explain-body .table-scroll { margin-bottom: 12px; }
+    #explain-table td { white-space: normal; text-align: left; vertical-align: top; min-width: 120px; }
+    #explain-table td:nth-child(4) { text-align: right; white-space: nowrap; min-width: 0; }
+    #explain-table th { text-align: left; }
+    .explain-foot { color: var(--muted); font-size: 0.9rem; }
     .downloads { display: grid; gap: 12px; max-width: 640px; }
     .dl {
       display: flex; justify-content: space-between; align-items: center; gap: 12px;
@@ -148,6 +166,27 @@
     <section id="sentiment" role="tabpanel" hidden>
       <h2>Sentiment</h2>
       <p class="sub">Loughran-McDonald dictionary scores of the MD&amp;A section (Item 7).</p>
+
+      <details class="explain">
+        <summary>How to read this: what each sentiment measure means</summary>
+        <div class="explain-body">
+          <p>These measures come from the <strong>Loughran-McDonald dictionary</strong>, word lists built
+             specifically for financial documents. The program counts how many words from each list appear
+             in the MD&amp;A. A word can be on more than one list (for example, <em>may</em> counts as both
+             uncertain and weak modal).</p>
+          <div class="table-scroll">
+            <table id="explain-table">
+              <thead><tr><th>Measure</th><th>What it captures</th><th>Example words / formula</th>
+                <th id="explain-year">Example</th><th>How to read it</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <p class="explain-foot">Most words in a 10-K are neutral (<em>revenue</em>, <em>fiscal</em>,
+             <em>product</em>), so only about 2&ndash;3% of words carry sentiment. That is why sentiment scores
+             are small numbers close to zero.</p>
+        </div>
+      </details>
+
       <div class="kpis" id="sent-kpis"></div>
       <div class="card" style="margin-bottom:24px">
         <h3>Positive vs. negative words</h3>
@@ -319,6 +358,33 @@
         "<th>P/N ratio</th><th>Sentiment score</th></tr></thead><tbody>" +
         s.map((x) => `<tr><td>FY ${x.year}</td>` + cols.map((c) => `<td>${x[c[1]].toLocaleString()}</td>`).join("") +
           `<td>${fmt2(x.pn)}</td><td>${x.score.toFixed(4)}</td></tr>`).join("") + "</tbody>";
+      // "How to read this" table, filled with the most recent year's numbers
+      const ex = s[0];
+      el("explain-year").textContent = `${d.ticker} FY ${ex.year}`;
+      const explain = [
+        ["Positive", "Good news, success", "achieve, improve, gain, strong", ex.positive,
+         "More positive words = more upbeat language."],
+        ["Negative", "Bad news, problems", "loss, decline, adverse, impairment", ex.negative,
+         "Usually higher than positive in 10-Ks, because companies must discuss risks."],
+        ["Uncertainty", "Vagueness, risk, the unknown", "may, approximately, risk, uncertain", ex.uncertainty,
+         "Rises when management is less sure about the future (economy, supply chain, currency)."],
+        ["Litigious", "Legal language", "litigation, court, settlement, plaintiff", ex.litigious,
+         "Tracks legal and regulatory exposure."],
+        ["Strong modal", "Firm commitment", "will, must, always, never", ex.strongModal,
+         "Low values mean management avoids firm promises."],
+        ["Weak modal", "Hedging, tentative wording", "could, might, possibly", ex.weakModal,
+         "Higher values mean more cautious, hedged statements."],
+        ["Constraining", "Limits and obligations", "required, obligations, restrict, comply", ex.constraining,
+         "Reflects regulations, debt terms, and other rules the company must follow."],
+        ["P/N ratio", "Overall tone", "Positive ÷ Negative", fmt2(ex.pn),
+         "Above 1 = more positive than negative words; below 1 = more negative; 1 = balanced."],
+        ["Sentiment score", "Net tone per word", "(Positive − Negative) ÷ Total words", ex.score.toFixed(4),
+         "Below 0 = net negative, above 0 = net positive. Adjusts for MD&A length, so years can be compared fairly."],
+      ];
+      el("explain-table").querySelector("tbody").innerHTML = explain.map((r) =>
+        `<tr><td><strong>${r[0]}</strong></td><td>${r[1]}</td><td><em>${r[2]}</em></td><td>${r[3]}</td><td>${r[4]}</td></tr>`
+      ).join("");
+
       el("sent-notes").innerHTML = (d.notes?.sentiment || []).map((n) => `<li>${n}</li>`).join("");
 
       // 5. Price vs sentiment (two aligned charts, shared years — no dual axis)
