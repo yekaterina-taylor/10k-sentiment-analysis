@@ -57,6 +57,29 @@
     .align { border: 2px solid var(--blue); border-radius: 8px; padding: 14px 16px; margin-bottom: 24px; line-height: 1.5; }
     .align strong { color: var(--blue); }
     footer { background: var(--blue); color: #fff; text-align: center; padding: 14px 16px; font-size: 0.85rem; }
+    details.explain { border: 2px solid var(--blue); border-radius: 8px; margin-bottom: 24px; background: var(--paper); }
+    details.explain summary {
+      cursor: pointer; padding: 14px 16px; font-weight: bold; color: var(--blue);
+      list-style: none; display: flex; align-items: center; gap: 10px;
+    }
+    details.explain summary::-webkit-details-marker { display: none; }
+    details.explain summary::before {
+      content: "+"; display: inline-grid; place-items: center; width: 24px; height: 24px; flex: 0 0 24px;
+      border-radius: 50%; background: var(--gold); color: var(--blue); font-size: 1.1rem;
+    }
+    details.explain[open] summary::before { content: "\2212"; }
+    details.explain[open] summary { border-bottom: 1px solid var(--line); }
+    .explain-body { padding: 4px 16px 6px; line-height: 1.5; }
+    .explain-body .table-scroll { margin-bottom: 12px; }
+    .legend-row { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 12px; }
+    .legend-item { display: inline-flex; align-items: center; gap: 8px; }
+    .chip { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 4px; font-weight: bold;
+            color: var(--muted); border: 1px solid rgba(0,0,0,.08); }
+    .explain table th, .explain table td { text-align: left; white-space: normal; vertical-align: top; }
+    .explain table td:first-child { font-weight: bold; white-space: nowrap; }
+    .explain .what { display: block; font-weight: normal; color: var(--muted); }
+    .chip.st-good { background: #DDF3E4; } .chip.st-mid { background: #FFF1C2; } .chip.st-weak { background: #FCE1E8; }
+    .explain-foot { color: var(--muted); font-size: 0.9rem; }
   </style>
 </head>
 <body>
@@ -117,6 +140,33 @@
          <span class="key"><span class="sw" style="background:var(--nvda)"></span>NVIDIA</span></p>
       <div class="grid2" id="ratio-charts"></div>
       <div class="table-scroll"><table id="ratio-table"></table></div>
+      <details class="explain">
+        <summary>How to read the colors: what Strong, Adequate and Weak mean</summary>
+        <div class="explain-body">
+          <p>Each value in the ratio table is shaded by comparing it with general rule-of-thumb benchmarks.
+            The symbol in each cell gives the same information without relying on color.</p>
+          <div class="legend-row">
+            <span class="legend-item"><span class="chip st-good">✓</span>Strong</span>
+            <span class="legend-item"><span class="chip st-mid">●</span>Adequate / moderate</span>
+            <span class="legend-item"><span class="chip st-weak">!</span>Weak / high risk</span>
+          </div>
+          <div class="table-scroll"><table>
+            <thead><tr><th>Ratio</th><th>✓ Strong</th><th>● Adequate / moderate</th><th>! Weak / high risk</th></tr></thead>
+            <tbody>
+              <tr><td>Current Ratio<span class="what">Can short-term assets cover bills due within a year?</span></td>
+                <td class="st-good">≥ 1.5</td><td class="st-mid">1.0–1.5</td><td class="st-weak">&lt; 1.0</td></tr>
+              <tr><td>Debt-to-Assets Ratio<span class="what">How much of the company's assets are financed with liabilities?</span></td>
+                <td class="st-good">≤ 0.40</td><td class="st-mid">0.40–0.60</td><td class="st-weak">&gt; 0.60</td></tr>
+              <tr><td>Asset Turnover<span class="what">How many dollars of sales each dollar of assets produces.</span></td>
+                <td class="st-good">≥ 1.0</td><td class="st-mid">0.5–1.0</td><td class="st-weak">&lt; 0.5</td></tr>
+              <tr><td>Net Profit Margin<span class="what">How many cents of profit the company keeps from each dollar of sales.</span></td>
+                <td class="st-good">≥ 20%</td><td class="st-mid">10–20%</td><td class="st-weak">&lt; 10%</td></tr>
+            </tbody></table></div>
+          <p><strong>Keep in mind:</strong> these are general standards, not rules. Healthy levels differ by
+            industry and business model. For example, a very profitable company with steady cash flow can safely run a current
+            ratio below 1.0, and heavy share buybacks raise debt-to-assets without signaling distress, which is Apple's case.</p>
+        </div>
+      </details>
     </section>
 
     <!-- 4. Sentiment -->
@@ -134,6 +184,47 @@
           <div class="chart tall"><canvas id="per1000-chart"></canvas></div></div>
       </div>
       <div class="table-scroll"><table id="sent-table"></table></div>
+      <details class="explain">
+        <summary>How to read this: what each sentiment measure means and how to read the colors</summary>
+        <div class="explain-body">
+          <p>These measures come from the <strong>Loughran-McDonald dictionary</strong>, word lists built
+             specifically for financial documents. The program counts how many words from each list appear
+             in the MD&amp;A. A word can be on more than one list (for example, <em>may</em> counts as both
+             uncertain and weak modal). The bar chart shows each count per 1,000 words, so a longer MD&amp;A
+             does not automatically score higher.</p>
+          <div class="table-scroll"><table>
+            <thead><tr><th>Measure</th><th>What it captures</th><th>Example words / formula</th><th>How to read it</th></tr></thead>
+            <tbody>
+              <tr><td>Positive</td><td>Good news, success</td><td><em>achieve, improve, gain, strong</em></td><td>More positive words = more upbeat language.</td></tr>
+              <tr><td>Negative</td><td>Bad news, problems</td><td><em>loss, decline, adverse, impairment</em></td><td>Usually higher than positive in 10-Ks, because companies must discuss risks.</td></tr>
+              <tr><td>Uncertainty</td><td>Vagueness, risk, the unknown</td><td><em>may, approximately, risk, uncertain</em></td><td>Rises when management is less sure about the future.</td></tr>
+              <tr><td>Litigious</td><td>Legal language</td><td><em>litigation, court, settlement, plaintiff</em></td><td>Tracks legal and regulatory exposure.</td></tr>
+              <tr><td>Strong modal</td><td>Firm commitment</td><td><em>will, must, always, never</em></td><td>Low values mean management avoids firm promises.</td></tr>
+              <tr><td>Weak modal</td><td>Hedging, tentative wording</td><td><em>could, might, possibly</em></td><td>Higher values mean more cautious, hedged statements.</td></tr>
+              <tr><td>Constraining</td><td>Limits and obligations</td><td><em>required, obligations, restrict, comply</em></td><td>Reflects regulations, debt terms, and other rules the company must follow.</td></tr>
+              <tr><td>P/N ratio</td><td>Overall tone</td><td><em>Positive ÷ Negative</em></td><td>Above 1 = more positive than negative words; below 1 = more negative; 1 = balanced.</td></tr>
+              <tr><td>Sentiment score</td><td>Net tone per word</td><td><em>(Positive − Negative) ÷ Total words</em></td><td>Below 0 = net negative, above 0 = net positive. Adjusts for MD&amp;A length.</td></tr>
+            </tbody></table></div>
+          <p class="explain-foot">Most words in a 10-K are neutral (<em>revenue</em>, <em>fiscal</em>, <em>product</em>), so only
+             about 2&ndash;3% of words carry sentiment. That is why sentiment scores are small numbers close to zero.</p>
+          <h3 style="color:var(--blue);margin:18px 0 8px">How to read the colors</h3>
+          <p>The P/N ratio and sentiment score cells are shaded by tone. The symbol in each cell gives the same
+             information without relying on color.</p>
+          <div class="table-scroll"><table>
+            <thead><tr><th>Category</th><th>P/N ratio</th><th>Sentiment score</th><th>What it means</th></tr></thead>
+            <tbody>
+              <tr><td class="st-good"><span class="ic">✓</span>Net positive tone</td><td>≥ 1.0</td><td>≥ 0</td>
+                <td>Positive words equal or outnumber negative words.</td></tr>
+              <tr><td class="st-mid"><span class="ic">●</span>Typical / cautious</td><td>0.5 – 1.0</td><td>−0.005 to 0</td>
+                <td>More negative than positive words, which is normal for a 10-K because companies must discuss risks.</td></tr>
+              <tr><td class="st-weak"><span class="ic">!</span>Strongly negative</td><td>below 0.5</td><td>below −0.005</td>
+                <td>Negative words outnumber positive words more than 2 to 1, or make up an unusually large share of the text.</td></tr>
+            </tbody></table></div>
+          <p class="explain-foot">Unlike the financial ratio benchmarks, there is no standard cutoff for MD&amp;A tone; these
+             categories are our own. The two columns can disagree for the same year, because the sentiment score also
+             depends on how many words in the text carry sentiment at all.</p>
+        </div>
+      </details>
     </section>
 
     <!-- 5. Price vs sentiment -->
